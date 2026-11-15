@@ -1,0 +1,22 @@
+{
+  "PL_probabilidades_suman_uno": true,
+  "PL_invariante_a_desplazamiento": true,
+  "PL_sin_ventajas_uniforme": true,
+  "rango_esperado_coincide_enumeracion": true,
+  "rango_esperado_acotado": true,
+  "contrafactual_igual_puntaje_mitad": true,
+  "claves_2024_sin_duplicados": true,
+  "carreras_2024": 24,
+  "clasificados_2024": 425,
+  "victorias_GP_2024": {
+    "hamilton": 2,
+    "leclerc": 3,
+    "max_verstappen": 9,
+    "norris": 4,
+    "piastri": 2,
+    "russell": 2,
+    "sainz": 2
+  },
+  "R_y_Stan_ejecutados_en_este_entorno": false,
+  "historico_2014_2023_descargado_en_este_entorno": false
+}

@@ -1,0 +1,1701 @@
+"fold","round","race_id","circuit_id","driver_id","regla","observado","estimado","error_absoluto"
+1,1,"2024-1","bahrain","max_verstappen","Constructor",1,6.87318845871265,5.87318845871265
+1,1,"2024-1","bahrain","perez","Constructor",2,6.87318845871265,4.87318845871265
+1,1,"2024-1","bahrain","sainz","Constructor",3,5.41387061415812,2.41387061415812
+1,1,"2024-1","bahrain","leclerc","Constructor",4,5.41387061415812,1.41387061415812
+1,1,"2024-1","bahrain","russell","Constructor",5,6.49056169633424,1.49056169633424
+1,1,"2024-1","bahrain","norris","Constructor",6,8.92566930219333,2.92566930219333
+1,1,"2024-1","bahrain","hamilton","Constructor",7,6.49056169633424,0.509438303665761
+1,1,"2024-1","bahrain","piastri","Constructor",8,8.92566930219333,0.925669302193327
+1,1,"2024-1","bahrain","alonso","Constructor",9,11.6990598521005,2.69905985210046
+1,1,"2024-1","bahrain","stroll","Constructor",10,11.6990598521005,1.69905985210046
+1,1,"2024-1","bahrain","zhou","Constructor",11,14.6130320200764,3.6130320200764
+1,1,"2024-1","bahrain","kevin_magnussen","Constructor",12,12.4214201866457,0.421420186645729
+1,1,"2024-1","bahrain","ricciardo","Constructor",13,12.9068926207955,0.0931073792044668
+1,1,"2024-1","bahrain","tsunoda","Constructor",14,12.9068926207955,1.09310737920447
+1,1,"2024-1","bahrain","albon","Constructor",15,12.5286461286731,2.47135387132695
+1,1,"2024-1","bahrain","hulkenberg","Constructor",16,12.4214201866457,3.57857981335427
+1,1,"2024-1","bahrain","ocon","Constructor",17,13.1276591203105,3.87234087968952
+1,1,"2024-1","bahrain","gasly","Constructor",18,13.1276591203105,4.87234087968952
+1,1,"2024-1","bahrain","bottas","Constructor",19,14.6130320200764,4.3869679799236
+1,1,"2024-1","bahrain","sargeant","Constructor",20,12.5286461286731,7.47135387132695
+1,1,"2024-1","bahrain","max_verstappen","Parrilla",1,5.1903345535223,4.1903345535223
+1,1,"2024-1","bahrain","perez","Parrilla",2,7.23034481596482,5.23034481596482
+1,1,"2024-1","bahrain","sainz","Parrilla",3,6.6841628173585,3.6841628173585
+1,1,"2024-1","bahrain","leclerc","Parrilla",4,5.66204727948453,1.66204727948453
+1,1,"2024-1","bahrain","russell","Parrilla",5,6.16061732553271,1.16061732553271
+1,1,"2024-1","bahrain","norris","Parrilla",6,8.37924425790813,2.37924425790813
+1,1,"2024-1","bahrain","hamilton","Parrilla",7,9.58133064736916,2.58133064736916
+1,1,"2024-1","bahrain","piastri","Parrilla",8,8.97543390251507,0.975433902515071
+1,1,"2024-1","bahrain","alonso","Parrilla",9,7.79640998179838,1.20359001820162
+1,1,"2024-1","bahrain","stroll","Parrilla",10,11.4186693526308,1.41866935263084
+1,1,"2024-1","bahrain","zhou","Parrilla",11,14.3158371826415,3.3158371826415
+1,1,"2024-1","bahrain","kevin_magnussen","Parrilla",12,13.2035900182016,1.20359001820162
+1,1,"2024-1","bahrain","ricciardo","Parrilla",13,12.6207557420919,0.379244257908134
+1,1,"2024-1","bahrain","tsunoda","Parrilla",14,10.806881409185,3.19311859081499
+1,1,"2024-1","bahrain","albon","Parrilla",15,12.0245660974849,2.97543390251507
+1,1,"2024-1","bahrain","hulkenberg","Parrilla",16,10.193118590815,5.80688140918501
+1,1,"2024-1","bahrain","ocon","Parrilla",17,15.3379527205155,1.66204727948453
+1,1,"2024-1","bahrain","gasly","Parrilla",18,15.8096654464777,2.1903345535223
+1,1,"2024-1","bahrain","bottas","Parrilla",19,13.7696551840352,5.23034481596482
+1,1,"2024-1","bahrain","sargeant","Parrilla",20,14.8393826744673,5.16061732553271
+1,1,"2024-1","bahrain","max_verstappen","Constructor + parrilla",1,4.08854401898385,3.08854401898385
+1,1,"2024-1","bahrain","perez","Constructor + parrilla",2,5.45709934678822,3.45709934678822
+1,1,"2024-1","bahrain","sainz","Constructor + parrilla",3,4.11744482328919,1.11744482328919
+1,1,"2024-1","bahrain","leclerc","Constructor + parrilla",4,3.51690611677737,0.483093883222633
+1,1,"2024-1","bahrain","russell","Constructor + parrilla",5,4.49365989575741,0.506340104242588
+1,1,"2024-1","bahrain","norris","Constructor + parrilla",6,7.67207032750365,1.67207032750365
+1,1,"2024-1","bahrain","hamilton","Constructor + parrilla",7,6.71189371372723,0.28810628627277
+1,1,"2024-1","bahrain","piastri","Constructor + parrilla",8,8.09788524922594,0.0978852492259428
+1,1,"2024-1","bahrain","alonso","Constructor + parrilla",9,9.21152963839404,0.211529638394042
+1,1,"2024-1","bahrain","stroll","Constructor + parrilla",10,11.9559447448342,1.95594474483417
+1,1,"2024-1","bahrain","zhou","Constructor + parrilla",11,16.3087979277245,5.30879792772451
+1,1,"2024-1","bahrain","kevin_magnussen","Constructor + parrilla",12,13.8786565204046,1.87865652040455
+1,1,"2024-1","bahrain","ricciardo","Constructor + parrilla",13,13.7966381785292,0.796638178529165
+1,1,"2024-1","bahrain","tsunoda","Constructor + parrilla",14,12.421677101784,1.578322898216
+1,1,"2024-1","bahrain","albon","Constructor + parrilla",15,13.0428498879061,1.9571501120939
+1,1,"2024-1","bahrain","hulkenberg","Constructor + parrilla",16,11.5778314992759,4.42216850072412
+1,1,"2024-1","bahrain","ocon","Constructor + parrilla",17,16.0486719189289,0.9513280810711
+1,1,"2024-1","bahrain","gasly","Constructor + parrilla",18,16.4252352511698,1.57476474883017
+1,1,"2024-1","bahrain","bottas","Constructor + parrilla",19,15.9259831323232,3.07401686767679
+1,1,"2024-1","bahrain","sargeant","Constructor + parrilla",20,15.2506807066728,4.7493192933272
+1,1,"2024-1","bahrain","max_verstappen","Piloto + constructor + parrilla",1,3.024829751423,2.024829751423
+1,1,"2024-1","bahrain","perez","Piloto + constructor + parrilla",2,6.54579164622259,4.54579164622259
+1,1,"2024-1","bahrain","sainz","Piloto + constructor + parrilla",3,4.00586030392786,1.00586030392786
+1,1,"2024-1","bahrain","leclerc","Piloto + constructor + parrilla",4,3.58522377295332,0.414776227046676
+1,1,"2024-1","bahrain","russell","Piloto + constructor + parrilla",5,4.61676930538752,0.383230694612478
+1,1,"2024-1","bahrain","norris","Piloto + constructor + parrilla",6,7.51023957098206,1.51023957098206
+1,1,"2024-1","bahrain","hamilton","Piloto + constructor + parrilla",7,6.40366408035881,0.596335919641193
+1,1,"2024-1","bahrain","piastri","Piloto + constructor + parrilla",8,7.58585247518393,0.41414752481607
+1,1,"2024-1","bahrain","alonso","Piloto + constructor + parrilla",9,8.77190552381198,0.228094476188017
+1,1,"2024-1","bahrain","stroll","Piloto + constructor + parrilla",10,12.6347460674998,2.63474606749977
+1,1,"2024-1","bahrain","zhou","Piloto + constructor + parrilla",11,16.2658027006895,5.26580270068954
+1,1,"2024-1","bahrain","kevin_magnussen","Piloto + constructor + parrilla",12,13.8795981895771,1.87959818957711
+1,1,"2024-1","bahrain","ricciardo","Piloto + constructor + parrilla",13,13.6696002522915,0.669600252291492
+1,1,"2024-1","bahrain","tsunoda","Piloto + constructor + parrilla",14,12.8004343273376,1.19956567266236
+1,1,"2024-1","bahrain","albon","Piloto + constructor + parrilla",15,13.1424162902039,1.85758370979605
+1,1,"2024-1","bahrain","hulkenberg","Piloto + constructor + parrilla",16,11.269902262033,4.73009773796696
+1,1,"2024-1","bahrain","ocon","Piloto + constructor + parrilla",17,16.2571830273265,0.742816972673513
+1,1,"2024-1","bahrain","gasly","Piloto + constructor + parrilla",18,16.0604738372202,1.93952616277985
+1,1,"2024-1","bahrain","bottas","Piloto + constructor + parrilla",19,15.8283773355075,3.1716226644925
+1,1,"2024-1","bahrain","sargeant","Piloto + constructor + parrilla",20,16.1413292800622,3.85867071993776
+1,13,"2024-13","hungaroring","piastri","Constructor",1,8.649488152198,7.649488152198
+1,13,"2024-13","hungaroring","norris","Constructor",2,8.649488152198,6.649488152198
+1,13,"2024-13","hungaroring","hamilton","Constructor",3,6.31923256714259,3.31923256714259
+1,13,"2024-13","hungaroring","leclerc","Constructor",4,5.28143932310324,1.28143932310324
+1,13,"2024-13","hungaroring","max_verstappen","Constructor",5,6.68695161784801,1.68695161784801
+1,13,"2024-13","hungaroring","sainz","Constructor",6,5.28143932310324,0.718560676896759
+1,13,"2024-13","hungaroring","perez","Constructor",7,6.68695161784801,0.31304838215199
+1,13,"2024-13","hungaroring","russell","Constructor",8,6.31923256714259,1.68076743285741
+1,13,"2024-13","hungaroring","tsunoda","Constructor",9,12.4199199795334,3.41991997953338
+1,13,"2024-13","hungaroring","stroll","Constructor",10,11.2813910022497,1.28139100224974
+1,13,"2024-13","hungaroring","alonso","Constructor",11,11.2813910022497,0.281391002249739
+1,13,"2024-13","hungaroring","ricciardo","Constructor",12,12.4199199795334,0.419919979533383
+1,13,"2024-13","hungaroring","hulkenberg","Constructor",13,11.9625077926772,1.03749220732283
+1,13,"2024-13","hungaroring","albon","Constructor",14,12.0638039287944,1.93619607120559
+1,13,"2024-13","hungaroring","kevin_magnussen","Constructor",15,11.9625077926772,3.03749220732283
+1,13,"2024-13","hungaroring","bottas","Constructor",16,14.0214360762982,1.97856392370179
+1,13,"2024-13","hungaroring","sargeant","Constructor",17,12.0638039287944,4.93619607120559
+1,13,"2024-13","hungaroring","ocon","Constructor",18,12.6276591203105,5.37234087968952
+1,13,"2024-13","hungaroring","zhou","Constructor",19,14.0214360762982,4.97856392370179
+1,13,"2024-13","hungaroring","piastri","Parrilla",1,6.40817120391877,5.40817120391877
+1,13,"2024-13","hungaroring","norris","Parrilla",2,6.00975573226661,4.00975573226661
+1,13,"2024-13","hungaroring","hamilton","Parrilla",3,7.68766702207024,4.68766702207024
+1,13,"2024-13","hungaroring","leclerc","Parrilla",4,8.13719019086503,4.13719019086503
+1,13,"2024-13","hungaroring","max_verstappen","Parrilla",5,6.8215409907045,1.8215409907045
+1,13,"2024-13","hungaroring","sainz","Parrilla",6,7.2485472985556,1.24854729855561
+1,13,"2024-13","hungaroring","perez","Parrilla",7,12.7514527014444,5.7514527014444
+1,13,"2024-13","hungaroring","russell","Parrilla",8,13.1784590092955,5.17845900929549
+1,13,"2024-13","hungaroring","tsunoda","Parrilla",9,10,1
+1,13,"2024-13","hungaroring","stroll","Parrilla",10,9.05981732877536,0.940182671224644
+1,13,"2024-13","hungaroring","alonso","Parrilla",11,8.59524337810115,2.40475662189885
+1,13,"2024-13","hungaroring","ricciardo","Parrilla",12,9.52879797835351,2.47120202164649
+1,13,"2024-13","hungaroring","hulkenberg","Parrilla",13,10.4712020216465,2.52879797835351
+1,13,"2024-13","hungaroring","albon","Parrilla",14,11.4047566218988,2.59524337810115
+1,13,"2024-13","hungaroring","kevin_magnussen","Parrilla",15,12.3123329779298,2.68766702207024
+1,13,"2024-13","hungaroring","bottas","Parrilla",16,10.9401826712246,5.05981732877536
+1,13,"2024-13","hungaroring","sargeant","Parrilla",17,11.862809809135,5.13719019086503
+1,13,"2024-13","hungaroring","ocon","Parrilla",18,13.9902442677334,4.00975573226661
+1,13,"2024-13","hungaroring","zhou","Parrilla",19,13.5918287960812,5.40817120391877
+1,13,"2024-13","hungaroring","piastri","Constructor + parrilla",1,5.98996744442819,4.98996744442819
+1,13,"2024-13","hungaroring","norris","Constructor + parrilla",2,5.67381779330518,3.67381779330518
+1,13,"2024-13","hungaroring","hamilton","Constructor + parrilla",3,5.12177847695483,2.12177847695483
+1,13,"2024-13","hungaroring","leclerc","Constructor + parrilla",4,4.58328905909392,0.583289059093915
+1,13,"2024-13","hungaroring","max_verstappen","Constructor + parrilla",5,4.82544425849276,0.174555741507241
+1,13,"2024-13","hungaroring","sainz","Constructor + parrilla",6,4.05272666659318,1.94727333340682
+1,13,"2024-13","hungaroring","perez","Constructor + parrilla",7,9.22879222156706,2.22879222156706
+1,13,"2024-13","hungaroring","russell","Constructor + parrilla",8,9.23876228385658,1.23876228385658
+1,13,"2024-13","hungaroring","tsunoda","Constructor + parrilla",9,12.092434110059,3.09243411005902
+1,13,"2024-13","hungaroring","stroll","Constructor + parrilla",10,10.31463433555,0.314634335550005
+1,13,"2024-13","hungaroring","alonso","Constructor + parrilla",11,9.93200266789732,1.06799733210268
+1,13,"2024-13","hungaroring","ricciardo","Constructor + parrilla",12,11.715728448995,0.284271551005006
+1,13,"2024-13","hungaroring","hulkenberg","Constructor + parrilla",13,12.0546043884583,0.945395611541706
+1,13,"2024-13","hungaroring","albon","Constructor + parrilla",14,12.8793256008314,1.12067439916857
+1,13,"2024-13","hungaroring","kevin_magnussen","Constructor + parrilla",15,13.510522234876,1.489477765124
+1,13,"2024-13","hungaroring","bottas","Constructor + parrilla",16,14.2302318756062,1.7697681243938
+1,13,"2024-13","hungaroring","sargeant","Constructor + parrilla",17,13.2391927043672,3.76080729563279
+1,13,"2024-13","hungaroring","ocon","Constructor + parrilla",18,15.3019989560135,2.69800104398651
+1,13,"2024-13","hungaroring","zhou","Constructor + parrilla",19,16.0147464730543,2.98525352694566
+1,13,"2024-13","hungaroring","piastri","Piloto + constructor + parrilla",1,5.56909768609007,4.56909768609007
+1,13,"2024-13","hungaroring","norris","Piloto + constructor + parrilla",2,5.59298915606564,3.59298915606564
+1,13,"2024-13","hungaroring","hamilton","Piloto + constructor + parrilla",3,4.90138640445732,1.90138640445732
+1,13,"2024-13","hungaroring","leclerc","Piloto + constructor + parrilla",4,4.63540516239078,0.635405162390781
+1,13,"2024-13","hungaroring","max_verstappen","Piloto + constructor + parrilla",5,3.54757347697253,1.45242652302747
+1,13,"2024-13","hungaroring","sainz","Piloto + constructor + parrilla",6,3.95896248034657,2.04103751965343
+1,13,"2024-13","hungaroring","perez","Piloto + constructor + parrilla",7,10.3971741490654,3.39717414906539
+1,13,"2024-13","hungaroring","russell","Piloto + constructor + parrilla",8,9.1078953401493,1.1078953401493
+1,13,"2024-13","hungaroring","tsunoda","Piloto + constructor + parrilla",9,12.4524761379242,3.45247613792417
+1,13,"2024-13","hungaroring","stroll","Piloto + constructor + parrilla",10,11.0617472281417,1.06174722814166
+1,13,"2024-13","hungaroring","alonso","Piloto + constructor + parrilla",11,9.33236140095239,1.66763859904761
+1,13,"2024-13","hungaroring","ricciardo","Piloto + constructor + parrilla",12,11.592015493752,0.407984506247999
+1,13,"2024-13","hungaroring","hulkenberg","Piloto + constructor + parrilla",13,11.6440382646366,1.3559617353634
+1,13,"2024-13","hungaroring","albon","Piloto + constructor + parrilla",14,12.9344069389063,1.06559306109366
+1,13,"2024-13","hungaroring","kevin_magnussen","Piloto + constructor + parrilla",15,13.4771714440082,1.52282855599181
+1,13,"2024-13","hungaroring","bottas","Piloto + constructor + parrilla",16,14.1111668191805,1.8888331808195
+1,13,"2024-13","hungaroring","sargeant","Piloto + constructor + parrilla",17,14.2543314651113,2.74566853488872
+1,13,"2024-13","hungaroring","ocon","Piloto + constructor + parrilla",18,15.4862981444449,2.51370185555507
+1,13,"2024-13","hungaroring","zhou","Piloto + constructor + parrilla",19,15.9435028074043,3.05649719259566
+1,17,"2024-17","baku","piastri","Constructor",1,6.95822821432028,5.95822821432028
+1,17,"2024-17","baku","leclerc","Constructor",2,4.19986823357907,2.19986823357907
+1,17,"2024-17","baku","russell","Constructor",3,5.03659982889275,2.03659982889275
+1,17,"2024-17","baku","norris","Constructor",4,6.95822821432028,2.95822821432028
+1,17,"2024-17","baku","max_verstappen","Constructor",5,5.3354766769005,0.3354766769005
+1,17,"2024-17","baku","alonso","Constructor",6,9.1871086099012,3.1871086099012
+1,17,"2024-17","baku","albon","Constructor",7,9.86216126010273,2.86216126010273
+1,17,"2024-17","baku","colapinto","Constructor",8,9.86216126010273,1.86216126010273
+1,17,"2024-17","baku","hamilton","Constructor",9,5.03659982889275,3.96340017110725
+1,17,"2024-17","baku","bearman","Constructor",10,9.77483896673692,0.225161033263078
+1,17,"2024-17","baku","hulkenberg","Constructor",11,9.77483896673692,1.22516103326308
+1,17,"2024-17","baku","gasly","Constructor",12,10.3509687433429,1.64903125665712
+1,17,"2024-17","baku","ricciardo","Constructor",13,10.170558025386,2.82944197461399
+1,17,"2024-17","baku","zhou","Constructor",14,11.5706972137211,2.42930278627895
+1,17,"2024-17","baku","ocon","Constructor",15,10.3509687433429,4.64903125665712
+1,17,"2024-17","baku","bottas","Constructor",16,11.5706972137211,4.42930278627895
+1,17,"2024-17","baku","piastri","Parrilla",1,4.81605736895326,3.81605736895326
+1,17,"2024-17","baku","leclerc","Parrilla",2,4.4817039622222,2.4817039622222
+1,17,"2024-17","baku","russell","Parrilla",3,5.91405892439658,2.91405892439658
+1,17,"2024-17","baku","norris","Parrilla",4,10.1091533111628,6.10915331116277
+1,17,"2024-17","baku","max_verstappen","Parrilla",5,6.30763787116269,1.30763787116269
+1,17,"2024-17","baku","alonso","Parrilla",6,6.71242100513794,0.712421005137942
+1,17,"2024-17","baku","albon","Parrilla",7,7.54809329023363,0.548093290233632
+1,17,"2024-17","baku","colapinto","Parrilla",8,7.12657022548849,0.87342977451151
+1,17,"2024-17","baku","hamilton","Parrilla",9,11.6858706999521,2.68587069995214
+1,17,"2024-17","baku","bearman","Parrilla",10,7.9748745263122,2.0251254736878
+1,17,"2024-17","baku","hulkenberg","Parrilla",11,8.83532805708792,2.16467194291208
+1,17,"2024-17","baku","gasly","Parrilla",12,11.3104900910594,0.689509908940588
+1,17,"2024-17","baku","ricciardo","Parrilla",13,9.68980023641283,3.31019976358717
+1,17,"2024-17","baku","zhou","Parrilla",14,10.9214351224076,3.0785648775924
+1,17,"2024-17","baku","ocon","Parrilla",15,12.0461349193269,2.95386508067311
+1,17,"2024-17","baku","bottas","Parrilla",16,10.5203703886834,5.47962961131656
+1,17,"2024-17","baku","piastri","Constructor + parrilla",1,4.3028049973064,3.3028049973064
+1,17,"2024-17","baku","leclerc","Constructor + parrilla",2,2.44764234160314,0.447642341603139
+1,17,"2024-17","baku","russell","Constructor + parrilla",3,3.76579517030069,0.765795170300694
+1,17,"2024-17","baku","norris","Constructor + parrilla",4,8.40767022035975,4.40767022035975
+1,17,"2024-17","baku","max_verstappen","Constructor + parrilla",5,4.22861711331268,0.771382886687318
+1,17,"2024-17","baku","alonso","Constructor + parrilla",6,7.49125949540469,1.49125949540469
+1,17,"2024-17","baku","albon","Constructor + parrilla",7,8.77188435147355,1.77188435147355
+1,17,"2024-17","baku","colapinto","Constructor + parrilla",8,8.41383682426116,0.413836824261162
+1,17,"2024-17","baku","hamilton","Constructor + parrilla",9,8.00615262920524,0.993847370794764
+1,17,"2024-17","baku","bearman","Constructor + parrilla",10,9.04992300655393,0.950076993446071
+1,17,"2024-17","baku","hulkenberg","Constructor + parrilla",11,9.76798590423749,1.23201409576251
+1,17,"2024-17","baku","gasly","Constructor + parrilla",12,12.243172574052,0.243172574052034
+1,17,"2024-17","baku","ricciardo","Constructor + parrilla",13,10.8029167402492,2.19708325975076
+1,17,"2024-17","baku","zhou","Constructor + parrilla",14,12.878776122838,1.12122387716202
+1,17,"2024-17","baku","ocon","Constructor + parrilla",15,12.8297586796746,2.17024132032543
+1,17,"2024-17","baku","bottas","Constructor + parrilla",16,12.5918038291675,3.40819617083255
+1,17,"2024-17","baku","piastri","Piloto + constructor + parrilla",1,4.17500538668623,3.17500538668623
+1,17,"2024-17","baku","leclerc","Piloto + constructor + parrilla",2,2.5914762386642,0.591476238664198
+1,17,"2024-17","baku","russell","Piloto + constructor + parrilla",3,4.00715677255024,1.00715677255024
+1,17,"2024-17","baku","norris","Piloto + constructor + parrilla",4,8.36897673319778,4.36897673319778
+1,17,"2024-17","baku","max_verstappen","Piloto + constructor + parrilla",5,3.28468072290661,1.71531927709339
+1,17,"2024-17","baku","alonso","Piloto + constructor + parrilla",6,7.30343928796642,1.30343928796642
+1,17,"2024-17","baku","albon","Piloto + constructor + parrilla",7,9.17624592005592,2.17624592005592
+1,17,"2024-17","baku","colapinto","Piloto + constructor + parrilla",8,8.10349332684221,0.103493326842209
+1,17,"2024-17","baku","hamilton","Piloto + constructor + parrilla",9,7.79189067043892,1.20810932956108
+1,17,"2024-17","baku","bearman","Piloto + constructor + parrilla",10,9.45299124888641,0.547008751113594
+1,17,"2024-17","baku","hulkenberg","Piloto + constructor + parrilla",11,9.71861391768755,1.28138608231245
+1,17,"2024-17","baku","gasly","Piloto + constructor + parrilla",12,12.1319887117723,0.131988711772275
+1,17,"2024-17","baku","ricciardo","Piloto + constructor + parrilla",13,10.9472633143247,2.05273668567531
+1,17,"2024-17","baku","zhou","Piloto + constructor + parrilla",14,13.0358334786395,0.964166521360507
+1,17,"2024-17","baku","ocon","Piloto + constructor + parrilla",15,13.1952064064715,1.80479359352848
+1,17,"2024-17","baku","bottas","Piloto + constructor + parrilla",16,12.7157378629095,3.28426213709045
+1,21,"2024-21","interlagos","max_verstappen","Constructor",1,5.39747788145055,4.39747788145055
+1,21,"2024-21","interlagos","ocon","Constructor",2,10.0663560549419,8.06635605494192
+1,21,"2024-21","interlagos","gasly","Constructor",3,10.0663560549419,7.06635605494192
+1,21,"2024-21","interlagos","russell","Constructor",4,5.10653846286225,1.10653846286225
+1,21,"2024-21","interlagos","leclerc","Constructor",5,4.28518209792443,0.71481790207557
+1,21,"2024-21","interlagos","norris","Constructor",6,6.94667012220747,0.946670122207474
+1,21,"2024-21","interlagos","tsunoda","Constructor",7,9.90345220965199,2.90345220965199
+1,21,"2024-21","interlagos","piastri","Constructor",8,6.94667012220747,1.05332987779253
+1,21,"2024-21","interlagos","lawson","Constructor",9,9.90345220965199,0.903452209651986
+1,21,"2024-21","interlagos","hamilton","Constructor",10,5.10653846286225,4.89346153713775
+1,21,"2024-21","interlagos","perez","Constructor",11,5.39747788145055,5.60252211854945
+1,21,"2024-21","interlagos","bearman","Constructor",12,9.54530930364758,2.45469069635242
+1,21,"2024-21","interlagos","bottas","Constructor",13,11.158057599816,1.84194240018397
+1,21,"2024-21","interlagos","alonso","Constructor",14,9.01240393656757,4.98759606343243
+1,21,"2024-21","interlagos","zhou","Constructor",15,11.158057599816,3.84194240018397
+1,21,"2024-21","interlagos","max_verstappen","Parrilla",1,10.9038931075705,9.90389310757052
+1,21,"2024-21","interlagos","ocon","Parrilla",2,5.97710397532916,3.97710397532916
+1,21,"2024-21","interlagos","gasly","Parrilla",3,9.46232284203934,6.46232284203934
+1,21,"2024-21","interlagos","russell","Parrilla",4,5.263096688373,1.263096688373
+1,21,"2024-21","interlagos","leclerc","Parrilla",5,6.73052620020601,1.73052620020601
+1,21,"2024-21","interlagos","norris","Parrilla",6,4.92459482718647,1.07540517281353
+1,21,"2024-21","interlagos","tsunoda","Parrilla",7,5.61438331270164,1.38561668729836
+1,21,"2024-21","interlagos","piastri","Parrilla",8,7.50925584293658,0.490744157063415
+1,21,"2024-21","interlagos","lawson","Parrilla",9,6.34971938003993,2.65028061996007
+1,21,"2024-21","interlagos","hamilton","Parrilla",10,9.83806747384959,0.161932526150414
+1,21,"2024-21","interlagos","perez","Parrilla",11,9.07907256676591,1.92092743323409
+1,21,"2024-21","interlagos","bearman","Parrilla",12,10.2045887799727,1.79541122002734
+1,21,"2024-21","interlagos","bottas","Parrilla",13,8.69016366291482,4.30983633708518
+1,21,"2024-21","interlagos","alonso","Parrilla",14,7.90322407215034,6.09677592784966
+1,21,"2024-21","interlagos","zhou","Parrilla",15,11.549987267964,3.45001273203598
+1,21,"2024-21","interlagos","max_verstappen","Constructor + parrilla",1,8.17596366828054,7.17596366828054
+1,21,"2024-21","interlagos","ocon","Constructor + parrilla",2,8.2000113700505,6.2000113700505
+1,21,"2024-21","interlagos","gasly","Constructor + parrilla",3,11.1050479192859,8.10504791928592
+1,21,"2024-21","interlagos","russell","Constructor + parrilla",4,3.37484039140593,0.625159608594074
+1,21,"2024-21","interlagos","leclerc","Constructor + parrilla",5,3.67896599999158,1.32103400000842
+1,21,"2024-21","interlagos","norris","Constructor + parrilla",6,4.4855115857478,1.5144884142522
+1,21,"2024-21","interlagos","tsunoda","Constructor + parrilla",7,7.70444516499032,0.70444516499032
+1,21,"2024-21","interlagos","piastri","Constructor + parrilla",8,6.64662753067207,1.35337246932793
+1,21,"2024-21","interlagos","lawson","Constructor + parrilla",9,8.38954364661437,0.610456353385626
+1,21,"2024-21","interlagos","hamilton","Constructor + parrilla",10,6.85413708663399,3.14586291336601
+1,21,"2024-21","interlagos","perez","Constructor + parrilla",11,6.47822293159227,4.52177706840773
+1,21,"2024-21","interlagos","bearman","Constructor + parrilla",12,11.2408663338864,0.759133666113579
+1,21,"2024-21","interlagos","bottas","Constructor + parrilla",13,11.4609158859402,1.53908411405982
+1,21,"2024-21","interlagos","alonso","Constructor + parrilla",14,8.89585683575456,5.10414316424544
+1,21,"2024-21","interlagos","zhou","Constructor + parrilla",15,13.3090436491535,1.69095635084646
+1,21,"2024-21","interlagos","max_verstappen","Piloto + constructor + parrilla",1,6.41733839563303,5.41733839563303
+1,21,"2024-21","interlagos","ocon","Piloto + constructor + parrilla",2,8.68834569747682,6.68834569747682
+1,21,"2024-21","interlagos","gasly","Piloto + constructor + parrilla",3,10.9438862263485,7.94388622634846
+1,21,"2024-21","interlagos","russell","Piloto + constructor + parrilla",4,3.41940930736054,0.580590692639465
+1,21,"2024-21","interlagos","leclerc","Piloto + constructor + parrilla",5,3.64912964530087,1.35087035469913
+1,21,"2024-21","interlagos","norris","Piloto + constructor + parrilla",6,4.38520697503321,1.61479302496679
+1,21,"2024-21","interlagos","tsunoda","Piloto + constructor + parrilla",7,8.24989053355689,1.24989053355689
+1,21,"2024-21","interlagos","piastri","Piloto + constructor + parrilla",8,6.17309253227727,1.82690746772273
+1,21,"2024-21","interlagos","lawson","Piloto + constructor + parrilla",9,9.07577460701421,0.0757746070142087
+1,21,"2024-21","interlagos","hamilton","Piloto + constructor + parrilla",10,6.50845745500544,3.49154254499456
+1,21,"2024-21","interlagos","perez","Piloto + constructor + parrilla",11,7.63630695472241,3.36369304527759
+1,21,"2024-21","interlagos","bearman","Piloto + constructor + parrilla",12,11.4000313645614,0.599968635438628
+1,21,"2024-21","interlagos","bottas","Piloto + constructor + parrilla",13,11.5536232393731,1.44637676062694
+1,21,"2024-21","interlagos","alonso","Piloto + constructor + parrilla",14,8.52169788414594,5.47830211585406
+1,21,"2024-21","interlagos","zhou","Piloto + constructor + parrilla",15,13.3778091821905,1.62219081780951
+1,5,"2024-5","shanghai","max_verstappen","Constructor",1,6.34734070444692,5.34734070444692
+1,5,"2024-5","shanghai","norris","Constructor",2,8.14536061450269,6.14536061450269
+1,5,"2024-5","shanghai","perez","Constructor",3,6.34734070444692,3.34734070444692
+1,5,"2024-5","shanghai","leclerc","Constructor",4,5.04261724697479,1.04261724697479
+1,5,"2024-5","shanghai","sainz","Constructor",5,5.04261724697479,0.0426172469747934
+1,5,"2024-5","shanghai","russell","Constructor",6,6.00601527316928,0.00601527316928241
+1,5,"2024-5","shanghai","alonso","Constructor",7,10.5070426266003,3.50704262660031
+1,5,"2024-5","shanghai","piastri","Constructor",8,8.14536061450269,0.145360614502687
+1,5,"2024-5","shanghai","hamilton","Constructor",9,6.00601527316928,2.99398472683072
+1,5,"2024-5","shanghai","hulkenberg","Constructor",10,11.1082207643341,1.10822076433409
+1,5,"2024-5","shanghai","ocon","Constructor",11,11.693200346613,0.693200346612972
+1,5,"2024-5","shanghai","albon","Constructor",12,11.1978087574443,0.802191242555653
+1,5,"2024-5","shanghai","gasly","Constructor",13,11.693200346613,1.30679965338703
+1,5,"2024-5","shanghai","zhou","Constructor",14,12.9047873318292,1.09521266817081
+1,5,"2024-5","shanghai","stroll","Constructor",15,10.5070426266003,4.49295737339969
+1,5,"2024-5","shanghai","kevin_magnussen","Constructor",16,11.1082207643341,4.89177923566591
+1,5,"2024-5","shanghai","sargeant","Constructor",17,11.1978087574443,5.80219124255565
+1,5,"2024-5","shanghai","max_verstappen","Parrilla",1,4.80461512652625,3.80461512652625
+1,5,"2024-5","shanghai","norris","Parrilla",2,6.09502805390511,4.09502805390511
+1,5,"2024-5","shanghai","perez","Parrilla",3,5.21459001543372,2.21459001543372
+1,5,"2024-5","shanghai","leclerc","Parrilla",4,7.04176025558323,3.04176025558323
+1,5,"2024-5","shanghai","sainz","Parrilla",5,7.53352794140589,2.53352794140589
+1,5,"2024-5","shanghai","russell","Parrilla",6,8.03371736336762,2.03371736336762
+1,5,"2024-5","shanghai","alonso","Parrilla",7,5.64536229028773,1.35463770971227
+1,5,"2024-5","shanghai","piastri","Parrilla",8,6.56133946314577,1.43866053685423
+1,5,"2024-5","shanghai","hamilton","Parrilla",9,12.8427661278011,3.84276612780106
+1,5,"2024-5","shanghai","hulkenberg","Parrilla",10,8.53930115468583,1.46069884531417
+1,5,"2024-5","shanghai","ocon","Parrilla",11,10.5543130602074,0.445686939792648
+1,5,"2024-5","shanghai","albon","Parrilla",12,11.0413284808432,0.958671519156798
+1,5,"2024-5","shanghai","gasly","Parrilla",13,11.5160605075902,1.48393949240978
+1,5,"2024-5","shanghai","zhou","Parrilla",14,11.9760088080218,2.02399119197817
+1,5,"2024-5","shanghai","stroll","Parrilla",15,9.55435077476899,5.44564922523101
+1,5,"2024-5","shanghai","kevin_magnussen","Parrilla",16,12.4189071327158,3.58109286728417
+1,5,"2024-5","shanghai","sargeant","Parrilla",17,13.6270234437104,3.37297655628961
+1,5,"2024-5","shanghai","max_verstappen","Constructor + parrilla",1,3.79599673048994,2.79599673048994
+1,5,"2024-5","shanghai","norris","Constructor + parrilla",2,6.06249061527758,4.06249061527758
+1,5,"2024-5","shanghai","perez","Constructor + parrilla",3,4.09906464524255,1.09906464524255
+1,5,"2024-5","shanghai","leclerc","Constructor + parrilla",4,4.41041117350752,0.410411173507523
+1,5,"2024-5","shanghai","sainz","Constructor + parrilla",5,4.74195719885222,0.258042801147775
+1,5,"2024-5","shanghai","russell","Constructor + parrilla",6,5.87618328196915,0.123816718030853
+1,5,"2024-5","shanghai","alonso","Constructor + parrilla",7,7.46393418709011,0.463934187090111
+1,5,"2024-5","shanghai","piastri","Constructor + parrilla",8,6.43897287981906,1.56102712018094
+1,5,"2024-5","shanghai","hamilton","Constructor + parrilla",9,9.76875648128389,0.768756481283889
+1,5,"2024-5","shanghai","hulkenberg","Constructor + parrilla",10,10.3188855537731,0.318885553773102
+1,5,"2024-5","shanghai","ocon","Constructor + parrilla",11,12.3101473596984,1.31014735969843
+1,5,"2024-5","shanghai","albon","Constructor + parrilla",12,12.2896337568577,0.289633756857725
+1,5,"2024-5","shanghai","gasly","Constructor + parrilla",13,13.0210298690731,0.0210298690730628
+1,5,"2024-5","shanghai","zhou","Constructor + parrilla",14,14.2131357359547,0.213135735954742
+1,5,"2024-5","shanghai","stroll","Constructor + parrilla",15,10.628830953844,4.37116904615605
+1,5,"2024-5","shanghai","kevin_magnussen","Constructor + parrilla",16,13.2839913165527,2.71600868344728
+1,5,"2024-5","shanghai","sargeant","Constructor + parrilla",17,14.2765782607143,2.72342173928575
+1,5,"2024-5","shanghai","max_verstappen","Piloto + constructor + parrilla",1,2.76873936615327,1.76873936615327
+1,5,"2024-5","shanghai","norris","Piloto + constructor + parrilla",2,5.98727405136753,3.98727405136753
+1,5,"2024-5","shanghai","perez","Piloto + constructor + parrilla",3,5.12150542381459,2.12150542381459
+1,5,"2024-5","shanghai","leclerc","Piloto + constructor + parrilla",4,4.45348341275144,0.453483412751437
+1,5,"2024-5","shanghai","sainz","Piloto + constructor + parrilla",5,4.59605327069045,0.403946729309546
+1,5,"2024-5","shanghai","russell","Piloto + constructor + parrilla",6,5.97375314242974,0.0262468575702561
+1,5,"2024-5","shanghai","alonso","Piloto + constructor + parrilla",7,7.1610046658463,0.161004665846296
+1,5,"2024-5","shanghai","piastri","Piloto + constructor + parrilla",8,6.04749038636201,1.95250961363799
+1,5,"2024-5","shanghai","hamilton","Piloto + constructor + parrilla",9,9.3666168153122,0.366616815312199
+1,5,"2024-5","shanghai","hulkenberg","Piloto + constructor + parrilla",10,10.1253064746702,0.125306474670221
+1,5,"2024-5","shanghai","ocon","Piloto + constructor + parrilla",11,12.5879573594637,1.58795735946368
+1,5,"2024-5","shanghai","albon","Piloto + constructor + parrilla",12,12.4071409320526,0.407140932052588
+1,5,"2024-5","shanghai","gasly","Piloto + constructor + parrilla",13,12.7374368245763,0.262563175423725
+1,5,"2024-5","shanghai","zhou","Piloto + constructor + parrilla",14,14.1967013202866,0.196701320286572
+1,5,"2024-5","shanghai","stroll","Piloto + constructor + parrilla",15,11.2788603410309,3.72113965896908
+1,5,"2024-5","shanghai","kevin_magnussen","Piloto + constructor + parrilla",16,13.2997196223354,2.70028037766463
+1,5,"2024-5","shanghai","sargeant","Piloto + constructor + parrilla",17,14.8909565908568,2.10904340914316
+1,9,"2024-9","villeneuve","max_verstappen","Constructor",1,4.7541515879058,3.7541515879058
+1,9,"2024-9","villeneuve","norris","Constructor",2,6.26878443964438,4.26878443964438
+1,9,"2024-9","villeneuve","russell","Constructor",3,4.47983699479808,1.47983699479808
+1,9,"2024-9","villeneuve","hamilton","Constructor",4,4.47983699479808,0.479836994798076
+1,9,"2024-9","villeneuve","piastri","Constructor",5,6.26878443964438,1.26878443964438
+1,9,"2024-9","villeneuve","alonso","Constructor",6,8.38925853018232,2.38925853018232
+1,9,"2024-9","villeneuve","stroll","Constructor",7,8.38925853018232,1.38925853018232
+1,9,"2024-9","villeneuve","ricciardo","Constructor",8,9.33423961036515,1.33423961036515
+1,9,"2024-9","villeneuve","gasly","Constructor",9,9.50844294304217,0.508442943042168
+1,9,"2024-9","villeneuve","ocon","Constructor",10,9.50844294304217,0.491557056957832
+1,9,"2024-9","villeneuve","hulkenberg","Constructor",11,8.95399441598804,2.04600558401196
+1,9,"2024-9","villeneuve","kevin_magnussen","Constructor",12,8.95399441598804,3.04600558401196
+1,9,"2024-9","villeneuve","bottas","Constructor",13,10.688367272027,2.31163272797304
+1,9,"2024-9","villeneuve","tsunoda","Constructor",14,9.33423961036515,4.66576038963485
+1,9,"2024-9","villeneuve","zhou","Constructor",15,10.688367272027,4.31163272797304
+1,9,"2024-9","villeneuve","max_verstappen","Parrilla",1,4.67393636481064,3.67393636481064
+1,9,"2024-9","villeneuve","norris","Parrilla",2,5.0661813646819,3.0661813646819
+1,9,"2024-9","villeneuve","russell","Parrilla",3,4.29978339184171,1.29978339184171
+1,9,"2024-9","villeneuve","hamilton","Parrilla",4,6.76972581192718,2.76972581192718
+1,9,"2024-9","villeneuve","piastri","Parrilla",5,5.47438850304599,0.47438850304599
+1,9,"2024-9","villeneuve","alonso","Parrilla",6,6.32882992165737,0.328829921657365
+1,9,"2024-9","villeneuve","stroll","Parrilla",7,7.66519817735457,0.66519817735457
+1,9,"2024-9","villeneuve","ricciardo","Parrilla",8,5.89614282993365,2.10385717006635
+1,9,"2024-9","villeneuve","gasly","Parrilla",9,10.2818163639818,1.28181636398184
+1,9,"2024-9","villeneuve","ocon","Parrilla",10,11.4467350884348,1.44673508843478
+1,9,"2024-9","villeneuve","hulkenberg","Parrilla",11,11.0738553735963,0.0738553735963361
+1,9,"2024-9","villeneuve","kevin_magnussen","Parrilla",12,9.86596834371007,2.13403165628993
+1,9,"2024-9","villeneuve","bottas","Parrilla",13,11.8022324545003,1.19776754549968
+1,9,"2024-9","villeneuve","tsunoda","Parrilla",14,7.21608211849093,6.78391788150907
+1,9,"2024-9","villeneuve","zhou","Parrilla",15,12.1391238920327,2.86087610796728
+1,9,"2024-9","villeneuve","max_verstappen","Constructor + parrilla",1,3.21930170175404,2.21930170175404
+1,9,"2024-9","villeneuve","norris","Constructor + parrilla",2,4.47479926765928,2.47479926765928
+1,9,"2024-9","villeneuve","russell","Constructor + parrilla",3,2.80761187375321,0.192388126246792
+1,9,"2024-9","villeneuve","hamilton","Constructor + parrilla",4,4.40595095539676,0.405950955396764
+1,9,"2024-9","villeneuve","piastri","Constructor + parrilla",5,4.78350146244623,0.216498537553774
+1,9,"2024-9","villeneuve","alonso","Constructor + parrilla",6,6.9336284606523,0.933628460652299
+1,9,"2024-9","villeneuve","stroll","Constructor + parrilla",7,7.99620830987324,0.996208309873241
+1,9,"2024-9","villeneuve","ricciardo","Constructor + parrilla",8,7.27563625313662,0.724363746863381
+1,9,"2024-9","villeneuve","gasly","Constructor + parrilla",9,10.8624018664453,1.86240186644526
+1,9,"2024-9","villeneuve","ocon","Constructor + parrilla",10,11.8010142568288,1.80101425682875
+1,9,"2024-9","villeneuve","hulkenberg","Constructor + parrilla",11,11.1334727399819,0.133472739981885
+1,9,"2024-9","villeneuve","kevin_magnussen","Constructor + parrilla",12,10.1414797704653,1.85852022953474
+1,9,"2024-9","villeneuve","bottas","Constructor + parrilla",13,12.7883495322389,0.211650467761071
+1,9,"2024-9","villeneuve","tsunoda","Constructor + parrilla",14,8.34180788382548,5.65819211617452
+1,9,"2024-9","villeneuve","zhou","Constructor + parrilla",15,13.0348356655428,1.96516433445725
+1,9,"2024-9","villeneuve","max_verstappen","Piloto + constructor + parrilla",1,2.47545013167939,1.47545013167939
+1,9,"2024-9","villeneuve","norris","Piloto + constructor + parrilla",2,4.51046388992615,2.51046388992615
+1,9,"2024-9","villeneuve","russell","Piloto + constructor + parrilla",3,3.00143902584785,0.00143902584785138
+1,9,"2024-9","villeneuve","hamilton","Piloto + constructor + parrilla",4,4.3015067094354,0.301506709435399
+1,9,"2024-9","villeneuve","piastri","Piloto + constructor + parrilla",5,4.56715462440237,0.432845375597628
+1,9,"2024-9","villeneuve","alonso","Piloto + constructor + parrilla",6,6.67018176591998,0.670181765919977
+1,9,"2024-9","villeneuve","stroll","Piloto + constructor + parrilla",7,8.61416841844313,1.61416841844313
+1,9,"2024-9","villeneuve","ricciardo","Piloto + constructor + parrilla",8,7.36976810069443,0.630231899305569
+1,9,"2024-9","villeneuve","gasly","Piloto + constructor + parrilla",9,10.6634146102156,1.66341461021559
+1,9,"2024-9","villeneuve","ocon","Piloto + constructor + parrilla",10,12.0393654257296,2.03936542572956
+1,9,"2024-9","villeneuve","hulkenberg","Piloto + constructor + parrilla",11,10.9387367785528,0.0612632214472448
+1,9,"2024-9","villeneuve","kevin_magnussen","Piloto + constructor + parrilla",12,10.2395657954294,1.76043420457057
+1,9,"2024-9","villeneuve","bottas","Piloto + constructor + parrilla",13,12.800640415813,0.199359584186954
+1,9,"2024-9","villeneuve","tsunoda","Piloto + constructor + parrilla",14,8.73214310952473,5.26785689047527
+1,9,"2024-9","villeneuve","zhou","Piloto + constructor + parrilla",15,13.0760011983862,1.92399880161382
+2,10,"2024-10","catalunya","max_verstappen","Constructor",1,6.9106963219758,5.9106963219758
+2,10,"2024-10","catalunya","norris","Constructor",2,8.70147218399146,6.70147218399146
+2,10,"2024-10","catalunya","hamilton","Constructor",3,6.5209635440101,3.5209635440101
+2,10,"2024-10","catalunya","russell","Constructor",4,6.5209635440101,2.5209635440101
+2,10,"2024-10","catalunya","leclerc","Constructor",5,5.28998806269783,0.289988062697828
+2,10,"2024-10","catalunya","sainz","Constructor",6,5.28998806269783,0.710011937302172
+2,10,"2024-10","catalunya","piastri","Constructor",7,8.70147218399146,1.70147218399146
+2,10,"2024-10","catalunya","perez","Constructor",8,6.9106963219758,1.0893036780242
+2,10,"2024-10","catalunya","gasly","Constructor",9,12.7440089202536,3.74400892025358
+2,10,"2024-10","catalunya","ocon","Constructor",10,12.7440089202536,2.74400892025358
+2,10,"2024-10","catalunya","hulkenberg","Constructor",11,12.4599513911626,1.45995139116256
+2,10,"2024-10","catalunya","alonso","Constructor",12,12.1578370602656,0.157837060265575
+2,10,"2024-10","catalunya","zhou","Constructor",13,15.0226572012461,2.02265720124613
+2,10,"2024-10","catalunya","stroll","Constructor",14,12.1578370602656,1.84216293973443
+2,10,"2024-10","catalunya","ricciardo","Constructor",15,12.5135707205812,2.48642927941884
+2,10,"2024-10","catalunya","bottas","Constructor",16,15.0226572012461,0.977342798753867
+2,10,"2024-10","catalunya","kevin_magnussen","Constructor",17,12.4599513911626,4.54004860883744
+2,10,"2024-10","catalunya","albon","Constructor",18,12.6788545938158,5.32114540618419
+2,10,"2024-10","catalunya","tsunoda","Constructor",19,12.5135707205812,6.48642927941884
+2,10,"2024-10","catalunya","sargeant","Constructor",20,12.6788545938158,7.32114540618419
+2,10,"2024-10","catalunya","max_verstappen","Parrilla",1,5.07623819727843,4.07623819727843
+2,10,"2024-10","catalunya","norris","Parrilla",2,4.57041516610695,2.57041516610695
+2,10,"2024-10","catalunya","hamilton","Parrilla",3,5.61839771931549,2.61839771931549
+2,10,"2024-10","catalunya","russell","Parrilla",4,6.19448557640707,2.19448557640707
+2,10,"2024-10","catalunya","leclerc","Parrilla",5,6.80137460059094,1.80137460059094
+2,10,"2024-10","catalunya","sainz","Parrilla",6,7.43531225340316,1.43531225340316
+2,10,"2024-10","catalunya","piastri","Parrilla",7,9.45480381039332,2.45480381039332
+2,10,"2024-10","catalunya","perez","Parrilla",8,10.8492869434706,2.84928694347058
+2,10,"2024-10","catalunya","gasly","Parrilla",9,8.09202912706888,0.907970872931118
+2,10,"2024-10","catalunya","ocon","Parrilla",10,8.76685071012775,1.23314928987225
+2,10,"2024-10","catalunya","hulkenberg","Parrilla",11,12.2331492898723,1.23314928987225
+2,10,"2024-10","catalunya","alonso","Parrilla",12,10.1507130565294,1.84928694347058
+2,10,"2024-10","catalunya","zhou","Parrilla",13,13.5646877465968,0.564687746596839
+2,10,"2024-10","catalunya","stroll","Parrilla",14,12.9079708729311,1.09202912706888
+2,10,"2024-10","catalunya","ricciardo","Parrilla",15,15.3816022806845,0.381602280684511
+2,10,"2024-10","catalunya","bottas","Parrilla",16,11.5451961896067,4.45480381039332
+2,10,"2024-10","catalunya","kevin_magnussen","Parrilla",17,14.1986253994091,2.80137460059094
+2,10,"2024-10","catalunya","albon","Parrilla",18,16.4295848338931,1.57041516610695
+2,10,"2024-10","catalunya","tsunoda","Parrilla",19,14.8055144235929,4.19448557640706
+2,10,"2024-10","catalunya","sargeant","Parrilla",20,15.9237618027216,4.07623819727843
+2,10,"2024-10","catalunya","max_verstappen","Constructor + parrilla",1,4.08993923891689,3.08993923891689
+2,10,"2024-10","catalunya","norris","Constructor + parrilla",2,4.72429048430354,2.72429048430354
+2,10,"2024-10","catalunya","hamilton","Constructor + parrilla",3,4.23804966957034,1.23804966957034
+2,10,"2024-10","catalunya","russell","Constructor + parrilla",4,4.62705253282686,0.627052532826861
+2,10,"2024-10","catalunya","leclerc","Constructor + parrilla",5,4.19848831484422,0.801511685155782
+2,10,"2024-10","catalunya","sainz","Constructor + parrilla",6,4.58619666879949,1.41380333120051
+2,10,"2024-10","catalunya","piastri","Constructor + parrilla",7,8.31801219466793,1.31801219466793
+2,10,"2024-10","catalunya","perez","Constructor + parrilla",8,8.00408843026703,0.0040884302670321
+2,10,"2024-10","catalunya","gasly","Constructor + parrilla",9,10.1050700938166,1.1050700938166
+2,10,"2024-10","catalunya","ocon","Constructor + parrilla",10,10.6254935842768,0.625493584276818
+2,10,"2024-10","catalunya","hulkenberg","Constructor + parrilla",11,13.049845297669,2.04984529766904
+2,10,"2024-10","catalunya","alonso","Constructor + parrilla",12,11.2363979608137,0.763602039186329
+2,10,"2024-10","catalunya","zhou","Constructor + parrilla",13,16.0026692458872,3.00266924588722
+2,10,"2024-10","catalunya","stroll","Constructor + parrilla",14,13.371717074893,0.628282925106967
+2,10,"2024-10","catalunya","ricciardo","Constructor + parrilla",15,15.6444584995867,0.644458499586667
+2,10,"2024-10","catalunya","bottas","Constructor + parrilla",16,14.5333595419464,1.46664045805363
+2,10,"2024-10","catalunya","kevin_magnussen","Constructor + parrilla",17,14.6248609181131,2.37513908188692
+2,10,"2024-10","catalunya","albon","Constructor + parrilla",18,16.6502055213832,1.34979447861681
+2,10,"2024-10","catalunya","tsunoda","Constructor + parrilla",19,15.158154994827,3.84184500517295
+2,10,"2024-10","catalunya","sargeant","Constructor + parrilla",20,16.211649732591,3.78835026740902
+2,10,"2024-10","catalunya","max_verstappen","Piloto + constructor + parrilla",1,3.09290418209687,2.09290418209687
+2,10,"2024-10","catalunya","norris","Piloto + constructor + parrilla",2,4.80100759941812,2.80100759941812
+2,10,"2024-10","catalunya","hamilton","Piloto + constructor + parrilla",3,4.12952128898349,1.12952128898349
+2,10,"2024-10","catalunya","russell","Piloto + constructor + parrilla",4,4.73890575669971,0.738905756699713
+2,10,"2024-10","catalunya","leclerc","Piloto + constructor + parrilla",5,4.38483596742969,0.615164032570314
+2,10,"2024-10","catalunya","sainz","Piloto + constructor + parrilla",6,4.42440405358404,1.57559594641596
+2,10,"2024-10","catalunya","piastri","Piloto + constructor + parrilla",7,7.68374838763799,0.683748387637987
+2,10,"2024-10","catalunya","perez","Piloto + constructor + parrilla",8,8.90420622871848,0.904206228718483
+2,10,"2024-10","catalunya","gasly","Piloto + constructor + parrilla",9,9.74673764879425,0.746737648794253
+2,10,"2024-10","catalunya","ocon","Piloto + constructor + parrilla",10,11.0417285659415,1.04172856594147
+2,10,"2024-10","catalunya","hulkenberg","Piloto + constructor + parrilla",11,12.8276604733282,1.82766047332816
+2,10,"2024-10","catalunya","alonso","Piloto + constructor + parrilla",12,10.9959958418375,1.00400415816248
+2,10,"2024-10","catalunya","zhou","Piloto + constructor + parrilla",13,16.1605672011003,3.16056720110026
+2,10,"2024-10","catalunya","stroll","Piloto + constructor + parrilla",14,13.7313422635226,0.26865773647739
+2,10,"2024-10","catalunya","ricciardo","Piloto + constructor + parrilla",15,15.3528783121371,0.352878312137078
+2,10,"2024-10","catalunya","bottas","Piloto + constructor + parrilla",16,14.319686905785,1.680313094215
+2,10,"2024-10","catalunya","kevin_magnussen","Piloto + constructor + parrilla",17,14.5051483582512,2.49485164174878
+2,10,"2024-10","catalunya","albon","Piloto + constructor + parrilla",18,16.2970534618019,1.70294653819808
+2,10,"2024-10","catalunya","tsunoda","Piloto + constructor + parrilla",19,15.5863888806273,3.41361111937271
+2,10,"2024-10","catalunya","sargeant","Piloto + constructor + parrilla",20,17.2752786223049,2.72472137769515
+2,14,"2024-14","spa","hamilton","Constructor",1,5.9085700883175,4.9085700883175
+2,14,"2024-14","spa","piastri","Constructor",2,7.88771520090468,5.88771520090468
+2,14,"2024-14","spa","leclerc","Constructor",3,4.79505406373055,1.79505406373055
+2,14,"2024-14","spa","max_verstappen","Constructor",4,6.26083317315089,2.26083317315089
+2,14,"2024-14","spa","norris","Constructor",5,7.88771520090468,2.88771520090468
+2,14,"2024-14","spa","sainz","Constructor",6,4.79505406373055,1.20494593626945
+2,14,"2024-14","spa","perez","Constructor",7,6.26083317315089,0.739166826849112
+2,14,"2024-14","spa","alonso","Constructor",8,11.0357464418748,3.03574644187483
+2,14,"2024-14","spa","ocon","Constructor",9,11.5685785896917,2.56857858969174
+2,14,"2024-14","spa","ricciardo","Constructor",10,11.359698435505,1.35969843550497
+2,14,"2024-14","spa","stroll","Constructor",11,11.0357464418748,0.0357464418748279
+2,14,"2024-14","spa","albon","Constructor",12,11.5097707561502,0.490229243849836
+2,14,"2024-14","spa","gasly","Constructor",13,11.5685785896917,1.43142141030826
+2,14,"2024-14","spa","kevin_magnussen","Constructor",14,11.3107929663641,2.68920703363593
+2,14,"2024-14","spa","bottas","Constructor",15,13.6350506569387,1.36494934306127
+2,14,"2024-14","spa","tsunoda","Constructor",16,11.359698435505,4.64030156449503
+2,14,"2024-14","spa","sargeant","Constructor",17,11.5097707561502,5.49022924384984
+2,14,"2024-14","spa","hulkenberg","Constructor",18,11.3107929663641,6.68920703363593
+2,14,"2024-14","spa","hamilton","Parrilla",1,5.66484996075081,4.66484996075081
+2,14,"2024-14","spa","piastri","Parrilla",2,6.63976854275026,4.63976854275026
+2,14,"2024-14","spa","leclerc","Parrilla",3,4.77990916798911,1.77990916798911
+2,14,"2024-14","spa","max_verstappen","Parrilla",4,9.89428018582351,5.89428018582351
+2,14,"2024-14","spa","norris","Parrilla",5,6.14207580583698,1.14207580583698
+2,14,"2024-14","spa","sainz","Parrilla",6,7.68617139211869,1.68617139211869
+2,14,"2024-14","spa","perez","Parrilla",7,5.21022193454663,1.78977806545337
+2,14,"2024-14","spa","alonso","Parrilla",8,8.22889253779427,0.228892537794273
+2,14,"2024-14","spa","ocon","Parrilla",9,8.78020516285347,0.219794837146527
+2,14,"2024-14","spa","ricciardo","Parrilla",10,10.9990091591086,0.999009159108562
+2,14,"2024-14","spa","stroll","Parrilla",11,12.0654048312269,1.0654048312269
+2,14,"2024-14","spa","albon","Parrilla",12,9.3365567145856,2.6634432854144
+2,14,"2024-14","spa","gasly","Parrilla",13,10.4496612386577,2.55033876134234
+2,14,"2024-14","spa","kevin_magnussen","Parrilla",14,13.0672259872404,0.932774012759609
+2,14,"2024-14","spa","bottas","Parrilla",15,11.5387306636503,3.46126933634967
+2,14,"2024-14","spa","tsunoda","Parrilla",16,14.4041516788235,1.59584832117646
+2,14,"2024-14","spa","sargeant","Parrilla",17,13.5370283868298,3.4629716131702
+2,14,"2024-14","spa","hulkenberg","Parrilla",18,12.5758566494135,5.4241433505865
+2,14,"2024-14","spa","hamilton","Constructor + parrilla",1,4.07249000110804,3.07249000110804
+2,14,"2024-14","spa","piastri","Constructor + parrilla",2,6.05399667719813,4.05399667719813
+2,14,"2024-14","spa","leclerc","Constructor + parrilla",3,2.86100548269726,0.138994517302741
+2,14,"2024-14","spa","max_verstappen","Constructor + parrilla",4,7.11315000225375,3.11315000225375
+2,14,"2024-14","spa","norris","Constructor + parrilla",5,5.69202578484203,0.692025784842026
+2,14,"2024-14","spa","sainz","Constructor + parrilla",6,4.52808964072544,1.47191035927456
+2,14,"2024-14","spa","perez","Constructor + parrilla",7,3.99182271539641,3.00817728460359
+2,14,"2024-14","spa","alonso","Constructor + parrilla",8,9.53318555810806,1.53318555810806
+2,14,"2024-14","spa","ocon","Constructor + parrilla",9,10.3936208469393,1.39362084693927
+2,14,"2024-14","spa","ricciardo","Constructor + parrilla",10,11.9502146976833,1.95021469768332
+2,14,"2024-14","spa","stroll","Constructor + parrilla",11,12.5588757500936,1.5588757500936
+2,14,"2024-14","spa","albon","Constructor + parrilla",12,10.7742336120116,1.22576638798837
+2,14,"2024-14","spa","gasly","Constructor + parrilla",13,11.7006473564849,1.29935264351509
+2,14,"2024-14","spa","kevin_magnussen","Constructor + parrilla",14,13.5732410261715,0.426758973828546
+2,14,"2024-14","spa","bottas","Constructor + parrilla",15,14.1972566756116,0.802743324388388
+2,14,"2024-14","spa","tsunoda","Constructor + parrilla",16,14.7264846130675,1.27351538693252
+2,14,"2024-14","spa","sargeant","Constructor + parrilla",17,14.1090544408321,2.89094555916788
+2,14,"2024-14","spa","hulkenberg","Constructor + parrilla",18,13.1706051187755,4.82939488122452
+2,14,"2024-14","spa","hamilton","Piloto + constructor + parrilla",1,3.90787744593398,2.90787744593398
+2,14,"2024-14","spa","piastri","Piloto + constructor + parrilla",2,5.60584199251436,3.60584199251436
+2,14,"2024-14","spa","leclerc","Piloto + constructor + parrilla",3,2.95605216664603,0.0439478333539718
+2,14,"2024-14","spa","max_verstappen","Piloto + constructor + parrilla",4,5.64825470954949,1.64825470954949
+2,14,"2024-14","spa","norris","Piloto + constructor + parrilla",5,5.71805549689658,0.718055496896576
+2,14,"2024-14","spa","sainz","Piloto + constructor + parrilla",6,4.31812090586515,1.68187909413485
+2,14,"2024-14","spa","perez","Piloto + constructor + parrilla",7,4.86889764037767,2.13110235962233
+2,14,"2024-14","spa","alonso","Piloto + constructor + parrilla",8,9.45092389041941,1.45092389041941
+2,14,"2024-14","spa","ocon","Piloto + constructor + parrilla",9,10.8910013251629,1.8910013251629
+2,14,"2024-14","spa","ricciardo","Piloto + constructor + parrilla",10,11.8154289961006,1.81542899610059
+2,14,"2024-14","spa","stroll","Piloto + constructor + parrilla",11,12.9720287637531,1.97202876375314
+2,14,"2024-14","spa","albon","Piloto + constructor + parrilla",12,10.6224487867424,1.37755121325756
+2,14,"2024-14","spa","gasly","Piloto + constructor + parrilla",13,11.3249124817898,1.67508751821019
+2,14,"2024-14","spa","kevin_magnussen","Piloto + constructor + parrilla",14,13.5261152632117,0.473884736788287
+2,14,"2024-14","spa","bottas","Piloto + constructor + parrilla",15,14.0440624826014,0.955937517398565
+2,14,"2024-14","spa","tsunoda","Piloto + constructor + parrilla",16,15.1013243862596,0.898675613740387
+2,14,"2024-14","spa","sargeant","Piloto + constructor + parrilla",17,15.227263386633,1.77273661336698
+2,14,"2024-14","spa","hulkenberg","Piloto + constructor + parrilla",18,13.0013898795427,4.99861012045733
+2,18,"2024-18","marina_bay","norris","Constructor",1,8.11967102975309,7.11967102975309
+2,18,"2024-18","marina_bay","max_verstappen","Constructor",2,6.49521343987277,4.49521343987277
+2,18,"2024-18","marina_bay","piastri","Constructor",3,8.11967102975309,5.11967102975309
+2,18,"2024-18","marina_bay","russell","Constructor",4,6.1379996456204,2.1379996456204
+2,18,"2024-18","marina_bay","leclerc","Constructor",5,5.00550242848405,0.00550242848404547
+2,18,"2024-18","marina_bay","hamilton","Constructor",6,6.1379996456204,0.137999645620404
+2,18,"2024-18","marina_bay","sainz","Constructor",7,5.00550242848405,1.99449757151595
+2,18,"2024-18","marina_bay","alonso","Constructor",8,11.2052393993141,3.20523939931406
+2,18,"2024-18","marina_bay","hulkenberg","Constructor",9,11.4729742936387,2.47297429363868
+2,18,"2024-18","marina_bay","perez","Constructor",10,6.49521343987277,3.50478656012723
+2,18,"2024-18","marina_bay","colapinto","Constructor",11,11.6658316913397,0.665831691339696
+2,18,"2024-18","marina_bay","tsunoda","Constructor",12,11.519782127888,0.480217872112013
+2,18,"2024-18","marina_bay","ocon","Constructor",13,11.7233255744785,1.27667442552151
+2,18,"2024-18","marina_bay","stroll","Constructor",14,11.2052393993141,2.79476060068594
+2,18,"2024-18","marina_bay","zhou","Constructor",15,13.7238633621,1.27613663790003
+2,18,"2024-18","marina_bay","bottas","Constructor",16,13.7238633621,2.27613663790003
+2,18,"2024-18","marina_bay","gasly","Constructor",17,11.7233255744785,5.27667442552151
+2,18,"2024-18","marina_bay","ricciardo","Constructor",18,11.519782127888,6.48021787211201
+2,18,"2024-18","marina_bay","norris","Parrilla",1,5.1345270588289,4.1345270588289
+2,18,"2024-18","marina_bay","max_verstappen","Parrilla",2,5.54676683504315,3.54676683504315
+2,18,"2024-18","marina_bay","piastri","Parrilla",3,6.89368059227879,3.89368059227879
+2,18,"2024-18","marina_bay","russell","Parrilla",4,6.4281694653482,2.4281694653482
+2,18,"2024-18","marina_bay","leclerc","Parrilla",5,8.86697528106009,3.86697528106009
+2,18,"2024-18","marina_bay","hamilton","Parrilla",6,5.97853991611775,0.021460083882249
+2,18,"2024-18","marina_bay","sainz","Parrilla",7,9.37487898073005,2.37487898073005
+2,18,"2024-18","marina_bay","alonso","Parrilla",8,7.86320044083069,0.136799559169312
+2,18,"2024-18","marina_bay","hulkenberg","Parrilla",9,7.37283969688173,1.62716030311827
+2,18,"2024-18","marina_bay","perez","Parrilla",10,10.889151418079,0.88915141807901
+2,18,"2024-18","marina_bay","colapinto","Parrilla",11,10.3887233321141,0.611276667885857
+2,18,"2024-18","marina_bay","tsunoda","Parrilla",12,8.36215322787597,3.63784677212403
+2,18,"2024-18","marina_bay","ocon","Parrilla",13,11.8638898912898,1.13611010871024
+2,18,"2024-18","marina_bay","stroll","Parrilla",14,12.7879368210488,1.21206317895117
+2,18,"2024-18","marina_bay","zhou","Parrilla",15,14.044465988244,0.95553401175599
+2,18,"2024-18","marina_bay","bottas","Parrilla",16,13.6450294521783,2.35497054782168
+2,18,"2024-18","marina_bay","gasly","Parrilla",17,13.2257214592683,3.77427854073171
+2,18,"2024-18","marina_bay","ricciardo","Parrilla",18,12.3333501427823,5.66664985721767
+2,18,"2024-18","marina_bay","norris","Constructor + parrilla",1,5.09671050372422,4.09671050372422
+2,18,"2024-18","marina_bay","max_verstappen","Constructor + parrilla",2,4.28529712957194,2.28529712957194
+2,18,"2024-18","marina_bay","piastri","Constructor + parrilla",3,6.51542389755413,3.51542389755413
+2,18,"2024-18","marina_bay","russell","Constructor + parrilla",4,4.65996973364383,0.659969733643833
+2,18,"2024-18","marina_bay","leclerc","Constructor + parrilla",5,5.39050964668205,0.390509646682048
+2,18,"2024-18","marina_bay","hamilton","Constructor + parrilla",6,4.34425013598041,1.65574986401959
+2,18,"2024-18","marina_bay","sainz","Constructor + parrilla",7,5.74161398834196,1.25838601165804
+2,18,"2024-18","marina_bay","alonso","Constructor + parrilla",8,9.69072674909707,1.69072674909707
+2,18,"2024-18","marina_bay","hulkenberg","Constructor + parrilla",9,9.53136486725682,0.531364867256816
+2,18,"2024-18","marina_bay","perez","Constructor + parrilla",10,8.21330432429269,1.78669567570731
+2,18,"2024-18","marina_bay","colapinto","Constructor + parrilla",11,11.9581844255795,0.958184425579544
+2,18,"2024-18","marina_bay","tsunoda","Constructor + parrilla",12,10.3314263789926,1.66857362100744
+2,18,"2024-18","marina_bay","ocon","Constructor + parrilla",13,13.0621180800504,0.0621180800504408
+2,18,"2024-18","marina_bay","stroll","Constructor + parrilla",14,13.3773750998443,0.622624900155678
+2,18,"2024-18","marina_bay","zhou","Constructor + parrilla",15,15.8604504043665,0.860450404366542
+2,18,"2024-18","marina_bay","bottas","Constructor + parrilla",16,15.6192862335679,0.380713766432125
+2,18,"2024-18","marina_bay","gasly","Constructor + parrilla",17,14.0566791222901,2.94332087770991
+2,18,"2024-18","marina_bay","ricciardo","Constructor + parrilla",18,13.2653092791635,4.7346907208365
+2,18,"2024-18","marina_bay","norris","Piloto + constructor + parrilla",1,5.16686654873176,4.16686654873176
+2,18,"2024-18","marina_bay","max_verstappen","Piloto + constructor + parrilla",2,3.19466018750964,1.19466018750964
+2,18,"2024-18","marina_bay","piastri","Piloto + constructor + parrilla",3,6.01032030606238,3.01032030606238
+2,18,"2024-18","marina_bay","russell","Piloto + constructor + parrilla",4,4.78250094111495,0.78250094111495
+2,18,"2024-18","marina_bay","leclerc","Piloto + constructor + parrilla",5,5.55914478810326,0.559144788103263
+2,18,"2024-18","marina_bay","hamilton","Piloto + constructor + parrilla",6,4.22057722663139,1.77942277336861
+2,18,"2024-18","marina_bay","sainz","Piloto + constructor + parrilla",7,5.49695854457048,1.50304145542952
+2,18,"2024-18","marina_bay","alonso","Piloto + constructor + parrilla",8,9.6048430071735,1.6048430071735
+2,18,"2024-18","marina_bay","hulkenberg","Piloto + constructor + parrilla",9,9.52943013482994,0.529430134829939
+2,18,"2024-18","marina_bay","perez","Piloto + constructor + parrilla",10,9.21613317178007,0.783866828219931
+2,18,"2024-18","marina_bay","colapinto","Piloto + constructor + parrilla",11,11.4455995011826,0.445599501182622
+2,18,"2024-18","marina_bay","tsunoda","Piloto + constructor + parrilla",12,11.0228528145633,0.977147185436676
+2,18,"2024-18","marina_bay","ocon","Piloto + constructor + parrilla",13,13.4543242715396,0.454324271539607
+2,18,"2024-18","marina_bay","stroll","Piloto + constructor + parrilla",14,13.7889125465213,0.211087453478692
+2,18,"2024-18","marina_bay","zhou","Piloto + constructor + parrilla",15,16.0662453647655,1.06624536476554
+2,18,"2024-18","marina_bay","bottas","Piloto + constructor + parrilla",16,15.5614733010306,0.438526698969406
+2,18,"2024-18","marina_bay","gasly","Piloto + constructor + parrilla",17,13.7337796169486,3.2662203830514
+2,18,"2024-18","marina_bay","ricciardo","Piloto + constructor + parrilla",18,13.145377726941,4.85462227305895
+2,2,"2024-2","jeddah","max_verstappen","Constructor",1,6.48478442499395,5.48478442499395
+2,2,"2024-2","jeddah","perez","Constructor",2,6.48478442499395,4.48478442499395
+2,2,"2024-2","jeddah","leclerc","Constructor",3,4.9973091219771,1.9973091219771
+2,2,"2024-2","jeddah","piastri","Constructor",4,8.10725461602955,4.10725461602955
+2,2,"2024-2","jeddah","alonso","Constructor",5,11.1919268882755,6.19192688827546
+2,2,"2024-2","jeddah","russell","Constructor",6,6.12850093122186,0.128500931221865
+2,2,"2024-2","jeddah","bearman","Constructor",7,4.9973091219771,2.0026908780229
+2,2,"2024-2","jeddah","norris","Constructor",8,8.10725461602955,0.107254616029547
+2,2,"2024-2","jeddah","hamilton","Constructor",9,6.12850093122186,2.87149906877814
+2,2,"2024-2","jeddah","hulkenberg","Constructor",10,11.4596270424151,1.45962704241508
+2,2,"2024-2","jeddah","albon","Constructor",11,11.6524599492899,0.652459949289893
+2,2,"2024-2","jeddah","kevin_magnussen","Constructor",12,11.4596270424151,0.540372957584918
+2,2,"2024-2","jeddah","ocon","Constructor",13,11.7099190922437,1.29008090775631
+2,2,"2024-2","jeddah","sargeant","Constructor",14,11.6524599492899,2.34754005071011
+2,2,"2024-2","jeddah","tsunoda","Constructor",15,11.506500160826,3.49349983917396
+2,2,"2024-2","jeddah","ricciardo","Constructor",16,11.506500160826,4.49349983917396
+2,2,"2024-2","jeddah","bottas","Constructor",17,13.7126407629869,3.28735923701305
+2,2,"2024-2","jeddah","zhou","Constructor",18,13.7126407629869,4.28735923701305
+2,2,"2024-2","jeddah","max_verstappen","Parrilla",1,4.84480870314311,3.84480870314311
+2,2,"2024-2","jeddah","perez","Parrilla",2,5.74542180432222,3.74542180432222
+2,2,"2024-2","jeddah","leclerc","Parrilla",3,5.28287513862092,2.28287513862092
+2,2,"2024-2","jeddah","piastri","Parrilla",4,6.7354097830245,2.7354097830245
+2,2,"2024-2","jeddah","alonso","Parrilla",5,6.23041994816903,1.23041994816903
+2,2,"2024-2","jeddah","russell","Parrilla",6,7.79375132733286,1.79375132733286
+2,2,"2024-2","jeddah","bearman","Parrilla",7,10.0098585306361,3.00985853063606
+2,2,"2024-2","jeddah","norris","Parrilla",8,7.25756258653128,0.742437413468721
+2,2,"2024-2","jeddah","hamilton","Parrilla",9,8.34062343103881,0.659376568961187
+2,2,"2024-2","jeddah","hulkenberg","Parrilla",10,12.1686738142939,2.16867381429392
+2,2,"2024-2","jeddah","albon","Parrilla",11,10.5637529918895,0.436247008110497
+2,2,"2024-2","jeddah","kevin_magnussen","Parrilla",12,11.1104353572656,0.889564642734367
+2,2,"2024-2","jeddah","ocon","Parrilla",13,13.1597345250019,0.15973452500185
+2,2,"2024-2","jeddah","sargeant","Parrilla",14,14.0634887971512,0.063488797151205
+2,2,"2024-2","jeddah","tsunoda","Parrilla",15,8.89467068055989,6.10532931944011
+2,2,"2024-2","jeddah","ricciardo","Parrilla",16,11.6464883117431,4.35351168825688
+2,2,"2024-2","jeddah","bottas","Parrilla",17,12.6739909360394,4.32600906396055
+2,2,"2024-2","jeddah","zhou","Parrilla",18,14.4780333332366,3.52196666676337
+2,2,"2024-2","jeddah","max_verstappen","Constructor + parrilla",1,3.89346207335651,2.89346207335651
+2,2,"2024-2","jeddah","perez","Constructor + parrilla",2,4.54546463328125,2.54546463328125
+2,2,"2024-2","jeddah","leclerc","Constructor + parrilla",3,3.23694370027985,0.236943700279852
+2,2,"2024-2","jeddah","piastri","Constructor + parrilla",4,6.42955901133775,2.42955901133775
+2,2,"2024-2","jeddah","alonso","Constructor + parrilla",5,8.31667150726088,3.31667150726088
+2,2,"2024-2","jeddah","russell","Constructor + parrilla",6,5.71531280452283,0.284687195477167
+2,2,"2024-2","jeddah","bearman","Constructor + parrilla",7,6.30255449739666,0.697445502603341
+2,2,"2024-2","jeddah","norris","Constructor + parrilla",8,6.82764924995056,1.17235075004944
+2,2,"2024-2","jeddah","hamilton","Constructor + parrilla",9,6.0999243043331,2.9000756956669
+2,2,"2024-2","jeddah","hulkenberg","Constructor + parrilla",10,12.961760522464,2.96176052246395
+2,2,"2024-2","jeddah","albon","Constructor + parrilla",11,11.9264467635446,0.926446763544595
+2,2,"2024-2","jeddah","kevin_magnussen","Constructor + parrilla",12,12.1818039760288,0.181803976028805
+2,2,"2024-2","jeddah","ocon","Constructor + parrilla",13,13.8702935638432,0.870293563843191
+2,2,"2024-2","jeddah","sargeant","Constructor + parrilla",14,14.526022895513,0.526022895512984
+2,2,"2024-2","jeddah","tsunoda","Constructor + parrilla",15,10.6054682529392,4.3945317470608
+2,2,"2024-2","jeddah","ricciardo","Constructor + parrilla",16,12.6160066449227,3.38399335507729
+2,2,"2024-2","jeddah","bottas","Constructor + parrilla",17,14.9026189945784,2.09738100542165
+2,2,"2024-2","jeddah","zhou","Constructor + parrilla",18,16.0420366044468,1.95796339555319
+2,2,"2024-2","jeddah","max_verstappen","Piloto + constructor + parrilla",1,2.84336738474834,1.84336738474834
+2,2,"2024-2","jeddah","perez","Piloto + constructor + parrilla",2,5.44019833330264,3.44019833330264
+2,2,"2024-2","jeddah","leclerc","Piloto + constructor + parrilla",3,3.35120839669772,0.351208396697722
+2,2,"2024-2","jeddah","piastri","Piloto + constructor + parrilla",4,5.8734472858747,1.8734472858747
+2,2,"2024-2","jeddah","alonso","Piloto + constructor + parrilla",5,8.21303328205209,3.21303328205209
+2,2,"2024-2","jeddah","russell","Piloto + constructor + parrilla",6,5.70809037634108,0.29190962365892
+2,2,"2024-2","jeddah","bearman","Piloto + constructor + parrilla",7,6.56105996083431,0.438940039165689
+2,2,"2024-2","jeddah","norris","Piloto + constructor + parrilla",8,6.73768155355204,1.26231844644796
+2,2,"2024-2","jeddah","hamilton","Piloto + constructor + parrilla",9,5.79336179511967,3.20663820488033
+2,2,"2024-2","jeddah","hulkenberg","Piloto + constructor + parrilla",10,12.7537964595148,2.75379645951475
+2,2,"2024-2","jeddah","albon","Piloto + constructor + parrilla",11,11.6733268119591,0.673326811959067
+2,2,"2024-2","jeddah","kevin_magnussen","Piloto + constructor + parrilla",12,12.1346500478609,0.134650047860886
+2,2,"2024-2","jeddah","ocon","Piloto + constructor + parrilla",13,14.0904638047666,1.09046380476664
+2,2,"2024-2","jeddah","sargeant","Piloto + constructor + parrilla",14,15.4523558397595,1.4523558397595
+2,2,"2024-2","jeddah","tsunoda","Piloto + constructor + parrilla",15,11.1632095102979,3.83679048970206
+2,2,"2024-2","jeddah","ricciardo","Piloto + constructor + parrilla",16,12.3987257421805,3.60127425781951
+2,2,"2024-2","jeddah","bottas","Piloto + constructor + parrilla",17,14.7066928236838,2.2933071763162
+2,2,"2024-2","jeddah","zhou","Piloto + constructor + parrilla",18,16.1053305914543,1.89466940854568
+2,22,"2024-22","vegas","russell","Constructor",1,6.14831351363149,5.14831351363149
+2,22,"2024-22","vegas","hamilton","Constructor",2,6.14831351363149,4.14831351363149
+2,22,"2024-22","vegas","sainz","Constructor",3,5.012767787522,2.012767787522
+2,22,"2024-22","vegas","leclerc","Constructor",4,5.012767787522,1.012767787522
+2,22,"2024-22","vegas","max_verstappen","Constructor",5,6.50596299587503,1.50596299587503
+2,22,"2024-22","vegas","norris","Constructor",6,8.13304968826107,2.13304968826107
+2,22,"2024-22","vegas","piastri","Constructor",7,8.13304968826107,1.13304968826107
+2,22,"2024-22","vegas","hulkenberg","Constructor",8,11.4897827782577,3.48978277825773
+2,22,"2024-22","vegas","tsunoda","Constructor",9,11.5366736856083,2.53667368560835
+2,22,"2024-22","vegas","perez","Constructor",10,6.50596299587503,3.49403700412497
+2,22,"2024-22","vegas","alonso","Constructor",11,11.2221963939574,0.222196393957415
+2,22,"2024-22","vegas","kevin_magnussen","Constructor",12,11.4897827782577,0.51021722174227
+2,22,"2024-22","vegas","zhou","Constructor",13,13.7398213998522,0.739821399852222
+2,22,"2024-22","vegas","colapinto","Constructor",14,11.6827294549718,2.31727054502815
+2,22,"2024-22","vegas","stroll","Constructor",15,11.2221963939574,3.77780360604259
+2,22,"2024-22","vegas","lawson","Constructor",16,11.5366736856083,4.46332631439165
+2,22,"2024-22","vegas","ocon","Constructor",17,11.7401340590975,5.25986594090246
+2,22,"2024-22","vegas","bottas","Constructor",18,13.7398213998522,4.26017860014778
+2,22,"2024-22","vegas","russell","Parrilla",1,5.87905155287583,4.87905155287583
+2,22,"2024-22","vegas","hamilton","Parrilla",2,9.27642159127995,7.27642159127995
+2,22,"2024-22","vegas","sainz","Parrilla",3,6.21688910207468,3.21688910207468
+2,22,"2024-22","vegas","leclerc","Parrilla",4,6.92985695022177,2.92985695022177
+2,22,"2024-22","vegas","max_verstappen","Parrilla",5,7.30285605885789,2.30285605885789
+2,22,"2024-22","vegas","norris","Parrilla",6,7.6851626273259,1.6851626273259
+2,22,"2024-22","vegas","piastri","Parrilla",7,8.4717116322522,1.47171163225219
+2,22,"2024-22","vegas","hulkenberg","Parrilla",8,8.87267051869414,0.87267051869414
+2,22,"2024-22","vegas","tsunoda","Parrilla",9,8.0753115152365,0.924688484763504
+2,22,"2024-22","vegas","perez","Parrilla",10,11.2737667597746,1.27376675977463
+2,22,"2024-22","vegas","alonso","Parrilla",11,11.6567536763301,0.656753676330114
+2,22,"2024-22","vegas","kevin_magnussen","Parrilla",12,10.0850390179408,1.91496098205922
+2,22,"2024-22","vegas","zhou","Parrilla",13,10.4862679433817,2.51373205661827
+2,22,"2024-22","vegas","colapinto","Parrilla",14,13.084573353445,0.915426646554986
+2,22,"2024-22","vegas","stroll","Parrilla",15,12.3938879308637,2.60611206913633
+2,22,"2024-22","vegas","lawson","Parrilla",16,10.8830744241769,5.1169255758231
+2,22,"2024-22","vegas","ocon","Parrilla",17,9.68115324834297,7.31884675165703
+2,22,"2024-22","vegas","bottas","Parrilla",18,12.7455520969253,5.25444790307465
+2,22,"2024-22","vegas","russell","Constructor + parrilla",1,4.14554574510374,3.14554574510374
+2,22,"2024-22","vegas","hamilton","Constructor + parrilla",2,6.38877574887156,4.38877574887156
+2,22,"2024-22","vegas","sainz","Constructor + parrilla",3,3.5610349757508,0.561034975750799
+2,22,"2024-22","vegas","leclerc","Constructor + parrilla",4,3.96820701006714,0.0317929899328608
+2,22,"2024-22","vegas","max_verstappen","Constructor + parrilla",5,5.34236810442953,0.342368104429532
+2,22,"2024-22","vegas","norris","Constructor + parrilla",6,6.9136936725388,0.913693672538797
+2,22,"2024-22","vegas","piastri","Constructor + parrilla",7,7.49794649488283,0.497946494882833
+2,22,"2024-22","vegas","hulkenberg","Constructor + parrilla",8,10.6689830784618,2.66898307846184
+2,22,"2024-22","vegas","tsunoda","Constructor + parrilla",9,10.0831819299854,1.08318192998539
+2,22,"2024-22","vegas","perez","Constructor + parrilla",10,8.17578961012975,1.82421038987025
+2,22,"2024-22","vegas","alonso","Constructor + parrilla",11,12.5666253755426,1.5666253755426
+2,22,"2024-22","vegas","kevin_magnussen","Constructor + parrilla",12,11.6032148465482,0.396785153451823
+2,22,"2024-22","vegas","zhou","Constructor + parrilla",13,13.8630604065361,0.863060406536118
+2,22,"2024-22","vegas","colapinto","Constructor + parrilla",14,14.0223141594171,0.0223141594170748
+2,22,"2024-22","vegas","stroll","Constructor + parrilla",15,13.140814825188,1.85918517481197
+2,22,"2024-22","vegas","lawson","Constructor + parrilla",16,12.2507396607025,3.74926033929748
+2,22,"2024-22","vegas","ocon","Constructor + parrilla",17,11.5084184626148,5.49158153738518
+2,22,"2024-22","vegas","bottas","Constructor + parrilla",18,15.2992858932293,2.70071410677073
+2,22,"2024-22","vegas","russell","Piloto + constructor + parrilla",1,4.24011940025849,3.24011940025849
+2,22,"2024-22","vegas","hamilton","Piloto + constructor + parrilla",2,6.0833410985333,4.0833410985333
+2,22,"2024-22","vegas","sainz","Piloto + constructor + parrilla",3,3.41483803157244,0.41483803157244
+2,22,"2024-22","vegas","leclerc","Piloto + constructor + parrilla",4,4.12334794182121,0.123347941821215
+2,22,"2024-22","vegas","max_verstappen","Piloto + constructor + parrilla",5,4.00788161959629,0.99211838040371
+2,22,"2024-22","vegas","norris","Piloto + constructor + parrilla",6,6.84281289582846,0.842812895828455
+2,22,"2024-22","vegas","piastri","Piloto + constructor + parrilla",7,6.84957387415501,0.150426125844986
+2,22,"2024-22","vegas","hulkenberg","Piloto + constructor + parrilla",8,10.5753218016673,2.57532180166732
+2,22,"2024-22","vegas","tsunoda","Piloto + constructor + parrilla",9,10.803630710234,1.80363071023397
+2,22,"2024-22","vegas","perez","Piloto + constructor + parrilla",10,9.19728763562479,0.80271236437521
+2,22,"2024-22","vegas","alonso","Piloto + constructor + parrilla",11,12.3482227188923,1.34822271889225
+2,22,"2024-22","vegas","kevin_magnussen","Piloto + constructor + parrilla",12,11.6411176910593,0.358882308940675
+2,22,"2024-22","vegas","zhou","Piloto + constructor + parrilla",13,14.1796002057844,1.17960020578444
+2,22,"2024-22","vegas","colapinto","Piloto + constructor + parrilla",14,13.4411404091694,0.558859590830561
+2,22,"2024-22","vegas","stroll","Piloto + constructor + parrilla",15,13.5912576820984,1.40874231790161
+2,22,"2024-22","vegas","lawson","Piloto + constructor + parrilla",16,12.4635615199952,3.53643848000483
+2,22,"2024-22","vegas","ocon","Piloto + constructor + parrilla",17,11.9788262847001,5.02117371529987
+2,22,"2024-22","vegas","bottas","Piloto + constructor + parrilla",18,15.2181184790096,2.78188152099043
+2,6,"2024-6","miami","norris","Constructor",1,8.41574395718199,7.41574395718199
+2,6,"2024-6","miami","max_verstappen","Constructor",2,6.70720280262286,4.70720280262286
+2,6,"2024-6","miami","leclerc","Constructor",3,5.15044505541066,2.15044505541066
+2,6,"2024-6","miami","perez","Constructor",4,6.70720280262286,2.70720280262286
+2,6,"2024-6","miami","sainz","Constructor",5,5.15044505541066,0.150445055410665
+2,6,"2024-6","miami","hamilton","Constructor",6,6.33336899158242,0.333368991582424
+2,6,"2024-6","miami","tsunoda","Constructor",7,12.023261386271,5.02326138627096
+2,6,"2024-6","miami","russell","Constructor",8,6.33336899158242,1.66663100841758
+2,6,"2024-6","miami","alonso","Constructor",9,11.6881065659475,2.68810656594753
+2,6,"2024-6","miami","ocon","Constructor",10,12.2401340590975,2.24013405909754
+2,6,"2024-6","miami","hulkenberg","Constructor",11,11.9729742936387,0.972974293638677
+2,6,"2024-6","miami","gasly","Constructor",12,12.2401340590975,0.24013405909754
+2,6,"2024-6","miami","piastri","Constructor",13,8.41574395718199,4.58425604281801
+2,6,"2024-6","miami","zhou","Constructor",14,14.3793355913395,0.379335591339453
+2,6,"2024-6","miami","ricciardo","Constructor",15,12.023261386271,2.97673861372904
+2,6,"2024-6","miami","bottas","Constructor",16,14.3793355913395,1.62066440866055
+2,6,"2024-6","miami","stroll","Constructor",17,11.6881065659475,5.31189343405247
+2,6,"2024-6","miami","albon","Constructor",18,12.1788545938158,5.82114540618419
+2,6,"2024-6","miami","kevin_magnussen","Constructor",19,11.9729742936387,7.02702570636132
+2,6,"2024-6","miami","norris","Parrilla",1,6.980572328584,5.980572328584
+2,6,"2024-6","miami","max_verstappen","Parrilla",2,4.95138815841713,2.95138815841713
+2,6,"2024-6","miami","leclerc","Parrilla",3,5.41920900855164,2.41920900855164
+2,6,"2024-6","miami","perez","Parrilla",4,6.43623620068054,2.43623620068054
+2,6,"2024-6","miami","sainz","Parrilla",5,5.91488205474454,0.914882054744542
+2,6,"2024-6","miami","hamilton","Parrilla",6,8.71801155644293,2.71801155644293
+2,6,"2024-6","miami","tsunoda","Parrilla",7,9.92463293612257,2.92463293612257
+2,6,"2024-6","miami","russell","Parrilla",8,8.12515695022305,0.125156950223051
+2,6,"2024-6","miami","alonso","Parrilla",9,12.8689552708539,3.8689552708539
+2,6,"2024-6","miami","ocon","Parrilla",10,11.7238387733181,1.72383877331811
+2,6,"2024-6","miami","hulkenberg","Parrilla",11,9.31923248747815,1.68076751252185
+2,6,"2024-6","miami","gasly","Parrilla",12,11.1310795308084,0.868920469191613
+2,6,"2024-6","miami","piastri","Parrilla",13,7.54472826409644,5.45527173590356
+2,6,"2024-6","miami","zhou","Parrilla",14,14.9072875698448,0.907287569844751
+2,6,"2024-6","miami","ricciardo","Parrilla",15,15.3503648530278,0.350364853027823
+2,6,"2024-6","miami","bottas","Parrilla",16,13.4143070122742,2.58569298772585
+2,6,"2024-6","miami","stroll","Parrilla",17,10.5299812418429,6.47001875815708
+2,6,"2024-6","miami","albon","Parrilla",18,12.3043505169612,5.69564948303877
+2,6,"2024-6","miami","kevin_magnussen","Parrilla",19,14.4357852857277,4.56421471427226
+2,6,"2024-6","miami","norris","Constructor + parrilla",1,6.60426572794791,5.60426572794791
+2,6,"2024-6","miami","max_verstappen","Constructor + parrilla",2,4.04589967534005,2.04589967534005
+2,6,"2024-6","miami","leclerc","Constructor + parrilla",3,3.40276741338532,0.402767413385319
+2,6,"2024-6","miami","perez","Constructor + parrilla",4,5.07212306144224,1.07212306144224
+2,6,"2024-6","miami","sainz","Constructor + parrilla",5,3.69824807418541,1.30175192581459
+2,6,"2024-6","miami","hamilton","Constructor + parrilla",6,6.30650267806637,0.306502678066375
+2,6,"2024-6","miami","tsunoda","Constructor + parrilla",7,11.3312466100754,4.33124661007541
+2,6,"2024-6","miami","russell","Constructor + parrilla",8,5.91579810673295,2.08420189326705
+2,6,"2024-6","miami","alonso","Constructor + parrilla",9,13.2948288054475,4.29482880544751
+2,6,"2024-6","miami","ocon","Constructor + parrilla",10,12.8347945096211,2.8347945096211
+2,6,"2024-6","miami","hulkenberg","Constructor + parrilla",11,10.8426717683396,0.157328231660379
+2,6,"2024-6","miami","gasly","Constructor + parrilla",12,12.3915261245721,0.391526124572094
+2,6,"2024-6","miami","piastri","Constructor + parrilla",13,7.00872525295069,5.99127474704931
+2,6,"2024-6","miami","zhou","Constructor + parrilla",14,16.6152935942628,2.61529359426282
+2,6,"2024-6","miami","ricciardo","Constructor + parrilla",15,15.5230358428624,0.523035842862427
+2,6,"2024-6","miami","bottas","Constructor + parrilla",16,15.6305939506596,0.369406049340419
+2,6,"2024-6","miami","stroll","Constructor + parrilla",17,11.5205907025255,5.47940929747448
+2,6,"2024-6","miami","albon","Constructor + parrilla",18,13.2240536533409,4.77594634665907
+2,6,"2024-6","miami","kevin_magnussen","Constructor + parrilla",19,14.737034448242,4.26296555175795
+2,6,"2024-6","miami","norris","Piloto + constructor + parrilla",1,6.57260689436623,5.57260689436623
+2,6,"2024-6","miami","max_verstappen","Piloto + constructor + parrilla",2,3.02348291143179,1.02348291143179
+2,6,"2024-6","miami","leclerc","Piloto + constructor + parrilla",3,3.55704783198979,0.557047831989793
+2,6,"2024-6","miami","perez","Piloto + constructor + parrilla",4,6.01299320614574,2.01299320614574
+2,6,"2024-6","miami","sainz","Piloto + constructor + parrilla",5,3.54980426042879,1.45019573957121
+2,6,"2024-6","miami","hamilton","Piloto + constructor + parrilla",6,6.04441406564129,0.0444140656412877
+2,6,"2024-6","miami","tsunoda","Piloto + constructor + parrilla",7,11.9918740336917,4.99187403369173
+2,6,"2024-6","miami","russell","Piloto + constructor + parrilla",8,5.95320839182889,2.04679160817111
+2,6,"2024-6","miami","alonso","Piloto + constructor + parrilla",9,13.1027288722985,4.10272887229847
+2,6,"2024-6","miami","ocon","Piloto + constructor + parrilla",10,13.2701850944171,3.27018509441715
+2,6,"2024-6","miami","hulkenberg","Piloto + constructor + parrilla",11,10.7833415242817,0.216658475718255
+2,6,"2024-6","miami","gasly","Piloto + constructor + parrilla",12,12.0308006763907,0.0308006763906814
+2,6,"2024-6","miami","piastri","Piloto + constructor + parrilla",13,6.46997544014704,6.53002455985296
+2,6,"2024-6","miami","zhou","Piloto + constructor + parrilla",14,16.8472465874322,2.84724658743224
+2,6,"2024-6","miami","ricciardo","Piloto + constructor + parrilla",15,15.39985164917,0.399851649169971
+2,6,"2024-6","miami","bottas","Piloto + constructor + parrilla",16,15.5743957850958,0.425604214904155
+2,6,"2024-6","miami","stroll","Piloto + constructor + parrilla",17,12.0370890206187,4.96291097938132
+2,6,"2024-6","miami","albon","Piloto + constructor + parrilla",18,13.0227101342825,4.97728986571755
+2,6,"2024-6","miami","kevin_magnussen","Piloto + constructor + parrilla",19,14.7562436203415,4.24375637965853
+3,11,"2024-11","red_bull_ring","russell","Constructor",1,5.87151936954859,4.87151936954859
+3,11,"2024-11","red_bull_ring","piastri","Constructor",2,7.19149141608454,5.19149141608454
+3,11,"2024-11","red_bull_ring","sainz","Constructor",3,5.34741048358367,2.34741048358367
+3,11,"2024-11","red_bull_ring","hamilton","Constructor",4,5.87151936954859,1.87151936954859
+3,11,"2024-11","red_bull_ring","max_verstappen","Constructor",5,6.72297928093357,1.72297928093357
+3,11,"2024-11","red_bull_ring","hulkenberg","Constructor",6,13.3197623596569,7.31976235965687
+3,11,"2024-11","red_bull_ring","perez","Constructor",7,6.72297928093357,0.277020719066427
+3,11,"2024-11","red_bull_ring","kevin_magnussen","Constructor",8,13.3197623596569,5.31976235965687
+3,11,"2024-11","red_bull_ring","ricciardo","Constructor",9,13.7492591121088,4.74925911210882
+3,11,"2024-11","red_bull_ring","gasly","Constructor",10,12.6973828022371,2.69738280223707
+3,11,"2024-11","red_bull_ring","leclerc","Constructor",11,5.34741048358367,5.65258951641633
+3,11,"2024-11","red_bull_ring","ocon","Constructor",12,12.6973828022371,0.697382802237074
+3,11,"2024-11","red_bull_ring","stroll","Constructor",13,11.9023941222351,1.09760587776489
+3,11,"2024-11","red_bull_ring","tsunoda","Constructor",14,13.7492591121088,0.250740887891176
+3,11,"2024-11","red_bull_ring","albon","Constructor",15,13.2071951016921,1.7928048983079
+3,11,"2024-11","red_bull_ring","bottas","Constructor",16,14.9906059519197,1.00939404808035
+3,11,"2024-11","red_bull_ring","zhou","Constructor",17,14.9906059519197,2.00939404808035
+3,11,"2024-11","red_bull_ring","alonso","Constructor",18,11.9023941222351,6.09760587776489
+3,11,"2024-11","red_bull_ring","sargeant","Constructor",19,13.2071951016921,5.7928048983079
+3,11,"2024-11","red_bull_ring","norris","Constructor",20,7.19149141608454,12.8085085839155
+3,11,"2024-11","red_bull_ring","russell","Parrilla",1,5.77953296386336,4.77953296386336
+3,11,"2024-11","red_bull_ring","piastri","Parrilla",2,8.17778006080412,6.17778006080412
+3,11,"2024-11","red_bull_ring","sainz","Parrilla",3,6.3402765450496,3.3402765450496
+3,11,"2024-11","red_bull_ring","hamilton","Parrilla",4,6.9292604151305,2.92926041513049
+3,11,"2024-11","red_bull_ring","max_verstappen","Parrilla",5,4.75359798646846,0.246402013531542
+3,11,"2024-11","red_bull_ring","hulkenberg","Parrilla",6,9.49259917141126,3.49259917141126
+3,11,"2024-11","red_bull_ring","perez","Parrilla",7,8.8291462784882,1.8291462784882
+3,11,"2024-11","red_bull_ring","kevin_magnussen","Parrilla",8,11.5074008285887,3.50740082858874
+3,11,"2024-11","red_bull_ring","ricciardo","Parrilla",9,10.8366188468495,1.83661884684947
+3,11,"2024-11","red_bull_ring","gasly","Parrilla",10,12.1708537215118,2.1708537215118
+3,11,"2024-11","red_bull_ring","leclerc","Parrilla",11,7.54306015263584,3.45693984736416
+3,11,"2024-11","red_bull_ring","ocon","Parrilla",12,10.1633811531505,1.83661884684947
+3,11,"2024-11","red_bull_ring","stroll","Parrilla",13,14.6597234549504,1.6597234549504
+3,11,"2024-11","red_bull_ring","tsunoda","Parrilla",14,12.8222199391959,1.17778006080412
+3,11,"2024-11","red_bull_ring","albon","Parrilla",15,14.0707395848695,0.929260415130495
+3,11,"2024-11","red_bull_ring","bottas","Parrilla",16,15.2204670361366,0.779532963863357
+3,11,"2024-11","red_bull_ring","zhou","Parrilla",17,16.2464020135315,0.753597986468456
+3,11,"2024-11","red_bull_ring","alonso","Parrilla",18,13.4569398473642,4.54306015263584
+3,11,"2024-11","red_bull_ring","sargeant","Parrilla",19,15.7501045266275,3.24989547337251
+3,11,"2024-11","red_bull_ring","norris","Parrilla",20,5.24989547337251,14.7501045266275
+3,11,"2024-11","red_bull_ring","russell","Constructor + parrilla",1,4.17050114890825,3.17050114890825
+3,11,"2024-11","red_bull_ring","piastri","Constructor + parrilla",2,6.59302503667791,4.59302503667791
+3,11,"2024-11","red_bull_ring","sainz","Constructor + parrilla",3,4.1657446213466,1.1657446213466
+3,11,"2024-11","red_bull_ring","hamilton","Constructor + parrilla",4,4.89873239196816,0.898732391968156
+3,11,"2024-11","red_bull_ring","max_verstappen","Constructor + parrilla",5,4.01159151786721,0.98840848213279
+3,11,"2024-11","red_bull_ring","hulkenberg","Constructor + parrilla",6,11.6008227268369,5.60082272683688
+3,11,"2024-11","red_bull_ring","perez","Constructor + parrilla",7,6.67769290888307,0.322307091116934
+3,11,"2024-11","red_bull_ring","kevin_magnussen","Constructor + parrilla",8,13.0458949309894,5.04589493098942
+3,11,"2024-11","red_bull_ring","ricciardo","Constructor + parrilla",9,12.8918355688118,3.89183556881176
+3,11,"2024-11","red_bull_ring","gasly","Constructor + parrilla",10,13.0551864494022,3.05518644940224
+3,11,"2024-11","red_bull_ring","leclerc","Constructor + parrilla",11,4.89426107703074,6.10573892296926
+3,11,"2024-11","red_bull_ring","ocon","Constructor + parrilla",12,11.6094349859114,0.390565014088613
+3,11,"2024-11","red_bull_ring","stroll","Constructor + parrilla",13,14.3743832433708,1.37438324337083
+3,11,"2024-11","red_bull_ring","tsunoda","Constructor + parrilla",14,14.3381713261384,0.338171326138433
+3,11,"2024-11","red_bull_ring","albon","Constructor + parrilla",15,14.8509045209784,0.149095479021607
+3,11,"2024-11","red_bull_ring","bottas","Constructor + parrilla",16,16.9443236035224,0.94432360352242
+3,11,"2024-11","red_bull_ring","zhou","Constructor + parrilla",17,17.6434062724054,0.643406272405425
+3,11,"2024-11","red_bull_ring","alonso","Constructor + parrilla",18,13.4146662620664,4.5853337379336
+3,11,"2024-11","red_bull_ring","sargeant","Constructor + parrilla",19,16.1735401036108,2.8264598963892
+3,11,"2024-11","red_bull_ring","norris","Constructor + parrilla",20,4.64588130327367,15.3541186967263
+3,11,"2024-11","red_bull_ring","russell","Piloto + constructor + parrilla",1,4.43416778828112,3.43416778828112
+3,11,"2024-11","red_bull_ring","piastri","Piloto + constructor + parrilla",2,7.07372275026701,5.07372275026701
+3,11,"2024-11","red_bull_ring","sainz","Piloto + constructor + parrilla",3,4.23485225851256,1.23485225851256
+3,11,"2024-11","red_bull_ring","hamilton","Piloto + constructor + parrilla",4,4.64064340429642,0.640643404296425
+3,11,"2024-11","red_bull_ring","max_verstappen","Piloto + constructor + parrilla",5,2.96813336065005,2.03186663934995
+3,11,"2024-11","red_bull_ring","hulkenberg","Piloto + constructor + parrilla",6,11.5208157890733,5.5208157890733
+3,11,"2024-11","red_bull_ring","perez","Piloto + constructor + parrilla",7,7.71333224744341,0.713332247443408
+3,11,"2024-11","red_bull_ring","kevin_magnussen","Piloto + constructor + parrilla",8,13.1700660727222,5.17006607272218
+3,11,"2024-11","red_bull_ring","ricciardo","Piloto + constructor + parrilla",9,12.7129334178335,3.71293341783351
+3,11,"2024-11","red_bull_ring","gasly","Piloto + constructor + parrilla",10,12.8267129862791,2.82671298627907
+3,11,"2024-11","red_bull_ring","leclerc","Piloto + constructor + parrilla",11,4.89080458520872,6.10919541479128
+3,11,"2024-11","red_bull_ring","ocon","Piloto + constructor + parrilla",12,11.4288939832913,0.57110601670866
+3,11,"2024-11","red_bull_ring","stroll","Piloto + constructor + parrilla",13,15.1551936285171,2.15519362851711
+3,11,"2024-11","red_bull_ring","tsunoda","Piloto + constructor + parrilla",14,14.7533177222156,0.75331772221562
+3,11,"2024-11","red_bull_ring","albon","Piloto + constructor + parrilla",15,14.4023502193367,0.597649780663286
+3,11,"2024-11","red_bull_ring","bottas","Piloto + constructor + parrilla",16,16.8360616922047,0.836061692204687
+3,11,"2024-11","red_bull_ring","zhou","Piloto + constructor + parrilla",17,17.5397608064976,0.539760806497572
+3,11,"2024-11","red_bull_ring","alonso","Piloto + constructor + parrilla",18,12.4732145327752,5.52678546722478
+3,11,"2024-11","red_bull_ring","sargeant","Piloto + constructor + parrilla",19,17.4106572281592,1.58934277184077
+3,11,"2024-11","red_bull_ring","norris","Piloto + constructor + parrilla",20,3.81436552643513,16.1856344735649
+3,15,"2024-15","zandvoort","norris","Constructor",1,7.19149141608454,6.19149141608454
+3,15,"2024-15","zandvoort","max_verstappen","Constructor",2,6.72297928093357,4.72297928093357
+3,15,"2024-15","zandvoort","leclerc","Constructor",3,5.34741048358367,2.34741048358367
+3,15,"2024-15","zandvoort","piastri","Constructor",4,7.19149141608454,3.19149141608454
+3,15,"2024-15","zandvoort","sainz","Constructor",5,5.34741048358367,0.347410483583672
+3,15,"2024-15","zandvoort","perez","Constructor",6,6.72297928093357,0.722979280933573
+3,15,"2024-15","zandvoort","russell","Constructor",7,5.87151936954859,1.12848063045141
+3,15,"2024-15","zandvoort","hamilton","Constructor",8,5.87151936954859,2.12848063045141
+3,15,"2024-15","zandvoort","gasly","Constructor",9,12.6973828022371,3.69738280223707
+3,15,"2024-15","zandvoort","alonso","Constructor",10,11.9023941222351,1.90239412223511
+3,15,"2024-15","zandvoort","hulkenberg","Constructor",11,13.3197623596569,2.31976235965687
+3,15,"2024-15","zandvoort","ricciardo","Constructor",12,13.7492591121088,1.74925911210882
+3,15,"2024-15","zandvoort","stroll","Constructor",13,11.9023941222351,1.09760587776489
+3,15,"2024-15","zandvoort","albon","Constructor",14,13.2071951016921,0.792804898307901
+3,15,"2024-15","zandvoort","ocon","Constructor",15,12.6973828022371,2.30261719776293
+3,15,"2024-15","zandvoort","sargeant","Constructor",16,13.2071951016921,2.7928048983079
+3,15,"2024-15","zandvoort","tsunoda","Constructor",17,13.7492591121088,3.25074088789118
+3,15,"2024-15","zandvoort","kevin_magnussen","Constructor",18,13.3197623596569,4.68023764034313
+3,15,"2024-15","zandvoort","bottas","Constructor",19,14.9906059519197,4.00939404808035
+3,15,"2024-15","zandvoort","zhou","Constructor",20,14.9906059519197,5.00939404808035
+3,15,"2024-15","zandvoort","norris","Parrilla",1,6.87576139591976,5.87576139591976
+3,15,"2024-15","zandvoort","max_verstappen","Parrilla",2,7.22392284303793,5.22392284303793
+3,15,"2024-15","zandvoort","leclerc","Parrilla",3,8.71212072356805,5.71212072356805
+3,15,"2024-15","zandvoort","piastri","Parrilla",4,7.58258590888218,3.58258590888218
+3,15,"2024-15","zandvoort","sainz","Parrilla",5,10.298946107656,5.29894610765595
+3,15,"2024-15","zandvoort","perez","Parrilla",6,8.32774894623315,2.32774894623315
+3,15,"2024-15","zandvoort","russell","Parrilla",7,7.95086404300335,0.950864043003346
+3,15,"2024-15","zandvoort","hamilton","Parrilla",8,11.8972393619416,3.89723936194162
+3,15,"2024-15","zandvoort","gasly","Parrilla",9,9.89756742706354,0.897567427063535
+3,15,"2024-15","zandvoort","alonso","Parrilla",10,9.10276063805838,0.897239361941621
+3,15,"2024-15","zandvoort","hulkenberg","Parrilla",11,11.1024325729365,0.102432572936465
+3,15,"2024-15","zandvoort","ricciardo","Parrilla",12,11.5016339074154,0.498366092584579
+3,15,"2024-15","zandvoort","stroll","Parrilla",13,9.49836609258458,3.50163390741542
+3,15,"2024-15","zandvoort","albon","Parrilla",14,13.7760771569621,0.223922843037935
+3,15,"2024-15","zandvoort","ocon","Parrilla",15,12.287879276432,2.71212072356804
+3,15,"2024-15","zandvoort","sargeant","Parrilla",16,13.4174140911178,2.58258590888218
+3,15,"2024-15","zandvoort","tsunoda","Parrilla",17,10.701053892344,6.29894610765595
+3,15,"2024-15","zandvoort","kevin_magnussen","Parrilla",18,14.1242386040802,3.87576139591976
+3,15,"2024-15","zandvoort","bottas","Parrilla",19,12.6722510537668,6.32774894623315
+3,15,"2024-15","zandvoort","zhou","Parrilla",20,13.0491359569967,6.95086404300335
+3,15,"2024-15","zandvoort","norris","Constructor + parrilla",1,5.21517653937256,4.21517653937256
+3,15,"2024-15","zandvoort","max_verstappen","Constructor + parrilla",2,5.08427084650782,3.08427084650782
+3,15,"2024-15","zandvoort","leclerc","Constructor + parrilla",3,4.87439917628249,1.87439917628249
+3,15,"2024-15","zandvoort","piastri","Constructor + parrilla",4,5.68883946978221,1.68883946978221
+3,15,"2024-15","zandvoort","sainz","Constructor + parrilla",5,5.82278546053434,0.822785460534338
+3,15,"2024-15","zandvoort","perez","Constructor + parrilla",6,5.7963589915953,0.2036410084047
+3,15,"2024-15","zandvoort","russell","Constructor + parrilla",7,4.85862667371889,2.14137332628111
+3,15,"2024-15","zandvoort","hamilton","Constructor + parrilla",8,7.35438304303192,0.645616956968077
+3,15,"2024-15","zandvoort","gasly","Constructor + parrilla",9,11.9061961828226,2.90619618282264
+3,15,"2024-15","zandvoort","alonso","Constructor + parrilla",10,10.6397597201369,0.639759720136855
+3,15,"2024-15","zandvoort","hulkenberg","Constructor + parrilla",11,13.3203658623658,2.32036586236585
+3,15,"2024-15","zandvoort","ricciardo","Constructor + parrilla",12,13.9887633465698,1.98876334656977
+3,15,"2024-15","zandvoort","stroll","Constructor + parrilla",13,10.9321315793931,2.06786842060688
+3,15,"2024-15","zandvoort","albon","Constructor + parrilla",14,15.1523108444349,1.15231084443495
+3,15,"2024-15","zandvoort","ocon","Constructor + parrilla",15,13.6458408840142,1.35415911598579
+3,15,"2024-15","zandvoort","sargeant","Constructor + parrilla",16,14.8901364553503,1.10986354464966
+3,15,"2024-15","zandvoort","tsunoda","Constructor + parrilla",17,13.4215596613683,3.5784403386317
+3,15,"2024-15","zandvoort","kevin_magnussen","Constructor + parrilla",18,15.4917453922737,2.50825460772625
+3,15,"2024-15","zandvoort","bottas","Constructor + parrilla",19,15.8378379525474,3.16216204745261
+3,15,"2024-15","zandvoort","zhou","Constructor + parrilla",20,16.0785119178973,3.9214880821027
+3,15,"2024-15","zandvoort","norris","Piloto + constructor + parrilla",1,4.07083487511103,3.07083487511103
+3,15,"2024-15","zandvoort","max_verstappen","Piloto + constructor + parrilla",2,3.58126688232137,1.58126688232137
+3,15,"2024-15","zandvoort","leclerc","Piloto + constructor + parrilla",3,4.78554317817586,1.78554317817586
+3,15,"2024-15","zandvoort","piastri","Piloto + constructor + parrilla",4,6.2968432942092,2.29684329420921
+3,15,"2024-15","zandvoort","sainz","Piloto + constructor + parrilla",5,5.69508038342942,0.695080383429423
+3,15,"2024-15","zandvoort","perez","Piloto + constructor + parrilla",6,7.10995768600287,1.10995768600287
+3,15,"2024-15","zandvoort","russell","Piloto + constructor + parrilla",7,5.03974951294517,1.96025048705483
+3,15,"2024-15","zandvoort","hamilton","Piloto + constructor + parrilla",8,6.7384355227513,1.2615644772487
+3,15,"2024-15","zandvoort","gasly","Piloto + constructor + parrilla",9,11.76277852647,2.76277852646999
+3,15,"2024-15","zandvoort","alonso","Piloto + constructor + parrilla",10,9.76131289287976,0.23868710712024
+3,15,"2024-15","zandvoort","hulkenberg","Piloto + constructor + parrilla",11,13.2132271275112,2.21322712751116
+3,15,"2024-15","zandvoort","ricciardo","Piloto + constructor + parrilla",12,13.7959503296239,1.79595032962387
+3,15,"2024-15","zandvoort","stroll","Piloto + constructor + parrilla",13,12.0696975328941,0.93030246710587
+3,15,"2024-15","zandvoort","albon","Piloto + constructor + parrilla",14,14.6969987907539,0.696998790753909
+3,15,"2024-15","zandvoort","ocon","Piloto + constructor + parrilla",15,13.4049717939053,1.59502820609471
+3,15,"2024-15","zandvoort","sargeant","Piloto + constructor + parrilla",16,16.5366722018783,0.536672201878261
+3,15,"2024-15","zandvoort","tsunoda","Piloto + constructor + parrilla",17,13.9967670633796,3.00323293662035
+3,15,"2024-15","zandvoort","kevin_magnussen","Piloto + constructor + parrilla",18,15.5861435611611,2.4138564388389
+3,15,"2024-15","zandvoort","bottas","Piloto + constructor + parrilla",19,15.8014834801883,3.19851651981168
+3,15,"2024-15","zandvoort","zhou","Piloto + constructor + parrilla",20,16.0562853644083,3.94371463559166
+3,19,"2024-19","americas","leclerc","Constructor",1,4.88721969082467,3.88721969082467
+3,19,"2024-19","americas","sainz","Constructor",2,4.88721969082467,2.88721969082467
+3,19,"2024-19","americas","max_verstappen","Constructor",3,6.16203107690282,3.16203107690282
+3,19,"2024-19","americas","norris","Constructor",4,6.60087025075119,2.60087025075119
+3,19,"2024-19","americas","piastri","Constructor",5,6.60087025075119,1.60087025075119
+3,19,"2024-19","americas","russell","Constructor",6,5.37151936954859,0.628480630451411
+3,19,"2024-19","americas","perez","Constructor",7,6.16203107690282,0.837968923097177
+3,19,"2024-19","americas","hulkenberg","Constructor",8,12.4508563742131,4.45085637421307
+3,19,"2024-19","americas","lawson","Constructor",9,12.8686023267832,3.86860232678316
+3,19,"2024-19","americas","colapinto","Constructor",10,12.3411688386259,2.34116883862588
+3,19,"2024-19","americas","kevin_magnussen","Constructor",11,12.4508563742131,1.45085637421307
+3,19,"2024-19","americas","gasly","Constructor",12,11.8468637509509,0.153136249049133
+3,19,"2024-19","americas","alonso","Constructor",13,11.0790048086303,1.92099519136973
+3,19,"2024-19","americas","tsunoda","Constructor",14,12.8686023267832,1.13139767321684
+3,19,"2024-19","americas","stroll","Constructor",15,11.0790048086303,3.92099519136973
+3,19,"2024-19","americas","albon","Constructor",16,12.3411688386259,3.65883116137412
+3,19,"2024-19","americas","bottas","Constructor",17,14.0776231975438,2.92237680245622
+3,19,"2024-19","americas","ocon","Constructor",18,11.8468637509509,6.15313624904913
+3,19,"2024-19","americas","zhou","Constructor",19,14.0776231975438,4.92237680245622
+3,19,"2024-19","americas","leclerc","Parrilla",1,6.77803715473812,5.77803715473812
+3,19,"2024-19","americas","sainz","Parrilla",2,6.29895797069856,4.29895797069856
+3,19,"2024-19","americas","max_verstappen","Parrilla",3,5.83951149283968,2.83951149283968
+3,19,"2024-19","americas","norris","Parrilla",4,5.40144334141494,1.40144334141494
+3,19,"2024-19","americas","piastri","Parrilla",5,7.27465358631645,2.27465358631645
+3,19,"2024-19","americas","russell","Parrilla",6,14.8878371346331,8.88783713463312
+3,19,"2024-19","americas","perez","Parrilla",7,9.3845497721142,2.3845497721142
+3,19,"2024-19","americas","hulkenberg","Parrilla",8,10.4717403793159,2.47174037931594
+3,19,"2024-19","americas","lawson","Parrilla",9,14.4684171777629,5.46841717776286
+3,19,"2024-19","americas","colapinto","Parrilla",10,12.5847771820424,2.58477718204235
+3,19,"2024-19","americas","kevin_magnussen","Parrilla",11,8.84432599391588,2.15567400608412
+3,19,"2024-19","americas","gasly","Parrilla",12,7.78639719492561,4.21360280507439
+3,19,"2024-19","americas","alonso","Parrilla",13,8.31058772067081,4.68941227932919
+3,19,"2024-19","americas","tsunoda","Parrilla",14,9.92809208356727,4.07190791643273
+3,19,"2024-19","americas","stroll","Parrilla",15,11.5466269031806,3.45337309681944
+3,19,"2024-19","americas","albon","Parrilla",16,12.0717306931365,3.9282693068635
+3,19,"2024-19","americas","bottas","Parrilla",17,13.0831595006577,3.91684049934231
+3,19,"2024-19","americas","ocon","Parrilla",18,11.0122951452912,6.98770485470882
+3,19,"2024-19","americas","zhou","Parrilla",19,14.0268595727783,4.97314042722172
+3,19,"2024-19","americas","leclerc","Constructor + parrilla",1,3.77231910937084,2.77231910937084
+3,19,"2024-19","americas","sainz","Constructor + parrilla",2,3.51473858586462,1.51473858586462
+3,19,"2024-19","americas","max_verstappen","Constructor + parrilla",3,4.09497498964026,1.09497498964026
+3,19,"2024-19","americas","norris","Constructor + parrilla",4,4.10308981098295,0.103089810982948
+3,19,"2024-19","americas","piastri","Constructor + parrilla",5,5.30026360930859,0.300263609308591
+3,19,"2024-19","americas","russell","Constructor + parrilla",6,9.75164850308526,3.75164850308526
+3,19,"2024-19","americas","perez","Constructor + parrilla",7,6.29139610359028,0.708603896409722
+3,19,"2024-19","americas","hulkenberg","Constructor + parrilla",8,12.2754789013057,4.27547890130571
+3,19,"2024-19","americas","lawson","Constructor + parrilla",9,15.620279775234,6.62027977523398
+3,19,"2024-19","americas","colapinto","Constructor + parrilla",10,13.7922822785789,3.79228227857885
+3,19,"2024-19","americas","kevin_magnussen","Constructor + parrilla",11,11.0129855122766,0.0129855122766003
+3,19,"2024-19","americas","gasly","Constructor + parrilla",12,9.66274024321687,2.33725975678313
+3,19,"2024-19","americas","alonso","Constructor + parrilla",13,9.43916401931893,3.56083598068107
+3,19,"2024-19","americas","tsunoda","Constructor + parrilla",14,12.2148831158067,1.78511688419333
+3,19,"2024-19","americas","stroll","Constructor + parrilla",15,11.9510999354046,3.04890006459541
+3,19,"2024-19","americas","albon","Constructor + parrilla",16,13.3972103727758,2.60278962722425
+3,19,"2024-19","americas","bottas","Constructor + parrilla",17,15.5006210498887,1.49937895011132
+3,19,"2024-19","americas","ocon","Constructor + parrilla",18,12.1794752679522,5.82052473204779
+3,19,"2024-19","americas","zhou","Constructor + parrilla",19,16.1253488163983,2.87465118360166
+3,19,"2024-19","americas","leclerc","Piloto + constructor + parrilla",1,3.7784544528474,2.7784544528474
+3,19,"2024-19","americas","sainz","Piloto + constructor + parrilla",2,3.55970532274473,1.55970532274473
+3,19,"2024-19","americas","max_verstappen","Piloto + constructor + parrilla",3,2.99454321445355,0.00545678554644846
+3,19,"2024-19","americas","norris","Piloto + constructor + parrilla",4,3.30019025124086,0.699809748759142
+3,19,"2024-19","americas","piastri","Piloto + constructor + parrilla",5,5.80666726788261,0.806667267882606
+3,19,"2024-19","americas","russell","Piloto + constructor + parrilla",6,9.61855685837197,3.61855685837197
+3,19,"2024-19","americas","perez","Piloto + constructor + parrilla",7,7.41319280907142,0.413192809071418
+3,19,"2024-19","americas","hulkenberg","Piloto + constructor + parrilla",8,12.2512172181066,4.25121721810661
+3,19,"2024-19","americas","lawson","Piloto + constructor + parrilla",9,15.8413546545208,6.84135465452077
+3,19,"2024-19","americas","colapinto","Piloto + constructor + parrilla",10,13.0711316578144,3.07113165781437
+3,19,"2024-19","americas","kevin_magnussen","Piloto + constructor + parrilla",11,11.3141483989403,0.314148398940253
+3,19,"2024-19","americas","gasly","Piloto + constructor + parrilla",12,9.61281367193208,2.38718632806792
+3,19,"2024-19","americas","alonso","Piloto + constructor + parrilla",13,8.65425084498187,4.34574915501813
+3,19,"2024-19","americas","tsunoda","Piloto + constructor + parrilla",14,12.8732960292001,1.12670397079994
+3,19,"2024-19","americas","stroll","Piloto + constructor + parrilla",15,13.0236699795028,1.97633002049715
+3,19,"2024-19","americas","albon","Piloto + constructor + parrilla",16,13.0786026525459,2.92139734745415
+3,19,"2024-19","americas","bottas","Piloto + constructor + parrilla",17,15.5708711622996,1.42912883770041
+3,19,"2024-19","americas","ocon","Piloto + constructor + parrilla",18,12.0412356033636,5.95876439663636
+3,19,"2024-19","americas","zhou","Piloto + constructor + parrilla",19,16.1960979501795,2.80390204982048
+3,23,"2024-23","losail","max_verstappen","Constructor",1,5.49793013006916,4.49793013006916
+3,23,"2024-23","losail","leclerc","Constructor",2,4.43336349864131,2.43336349864131
+3,23,"2024-23","losail","piastri","Constructor",3,5.85398395623367,2.85398395623367
+3,23,"2024-23","losail","russell","Constructor",4,4.8413081869804,0.841308186980403
+3,23,"2024-23","losail","gasly","Constructor",5,9.90269507415599,4.90269507415599
+3,23,"2024-23","losail","sainz","Constructor",6,4.43336349864131,1.56663650135869
+3,23,"2024-23","losail","alonso","Constructor",7,9.33212417576532,2.33212417576532
+3,23,"2024-23","losail","zhou","Constructor",8,11.5412429273343,3.54124292733433
+3,23,"2024-23","losail","kevin_magnussen","Constructor",9,10.3486597476337,1.34865974763366
+3,23,"2024-23","losail","norris","Constructor",10,5.85398395623367,4.14601604376633
+3,23,"2024-23","losail","bottas","Constructor",11,11.5412429273343,0.541242927334331
+3,23,"2024-23","losail","hamilton","Constructor",12,4.8413081869804,7.1586918130196
+3,23,"2024-23","losail","tsunoda","Constructor",13,10.6552445974329,2.34475540256708
+3,23,"2024-23","losail","lawson","Constructor",14,10.6552445974329,3.34475540256708
+3,23,"2024-23","losail","albon","Constructor",15,10.2683045391306,4.73169546086941
+3,23,"2024-23","losail","max_verstappen","Parrilla",1,5.0983392824505,4.0983392824505
+3,23,"2024-23","losail","leclerc","Parrilla",2,6.3672188284088,4.3672188284088
+3,23,"2024-23","losail","piastri","Parrilla",3,5.92969316955656,2.92969316955656
+3,23,"2024-23","losail","russell","Parrilla",4,4.70909047332521,0.709090473325211
+3,23,"2024-23","losail","gasly","Parrilla",5,9.11373237839292,4.11373237839292
+3,23,"2024-23","losail","sainz","Parrilla",6,7.27219315972116,1.27219315972116
+3,23,"2024-23","losail","alonso","Parrilla",7,7.73347975225357,0.733479752253568
+3,23,"2024-23","losail","zhou","Parrilla",8,9.5619910271616,1.5619910271616
+3,23,"2024-23","losail","kevin_magnussen","Parrilla",9,8.657484055357,0.342515944642999
+3,23,"2024-23","losail","norris","Parrilla",10,5.50591046668305,4.49408953331695
+3,23,"2024-23","losail","bottas","Parrilla",11,9.9993602981125,1.0006397018875
+3,23,"2024-23","losail","hamilton","Parrilla",12,6.81571911325336,5.18428088674664
+3,23,"2024-23","losail","tsunoda","Parrilla",13,10.4231839664912,2.57681603350885
+3,23,"2024-23","losail","lawson","Parrilla",14,11.5915111351094,2.40848886489062
+3,23,"2024-23","losail","albon","Parrilla",15,11.2210928937232,3.77890710627676
+3,23,"2024-23","losail","max_verstappen","Constructor + parrilla",1,4.17545506162817,3.17545506162817
+3,23,"2024-23","losail","leclerc","Constructor + parrilla",2,4.16155333901263,2.16155333901263
+3,23,"2024-23","losail","piastri","Constructor + parrilla",3,5.01598726522172,2.01598726522172
+3,23,"2024-23","losail","russell","Constructor + parrilla",4,3.4218473814278,0.578152618572195
+3,23,"2024-23","losail","gasly","Constructor + parrilla",5,10.1644726270111,5.1644726270111
+3,23,"2024-23","losail","sainz","Constructor + parrilla",6,4.73205363719873,1.26794636280127
+3,23,"2024-23","losail","alonso","Constructor + parrilla",7,8.82408355241475,1.82408355241475
+3,23,"2024-23","losail","zhou","Constructor + parrilla",8,11.7704201663697,3.77042016636971
+3,23,"2024-23","losail","kevin_magnussen","Constructor + parrilla",9,10.2140984525396,1.21409845253964
+3,23,"2024-23","losail","norris","Constructor + parrilla",10,4.72328832742409,5.27671167257591
+3,23,"2024-23","losail","bottas","Constructor + parrilla",11,12.0469726720442,1.04697267204418
+3,23,"2024-23","losail","hamilton","Constructor + parrilla",12,4.7933878596247,7.2066121403753
+3,23,"2024-23","losail","tsunoda","Constructor + parrilla",13,11.6229851394444,1.37701486055563
+3,23,"2024-23","losail","lawson","Constructor + parrilla",14,12.4365283116344,1.56347168836563
+3,23,"2024-23","losail","albon","Constructor + parrilla",15,11.896866207004,3.10313379299598
+3,23,"2024-23","losail","max_verstappen","Piloto + constructor + parrilla",1,3.19253376715334,2.19253376715334
+3,23,"2024-23","losail","leclerc","Piloto + constructor + parrilla",2,4.30596924493226,2.30596924493226
+3,23,"2024-23","losail","piastri","Piloto + constructor + parrilla",3,5.69173631758564,2.69173631758564
+3,23,"2024-23","losail","russell","Piloto + constructor + parrilla",4,3.77240632282237,0.227593677177626
+3,23,"2024-23","losail","gasly","Piloto + constructor + parrilla",5,10.1765825880877,5.17658258808773
+3,23,"2024-23","losail","sainz","Piloto + constructor + parrilla",6,4.87281017209611,1.12718982790389
+3,23,"2024-23","losail","alonso","Piloto + constructor + parrilla",7,8.42929424522954,1.42929424522954
+3,23,"2024-23","losail","zhou","Piloto + constructor + parrilla",8,11.880844070688,3.88084407068803
+3,23,"2024-23","losail","kevin_magnussen","Piloto + constructor + parrilla",9,10.4785898459425,1.47858984594254
+3,23,"2024-23","losail","norris","Piloto + constructor + parrilla",10,4.00827732272869,5.99172267727131
+3,23,"2024-23","losail","bottas","Piloto + constructor + parrilla",11,12.1266631048742,1.12666310487421
+3,23,"2024-23","losail","hamilton","Piloto + constructor + parrilla",12,4.6686809529438,7.3313190470562
+3,23,"2024-23","losail","tsunoda","Piloto + constructor + parrilla",13,12.0531144142375,0.946885585762477
+3,23,"2024-23","losail","lawson","Piloto + constructor + parrilla",14,12.6305524594387,1.36944754056128
+3,23,"2024-23","losail","albon","Piloto + constructor + parrilla",15,11.7119451712395,3.28805482876051
+3,3,"2024-3","albert_park","sainz","Constructor",1,3.91053290541498,2.91053290541498
+3,3,"2024-3","albert_park","leclerc","Constructor",2,3.91053290541498,1.91053290541498
+3,3,"2024-3","albert_park","norris","Constructor",3,5.29474727347165,2.29474727347165
+3,3,"2024-3","albert_park","piastri","Constructor",4,5.29474727347165,1.29474727347165
+3,3,"2024-3","albert_park","perez","Constructor",5,4.93546304792542,0.0645369520745831
+3,3,"2024-3","albert_park","stroll","Constructor",6,9.05054171188669,3.05054171188669
+3,3,"2024-3","albert_park","tsunoda","Constructor",7,10.6004979404902,3.60049794049018
+3,3,"2024-3","albert_park","alonso","Constructor",8,9.05054171188669,1.05054171188669
+3,3,"2024-3","albert_park","hulkenberg","Constructor",9,10.2359353366636,1.2359353366636
+3,3,"2024-3","albert_park","kevin_magnussen","Constructor",10,10.2359353366636,0.235935336663603
+3,3,"2024-3","albert_park","albon","Constructor",11,10.1407624005063,0.859237599493685
+3,3,"2024-3","albert_park","ricciardo","Constructor",12,10.6004979404902,1.39950205950982
+3,3,"2024-3","albert_park","gasly","Constructor",13,9.711373248335,3.288626751665
+3,3,"2024-3","albert_park","bottas","Constructor",14,11.658258859522,2.34174114047796
+3,3,"2024-3","albert_park","zhou","Constructor",15,11.658258859522,3.34174114047796
+3,3,"2024-3","albert_park","ocon","Constructor",16,9.711373248335,6.288626751665
+3,3,"2024-3","albert_park","sainz","Parrilla",1,4.45909114720925,3.45909114720925
+3,3,"2024-3","albert_park","leclerc","Parrilla",2,5.27874076539172,3.27874076539172
+3,3,"2024-3","albert_park","norris","Parrilla",3,4.85790503629452,1.85790503629452
+3,3,"2024-3","albert_park","piastri","Parrilla",4,5.71976698870988,1.71976698870988
+3,3,"2024-3","albert_park","perez","Parrilla",5,6.17876916171527,1.17876916171527
+3,3,"2024-3","albert_park","stroll","Parrilla",6,7.6367358931873,1.6367358931873
+3,3,"2024-3","albert_park","tsunoda","Parrilla",7,7.14020826073471,0.140208260734714
+3,3,"2024-3","albert_park","alonso","Parrilla",8,8.13952542038559,0.139525420385592
+3,3,"2024-3","albert_park","hulkenberg","Parrilla",9,11.096163289289,2.09616328928905
+3,3,"2024-3","albert_park","kevin_magnussen","Parrilla",10,10.1448164839614,0.144816483961364
+3,3,"2024-3","albert_park","albon","Parrilla",11,9.15028009726502,1.84971990273498
+3,3,"2024-3","albert_park","ricciardo","Parrilla",12,11.9802746904848,0.0197253095151524
+3,3,"2024-3","albert_park","gasly","Parrilla",13,11.5479462152384,1.45205378476164
+3,3,"2024-3","albert_park","bottas","Parrilla",14,9.65130199615995,4.34869800384005
+3,3,"2024-3","albert_park","zhou","Parrilla",15,12.3909863495003,2.60901365049974
+3,3,"2024-3","albert_park","ocon","Parrilla",16,10.6274882044729,5.3725117955271
+3,3,"2024-3","albert_park","sainz","Constructor + parrilla",1,2.62806452817183,1.62806452817183
+3,3,"2024-3","albert_park","leclerc","Constructor + parrilla",2,3.05703044125006,1.05703044125006
+3,3,"2024-3","albert_park","norris","Constructor + parrilla",3,3.70225402360533,0.702254023605332
+3,3,"2024-3","albert_park","piastri","Constructor + parrilla",4,4.22099739113326,0.220997391133256
+3,3,"2024-3","albert_park","perez","Constructor + parrilla",5,4.24440737998814,0.755592620011859
+3,3,"2024-3","albert_park","stroll","Constructor + parrilla",6,8.03439142522806,2.03439142522806
+3,3,"2024-3","albert_park","tsunoda","Constructor + parrilla",7,8.86345730989801,1.86345730989801
+3,3,"2024-3","albert_park","alonso","Constructor + parrilla",8,8.40151659033764,0.401516590337637
+3,3,"2024-3","albert_park","hulkenberg","Constructor + parrilla",9,11.6199916718335,2.61999167183347
+3,3,"2024-3","albert_park","kevin_magnussen","Constructor + parrilla",10,10.8616335369193,0.8616335369193
+3,3,"2024-3","albert_park","albon","Constructor + parrilla",11,10.0185533002913,0.981446699708696
+3,3,"2024-3","albert_park","ricciardo","Constructor + parrilla",12,12.6136320121123,0.613632012112348
+3,3,"2024-3","albert_park","gasly","Constructor + parrilla",13,11.5866804937772,1.41331950622283
+3,3,"2024-3","albert_park","bottas","Constructor + parrilla",14,11.6635191451906,2.33648085480941
+3,3,"2024-3","albert_park","zhou","Constructor + parrilla",15,13.6571619113194,1.34283808868056
+3,3,"2024-3","albert_park","ocon","Constructor + parrilla",16,10.8267088389441,5.17329116105594
+3,3,"2024-3","albert_park","sainz","Piloto + constructor + parrilla",1,2.53511526244047,1.53511526244047
+3,3,"2024-3","albert_park","leclerc","Piloto + constructor + parrilla",2,2.91778344028785,0.917783440287853
+3,3,"2024-3","albert_park","norris","Piloto + constructor + parrilla",3,2.88123445137985,0.118765548620147
+3,3,"2024-3","albert_park","piastri","Piloto + constructor + parrilla",4,4.46876449435968,0.468764494359679
+3,3,"2024-3","albert_park","perez","Piloto + constructor + parrilla",5,4.94055781828468,0.0594421817153208
+3,3,"2024-3","albert_park","stroll","Piloto + constructor + parrilla",6,8.848627826259,2.848627826259
+3,3,"2024-3","albert_park","tsunoda","Piloto + constructor + parrilla",7,9.35870556185421,2.35870556185421
+3,3,"2024-3","albert_park","alonso","Piloto + constructor + parrilla",8,7.64414486087765,0.355855139122353
+3,3,"2024-3","albert_park","hulkenberg","Piloto + constructor + parrilla",9,11.5617255946299,2.56172559462988
+3,3,"2024-3","albert_park","kevin_magnussen","Piloto + constructor + parrilla",10,11.0466194642406,1.04661946424061
+3,3,"2024-3","albert_park","albon","Piloto + constructor + parrilla",11,9.70153756671111,1.29846243328889
+3,3,"2024-3","albert_park","ricciardo","Piloto + constructor + parrilla",12,12.5198030433619,0.519803043361907
+3,3,"2024-3","albert_park","gasly","Piloto + constructor + parrilla",13,11.4505750388853,1.5494249611147
+3,3,"2024-3","albert_park","bottas","Piloto + constructor + parrilla",14,11.7299216169461,2.27007838305386
+3,3,"2024-3","albert_park","zhou","Piloto + constructor + parrilla",15,13.7250797110772,1.27492028892278
+3,3,"2024-3","albert_park","ocon","Piloto + constructor + parrilla",16,10.6698042484044,5.33019575159556
+3,7,"2024-7","imola","max_verstappen","Constructor",1,6.55735945598691,5.55735945598691
+3,7,"2024-7","imola","norris","Constructor",2,7.0068109923573,5.0068109923573
+3,7,"2024-7","imola","leclerc","Constructor",3,5.23100729006824,2.23100729006824
+3,7,"2024-7","imola","piastri","Constructor",4,7.0068109923573,3.0068109923573
+3,7,"2024-7","imola","sainz","Constructor",5,5.23100729006824,0.231007290068236
+3,7,"2024-7","imola","hamilton","Constructor",6,5.73754563261481,0.26245436738519
+3,7,"2024-7","imola","russell","Constructor",7,5.73754563261481,1.26245436738519
+3,7,"2024-7","imola","perez","Constructor",8,6.55735945598691,1.44264054401309
+3,7,"2024-7","imola","stroll","Constructor",9,11.4819044882497,2.48190448824973
+3,7,"2024-7","imola","tsunoda","Constructor",10,13.2147366554424,3.21473665544236
+3,7,"2024-7","imola","hulkenberg","Constructor",11,12.8128909506805,1.81289095068049
+3,7,"2024-7","imola","kevin_magnussen","Constructor",12,12.8128909506805,0.812890950680487
+3,7,"2024-7","imola","ricciardo","Constructor",13,13.2147366554424,0.21473665544236
+3,7,"2024-7","imola","ocon","Constructor",14,12.229254232707,1.770745767293
+3,7,"2024-7","imola","zhou","Constructor",15,14.3748927510471,0.625107248952895
+3,7,"2024-7","imola","gasly","Constructor",16,12.229254232707,3.770745767293
+3,7,"2024-7","imola","sargeant","Constructor",17,12.7071951016921,4.2928048983079
+3,7,"2024-7","imola","bottas","Constructor",18,14.3748927510471,3.6251072489529
+3,7,"2024-7","imola","alonso","Constructor",19,11.4819044882497,7.51809551175027
+3,7,"2024-7","imola","max_verstappen","Parrilla",1,6.68179245399305,5.68179245399305
+3,7,"2024-7","imola","norris","Parrilla",2,7.00992905543262,5.00992905543262
+3,7,"2024-7","imola","leclerc","Parrilla",3,7.34733968884927,4.34733968884927
+3,7,"2024-7","imola","piastri","Parrilla",4,8.0465152964934,4.0465152964934
+3,7,"2024-7","imola","sainz","Parrilla",5,7.6931836897746,2.6931836897746
+3,7,"2024-7","imola","hamilton","Parrilla",6,9.14063422129839,3.14063422129839
+3,7,"2024-7","imola","russell","Parrilla",7,8.40629400173917,1.40629400173917
+3,7,"2024-7","imola","perez","Parrilla",8,10.2605642032528,2.26056420325278
+3,7,"2024-7","imola","stroll","Parrilla",9,11.004461198052,2.00446119805198
+3,7,"2024-7","imola","tsunoda","Parrilla",10,8.77139713006406,1.22860286993594
+3,7,"2024-7","imola","hulkenberg","Parrilla",11,9.88650483898541,1.11349516101459
+3,7,"2024-7","imola","kevin_magnussen","Parrilla",12,12.7828711020858,0.782871102085828
+3,7,"2024-7","imola","ricciardo","Parrilla",13,9.51276276602167,3.48723723397833
+3,7,"2024-7","imola","ocon","Parrilla",14,10.6336435012538,3.36635649874615
+3,7,"2024-7","imola","zhou","Parrilla",15,12.4409335687597,2.55906643124028
+3,7,"2024-7","imola","gasly","Parrilla",16,11.734362398638,4.26563760136205
+3,7,"2024-7","imola","sargeant","Parrilla",17,13.1160395625777,3.88396043742225
+3,7,"2024-7","imola","bottas","Parrilla",18,12.0911053761222,5.90889462387783
+3,7,"2024-7","imola","alonso","Parrilla",19,13.4396659466063,5.56033405339368
+3,7,"2024-7","imola","max_verstappen","Constructor + parrilla",1,4.85495669122603,3.85495669122603
+3,7,"2024-7","imola","norris","Constructor + parrilla",2,5.41734814062803,3.41734814062803
+3,7,"2024-7","imola","leclerc","Constructor + parrilla",3,4.2448281265939,1.2448281265939
+3,7,"2024-7","imola","piastri","Constructor + parrilla",4,6.10211874942527,2.10211874942527
+3,7,"2024-7","imola","sainz","Constructor + parrilla",5,4.44329683065526,0.556703169344736
+3,7,"2024-7","imola","hamilton","Constructor + parrilla",6,5.72893416562342,0.271065834376584
+3,7,"2024-7","imola","russell","Constructor + parrilla",7,5.27891299901276,1.72108700098724
+3,7,"2024-7","imola","perez","Constructor + parrilla",8,7.16407705116142,0.835922948838582
+3,7,"2024-7","imola","stroll","Constructor + parrilla",9,11.8989407848355,2.89894078483553
+3,7,"2024-7","imola","tsunoda","Constructor + parrilla",10,11.8254527845002,1.82545278450025
+3,7,"2024-7","imola","hulkenberg","Constructor + parrilla",11,12.2562353121858,1.25623531218582
+3,7,"2024-7","imola","kevin_magnussen","Constructor + parrilla",12,14.3277119181753,2.32771191817526
+3,7,"2024-7","imola","ricciardo","Constructor + parrilla",13,12.3642671014266,0.635732898573387
+3,7,"2024-7","imola","ocon","Constructor + parrilla",14,12.279705908053,1.72029409194696
+3,7,"2024-7","imola","zhou","Constructor + parrilla",15,15.3660828685292,0.366082868529219
+3,7,"2024-7","imola","gasly","Constructor + parrilla",16,13.0791746510324,2.92082534896764
+3,7,"2024-7","imola","sargeant","Constructor + parrilla",17,14.480459430467,2.51954056953296
+3,7,"2024-7","imola","bottas","Constructor + parrilla",18,15.143820283756,2.85617971624396
+3,7,"2024-7","imola","alonso","Constructor + parrilla",19,13.7436762027127,5.25632379728726
+3,7,"2024-7","imola","max_verstappen","Piloto + constructor + parrilla",1,3.48182297372986,2.48182297372986
+3,7,"2024-7","imola","norris","Piloto + constructor + parrilla",2,4.30712232850192,2.30712232850192
+3,7,"2024-7","imola","leclerc","Piloto + constructor + parrilla",3,4.22169178827026,1.22169178827026
+3,7,"2024-7","imola","piastri","Piloto + constructor + parrilla",4,6.65236069470225,2.65236069470225
+3,7,"2024-7","imola","sainz","Piloto + constructor + parrilla",5,4.42910874308047,0.570891256919531
+3,7,"2024-7","imola","hamilton","Piloto + constructor + parrilla",6,5.29054713512223,0.709452864877766
+3,7,"2024-7","imola","russell","Piloto + constructor + parrilla",7,5.43853640804417,1.56146359195583
+3,7,"2024-7","imola","perez","Piloto + constructor + parrilla",8,8.33625896331082,0.33625896331082
+3,7,"2024-7","imola","stroll","Piloto + constructor + parrilla",9,12.8577494264399,3.85774942643994
+3,7,"2024-7","imola","tsunoda","Piloto + constructor + parrilla",10,12.369925969106,2.36992596910597
+3,7,"2024-7","imola","hulkenberg","Piloto + constructor + parrilla",11,12.1200755478482,1.12007554784819
+3,7,"2024-7","imola","kevin_magnussen","Piloto + constructor + parrilla",12,14.4021081290871,2.40210812908705
+3,7,"2024-7","imola","ricciardo","Piloto + constructor + parrilla",13,12.1624901449858,0.83750985501416
+3,7,"2024-7","imola","ocon","Piloto + constructor + parrilla",14,12.0292764332064,1.97072356679363
+3,7,"2024-7","imola","zhou","Piloto + constructor + parrilla",15,15.3219003675069,0.321900367506903
+3,7,"2024-7","imola","gasly","Piloto + constructor + parrilla",16,12.8225586567468,3.1774413432532
+3,7,"2024-7","imola","sargeant","Piloto + constructor + parrilla",17,15.963660901444,1.03633909855597
+3,7,"2024-7","imola","bottas","Piloto + constructor + parrilla",18,15.079483522512,2.92051647748796
+3,7,"2024-7","imola","alonso","Piloto + constructor + parrilla",19,12.7133218663549,6.28667813364513
+4,12,"2024-12","silverstone","hamilton","Constructor",1,5.61857949428453,4.61857949428453
+4,12,"2024-12","silverstone","max_verstappen","Constructor",2,4.83972245951908,2.83972245951908
+4,12,"2024-12","silverstone","norris","Constructor",3,7.67271153460088,4.67271153460088
+4,12,"2024-12","silverstone","piastri","Constructor",4,7.67271153460088,3.67271153460088
+4,12,"2024-12","silverstone","sainz","Constructor",5,4.67180675175173,0.328193248248274
+4,12,"2024-12","silverstone","hulkenberg","Constructor",6,11.4487114284329,5.44871142843286
+4,12,"2024-12","silverstone","stroll","Constructor",7,10.725322103441,3.72532210344097
+4,12,"2024-12","silverstone","alonso","Constructor",8,10.725322103441,2.72532210344097
+4,12,"2024-12","silverstone","albon","Constructor",9,11.9748614528619,2.97486145286187
+4,12,"2024-12","silverstone","tsunoda","Constructor",10,11.9682481408812,1.96824814088116
+4,12,"2024-12","silverstone","sargeant","Constructor",11,11.9748614528619,0.974861452861871
+4,12,"2024-12","silverstone","kevin_magnussen","Constructor",12,11.4487114284329,0.551288571567138
+4,12,"2024-12","silverstone","ricciardo","Constructor",13,11.9682481408812,1.03175185911884
+4,12,"2024-12","silverstone","leclerc","Constructor",14,4.67180675175173,9.32819324824827
+4,12,"2024-12","silverstone","bottas","Constructor",15,13.6202083442465,1.37979165575353
+4,12,"2024-12","silverstone","ocon","Constructor",16,11.5382360742454,4.46176392575457
+4,12,"2024-12","silverstone","perez","Constructor",17,4.83972245951908,12.1602775404809
+4,12,"2024-12","silverstone","zhou","Constructor",18,13.6202083442465,4.37979165575353
+4,12,"2024-12","silverstone","hamilton","Parrilla",1,5.48458233993768,4.48458233993768
+4,12,"2024-12","silverstone","max_verstappen","Parrilla",2,6.3384173693973,4.3384173693973
+4,12,"2024-12","silverstone","norris","Parrilla",3,5.90233105788073,2.90233105788073
+4,12,"2024-12","silverstone","piastri","Parrilla",4,6.79114486198476,2.79114486198476
+4,12,"2024-12","silverstone","sainz","Parrilla",5,7.73826692736076,2.73826692736076
+4,12,"2024-12","silverstone","hulkenberg","Parrilla",6,7.25851679321468,1.25851679321468
+4,12,"2024-12","silverstone","stroll","Parrilla",7,8.22789861134339,1.22789861134339
+4,12,"2024-12","silverstone","alonso","Parrilla",8,9.2259470264301,1.2259470264301
+4,12,"2024-12","silverstone","albon","Parrilla",9,8.72473047038431,0.275269529615688
+4,12,"2024-12","silverstone","tsunoda","Parrilla",10,10.7268810620014,0.726881062001413
+4,12,"2024-12","silverstone","sargeant","Parrilla",11,10.229926903117,0.770073096882976
+4,12,"2024-12","silverstone","kevin_magnussen","Parrilla",12,12.617810863811,0.617810863810959
+4,12,"2024-12","silverstone","ricciardo","Parrilla",13,11.6967570815317,1.30324291846831
+4,12,"2024-12","silverstone","leclerc","Parrilla",14,9.72865259205692,4.27134740794308
+4,12,"2024-12","silverstone","bottas","Parrilla",15,12.1645384892112,2.83546151078877
+4,12,"2024-12","silverstone","ocon","Parrilla",16,13.0545958226839,2.94540417731611
+4,12,"2024-12","silverstone","perez","Parrilla",17,13.8722893011824,3.1277106988176
+4,12,"2024-12","silverstone","zhou","Parrilla",18,11.2167124264708,6.78328757352923
+4,12,"2024-12","silverstone","hamilton","Constructor + parrilla",1,3.57904907486784,2.57904907486784
+4,12,"2024-12","silverstone","max_verstappen","Constructor + parrilla",2,3.51445938818126,1.51445938818126
+4,12,"2024-12","silverstone","norris","Constructor + parrilla",3,5.29434865246528,2.29434865246528
+4,12,"2024-12","silverstone","piastri","Constructor + parrilla",4,5.93473344974731,1.93473344974731
+4,12,"2024-12","silverstone","sainz","Constructor + parrilla",5,4.15252693432497,0.847473065675027
+4,12,"2024-12","silverstone","hulkenberg","Constructor + parrilla",6,9.3628019582892,3.3628019582892
+4,12,"2024-12","silverstone","stroll","Constructor + parrilla",7,9.50964139661344,2.50964139661344
+4,12,"2024-12","silverstone","alonso","Constructor + parrilla",8,10.2837834517349,2.28378345173488
+4,12,"2024-12","silverstone","albon","Constructor + parrilla",9,10.9926651739886,1.99266517398859
+4,12,"2024-12","silverstone","tsunoda","Constructor + parrilla",10,12.5014617181697,2.50146171816967
+4,12,"2024-12","silverstone","sargeant","Constructor + parrilla",11,12.1412534982782,1.14125349827815
+4,12,"2024-12","silverstone","kevin_magnussen","Constructor + parrilla",12,13.5060600892143,1.5060600892143
+4,12,"2024-12","silverstone","ricciardo","Constructor + parrilla",13,13.2272090554822,0.227209055482206
+4,12,"2024-12","silverstone","leclerc","Constructor + parrilla",14,5.32560562727493,8.67439437272506
+4,12,"2024-12","silverstone","bottas","Constructor + parrilla",15,14.8753829647236,0.124617035276442
+4,12,"2024-12","silverstone","ocon","Constructor + parrilla",16,13.9087970600036,2.09120293999637
+4,12,"2024-12","silverstone","perez","Constructor + parrilla",17,8.63117037453918,8.36882962546082
+4,12,"2024-12","silverstone","zhou","Constructor + parrilla",18,14.2590501321016,3.7409498678984
+4,12,"2024-12","silverstone","hamilton","Piloto + constructor + parrilla",1,3.54499143352328,2.54499143352328
+4,12,"2024-12","silverstone","max_verstappen","Piloto + constructor + parrilla",2,2.54093490186027,0.540934901860271
+4,12,"2024-12","silverstone","norris","Piloto + constructor + parrilla",3,5.2800275626997,2.2800275626997
+4,12,"2024-12","silverstone","piastri","Piloto + constructor + parrilla",4,5.31032911242252,1.31032911242252
+4,12,"2024-12","silverstone","sainz","Piloto + constructor + parrilla",5,4.23893302738524,0.761066972614763
+4,12,"2024-12","silverstone","hulkenberg","Piloto + constructor + parrilla",6,9.09054184036823,3.09054184036823
+4,12,"2024-12","silverstone","stroll","Piloto + constructor + parrilla",7,9.79765847977815,2.79765847977815
+4,12,"2024-12","silverstone","alonso","Piloto + constructor + parrilla",8,9.94747921069247,1.94747921069247
+4,12,"2024-12","silverstone","albon","Piloto + constructor + parrilla",9,10.933050200311,1.93305020031096
+4,12,"2024-12","silverstone","tsunoda","Piloto + constructor + parrilla",10,13.076521669822,3.07652166982201
+4,12,"2024-12","silverstone","sargeant","Piloto + constructor + parrilla",11,13.2817647490398,2.28176474903983
+4,12,"2024-12","silverstone","kevin_magnussen","Piloto + constructor + parrilla",12,13.4742010220724,1.47420102207244
+4,12,"2024-12","silverstone","ricciardo","Piloto + constructor + parrilla",13,12.9604471170057,0.0395528829942844
+4,12,"2024-12","silverstone","leclerc","Piloto + constructor + parrilla",14,5.04379961585574,8.95620038414426
+4,12,"2024-12","silverstone","bottas","Piloto + constructor + parrilla",15,14.8750468169116,0.124953183088431
+4,12,"2024-12","silverstone","ocon","Piloto + constructor + parrilla",16,14.1172717452743,1.88272825472571
+4,12,"2024-12","silverstone","perez","Piloto + constructor + parrilla",17,9.47103044774807,7.52896955225193
+4,12,"2024-12","silverstone","zhou","Piloto + constructor + parrilla",18,14.0159710472295,3.9840289527705
+4,16,"2024-16","monza","leclerc","Constructor",1,5.10384732607026,4.10384732607026
+4,16,"2024-16","monza","piastri","Constructor",2,8.34435175437167,6.34435175437167
+4,16,"2024-16","monza","norris","Constructor",3,8.34435175437167,5.34435175437167
+4,16,"2024-16","monza","sainz","Constructor",4,5.10384732607026,1.10384732607026
+4,16,"2024-16","monza","hamilton","Constructor",5,6.13415437285108,1.13415437285108
+4,16,"2024-16","monza","max_verstappen","Constructor",6,5.28716383213978,0.712836167860218
+4,16,"2024-16","monza","russell","Constructor",7,6.13415437285108,0.865845627148924
+4,16,"2024-16","monza","perez","Constructor",8,5.28716383213978,2.71283616786022
+4,16,"2024-16","monza","albon","Constructor",9,12.86074927164,3.86074927163999
+4,16,"2024-16","monza","kevin_magnussen","Constructor",10,12.3155346153898,2.31553461538977
+4,16,"2024-16","monza","alonso","Constructor",11,11.5633065710476,0.563306571047576
+4,16,"2024-16","monza","colapinto","Constructor",12,12.86074927164,0.860749271639985
+4,16,"2024-16","monza","ricciardo","Constructor",13,12.8539967640531,0.146003235946942
+4,16,"2024-16","monza","ocon","Constructor",14,12.4084098188508,1.59159018114923
+4,16,"2024-16","monza","gasly","Constructor",15,12.4084098188508,2.59159018114923
+4,16,"2024-16","monza","bottas","Constructor",16,14.5554840556126,1.44451594438741
+4,16,"2024-16","monza","hulkenberg","Constructor",17,12.3155346153898,4.68446538461023
+4,16,"2024-16","monza","zhou","Constructor",18,14.5554840556126,3.44451594438741
+4,16,"2024-16","monza","stroll","Constructor",19,11.5633065710476,7.43669342895242
+4,16,"2024-16","monza","leclerc","Parrilla",1,7.00221920860617,6.00221920860617
+4,16,"2024-16","monza","piastri","Parrilla",2,6.12431049748118,4.12431049748118
+4,16,"2024-16","monza","norris","Parrilla",3,5.71064472963199,2.71064472963199
+4,16,"2024-16","monza","sainz","Parrilla",4,7.46326147864741,3.46326147864741
+4,16,"2024-16","monza","hamilton","Parrilla",5,7.93650077872405,2.93650077872405
+4,16,"2024-16","monza","max_verstappen","Parrilla",6,8.41978796047308,2.41978796047308
+4,16,"2024-16","monza","russell","Parrilla",7,6.55532688122321,0.444673118776788
+4,16,"2024-16","monza","perez","Parrilla",8,8.91081331061613,0.910813310616135
+4,16,"2024-16","monza","albon","Parrilla",9,9.40714586369476,0.407145863694756
+4,16,"2024-16","monza","kevin_magnussen","Parrilla",10,11.395037119871,1.39503711987098
+4,16,"2024-16","monza","alonso","Parrilla",11,10.4056532553982,0.594346744601829
+4,16,"2024-16","monza","colapinto","Parrilla",12,13.7055238232374,1.70552382323743
+4,16,"2024-16","monza","ricciardo","Parrilla",13,10.902738752973,2.09726124702703
+4,16,"2024-16","monza","ocon","Parrilla",14,12.355768640819,1.64423135918095
+4,16,"2024-16","monza","gasly","Parrilla",15,11.8801412454853,3.11985875451466
+4,16,"2024-16","monza","bottas","Parrilla",16,14.1240206450185,1.87597935498149
+4,16,"2024-16","monza","hulkenberg","Parrilla",17,9.90627502336118,7.09372497663882
+4,16,"2024-16","monza","zhou","Parrilla",18,14.5245435077367,3.4754564922633
+4,16,"2024-16","monza","stroll","Parrilla",19,13.2702872770017,5.72971272299832
+4,16,"2024-16","monza","leclerc","Constructor + parrilla",1,4.19987380105957,3.19987380105957
+4,16,"2024-16","monza","piastri","Constructor + parrilla",2,6.04123480164298,4.04123480164298
+4,16,"2024-16","monza","norris","Constructor + parrilla",3,5.73221796328023,2.73221796328023
+4,16,"2024-16","monza","sainz","Constructor + parrilla",4,4.47144692085462,0.471446920854623
+4,16,"2024-16","monza","hamilton","Constructor + parrilla",5,5.5930165815222,0.593016581522204
+4,16,"2024-16","monza","max_verstappen","Constructor + parrilla",6,5.18910145258381,0.81089854741619
+4,16,"2024-16","monza","russell","Constructor + parrilla",7,4.71150860764238,2.28849139235762
+4,16,"2024-16","monza","perez","Constructor + parrilla",8,5.48810225731004,2.51189774268996
+4,16,"2024-16","monza","albon","Constructor + parrilla",9,11.8276794572656,2.82767945726555
+4,16,"2024-16","monza","kevin_magnussen","Constructor + parrilla",10,12.7709234231775,2.77092342317748
+4,16,"2024-16","monza","alonso","Constructor + parrilla",11,11.4704101819579,0.470410181957869
+4,16,"2024-16","monza","colapinto","Constructor + parrilla",12,14.8357239138038,2.83572391380375
+4,16,"2024-16","monza","ricciardo","Constructor + parrilla",13,12.8640796470841,0.135920352915933
+4,16,"2024-16","monza","ocon","Constructor + parrilla",14,13.5219166711682,0.478083328831787
+4,16,"2024-16","monza","gasly","Constructor + parrilla",15,13.1834084835687,1.8165915164313
+4,16,"2024-16","monza","bottas","Constructor + parrilla",16,16.2938268806101,0.293826880610062
+4,16,"2024-16","monza","hulkenberg","Constructor + parrilla",17,11.726778440378,5.27322155962197
+4,16,"2024-16","monza","zhou","Constructor + parrilla",18,16.5370432741623,1.46295672583774
+4,16,"2024-16","monza","stroll","Constructor + parrilla",19,13.5417072409282,5.45829275907181
+4,16,"2024-16","monza","leclerc","Piloto + constructor + parrilla",1,4.07060852163331,3.07060852163331
+4,16,"2024-16","monza","piastri","Piloto + constructor + parrilla",2,5.52736739578683,3.52736739578683
+4,16,"2024-16","monza","norris","Piloto + constructor + parrilla",3,5.8153285136888,2.8153285136888
+4,16,"2024-16","monza","sainz","Piloto + constructor + parrilla",4,4.6013015730133,0.601301573013295
+4,16,"2024-16","monza","hamilton","Piloto + constructor + parrilla",5,5.50409073581622,0.504090735816222
+4,16,"2024-16","monza","max_verstappen","Piloto + constructor + parrilla",6,3.79211925961475,2.20788074038525
+4,16,"2024-16","monza","russell","Piloto + constructor + parrilla",7,4.75617868721826,2.24382131278174
+4,16,"2024-16","monza","perez","Piloto + constructor + parrilla",8,6.61853570273006,1.38146429726994
+4,16,"2024-16","monza","albon","Piloto + constructor + parrilla",9,12.0511119460526,3.05111194605258
+4,16,"2024-16","monza","kevin_magnussen","Piloto + constructor + parrilla",10,13.0709869802509,3.07098698025091
+4,16,"2024-16","monza","alonso","Piloto + constructor + parrilla",11,11.4085147990199,0.40851479901993
+4,16,"2024-16","monza","colapinto","Piloto + constructor + parrilla",12,14.243794804279,2.24379480427902
+4,16,"2024-16","monza","ricciardo","Piloto + constructor + parrilla",13,12.9167781039595,0.0832218960405093
+4,16,"2024-16","monza","ocon","Piloto + constructor + parrilla",14,14.0528255658758,0.0528255658757537
+4,16,"2024-16","monza","gasly","Piloto + constructor + parrilla",15,12.8810747536115,2.11892524638855
+4,16,"2024-16","monza","bottas","Piloto + constructor + parrilla",16,16.5159820511833,0.515982051183308
+4,16,"2024-16","monza","hulkenberg","Piloto + constructor + parrilla",17,11.6485044686593,5.35149553134073
+4,16,"2024-16","monza","zhou","Piloto + constructor + parrilla",18,16.5511725312149,1.44882746878513
+4,16,"2024-16","monza","stroll","Piloto + constructor + parrilla",19,13.9737236063919,5.02627639360812
+4,20,"2024-20","rodriguez","sainz","Constructor",1,4.85087892373195,3.85087892373195
+4,20,"2024-20","rodriguez","norris","Constructor",2,7.80181650372184,5.80181650372184
+4,20,"2024-20","rodriguez","leclerc","Constructor",3,4.85087892373195,1.85087892373195
+4,20,"2024-20","rodriguez","hamilton","Constructor",4,5.79978592110655,1.79978592110655
+4,20,"2024-20","rodriguez","russell","Constructor",5,5.79978592110655,0.799785921106547
+4,20,"2024-20","rodriguez","max_verstappen","Constructor",6,5.02088731646276,0.979112683537241
+4,20,"2024-20","rodriguez","kevin_magnussen","Constructor",7,11.3036538580651,4.30365385806514
+4,20,"2024-20","rodriguez","piastri","Constructor",8,7.80181650372184,0.198183496278161
+4,20,"2024-20","rodriguez","hulkenberg","Constructor",9,11.3036538580651,2.30365385806514
+4,20,"2024-20","rodriguez","gasly","Constructor",10,11.3835471492574,1.38354714925739
+4,20,"2024-20","rodriguez","stroll","Constructor",11,10.6474876736558,0.352512326344218
+4,20,"2024-20","rodriguez","colapinto","Constructor",12,11.7765681690318,0.22343183096822
+4,20,"2024-20","rodriguez","ocon","Constructor",13,11.3835471492574,1.61645285074261
+4,20,"2024-20","rodriguez","bottas","Constructor",14,13.2419557281454,0.75804427185462
+4,20,"2024-20","rodriguez","zhou","Constructor",15,13.2419557281454,1.75804427185462
+4,20,"2024-20","rodriguez","lawson","Constructor",16,11.7708933563304,4.22910664366958
+4,20,"2024-20","rodriguez","perez","Constructor",17,5.02088731646276,11.9791126835372
+4,20,"2024-20","rodriguez","sainz","Parrilla",1,4.96864746259697,3.96864746259697
+4,20,"2024-20","rodriguez","norris","Parrilla",2,5.73535197832629,3.73535197832629
+4,20,"2024-20","rodriguez","leclerc","Parrilla",3,6.14212933687793,3.14212933687793
+4,20,"2024-20","rodriguez","hamilton","Parrilla",4,6.994261026213,2.994261026213
+4,20,"2024-20","rodriguez","russell","Parrilla",5,6.5623832541347,1.5623832541347
+4,20,"2024-20","rodriguez","max_verstappen","Parrilla",6,5.34371246923545,0.656287530764551
+4,20,"2024-20","rodriguez","kevin_magnussen","Parrilla",7,7.43575508208877,0.435755082088774
+4,20,"2024-20","rodriguez","piastri","Parrilla",8,11.8946095088258,3.89460950882575
+4,20,"2024-20","rodriguez","hulkenberg","Parrilla",9,8.79630535708435,0.203694642915648
+4,20,"2024-20","rodriguez","gasly","Parrilla",10,7.88474019483242,2.11525980516758
+4,20,"2024-20","rodriguez","stroll","Parrilla",11,10.6104553707855,0.389544629214527
+4,20,"2024-20","rodriguez","colapinto","Parrilla",12,11.4778838547492,0.522116145250774
+4,20,"2024-20","rodriguez","ocon","Parrilla",13,13.4105152366303,0.410515236630303
+4,20,"2024-20","rodriguez","bottas","Parrilla",14,11.049205833213,2.95079416678705
+4,20,"2024-20","rodriguez","zhou","Parrilla",15,12.6855046022879,2.31449539771207
+4,20,"2024-20","rodriguez","lawson","Parrilla",16,9.71087813860236,6.28912186139764
+4,20,"2024-20","rodriguez","perez","Parrilla",17,12.2976612935161,4.70233870648387
+4,20,"2024-20","rodriguez","sainz","Constructor + parrilla",1,3.13067369175375,2.13067369175375
+4,20,"2024-20","rodriguez","norris","Constructor + parrilla",2,5.62815546993045,3.62815546993045
+4,20,"2024-20","rodriguez","leclerc","Constructor + parrilla",3,3.81438642065374,0.81438642065374
+4,20,"2024-20","rodriguez","hamilton","Constructor + parrilla",4,5.03179496665377,1.03179496665377
+4,20,"2024-20","rodriguez","russell","Constructor + parrilla",5,4.75681092495017,0.243189075049832
+4,20,"2024-20","rodriguez","max_verstappen","Constructor + parrilla",6,3.45764416119059,2.54235583880941
+4,20,"2024-20","rodriguez","kevin_magnussen","Constructor + parrilla",7,9.60642179090799,2.60642179090799
+4,20,"2024-20","rodriguez","piastri","Constructor + parrilla",8,10.1260290565744,2.1260290565744
+4,20,"2024-20","rodriguez","hulkenberg","Constructor + parrilla",9,10.627758326746,1.62775832674596
+4,20,"2024-20","rodriguez","gasly","Constructor + parrilla",10,10.0082701125047,0.00827011250473753
+4,20,"2024-20","rodriguez","stroll","Constructor + parrilla",11,11.4192473808595,0.419247380859481
+4,20,"2024-20","rodriguez","colapinto","Constructor + parrilla",12,12.9594629963191,0.959462996319145
+4,20,"2024-20","rodriguez","ocon","Constructor + parrilla",13,14.0854065961473,1.0854065961473
+4,20,"2024-20","rodriguez","bottas","Constructor + parrilla",14,13.8218062107852,0.178193789214767
+4,20,"2024-20","rodriguez","zhou","Constructor + parrilla",15,14.8267625550456,0.173237444954383
+4,20,"2024-20","rodriguez","lawson","Constructor + parrilla",16,11.6895955857018,4.31040441429821
+4,20,"2024-20","rodriguez","perez","Constructor + parrilla",17,8.00977375327587,8.99022624672413
+4,20,"2024-20","rodriguez","sainz","Piloto + constructor + parrilla",1,3.29569792639454,2.29569792639454
+4,20,"2024-20","rodriguez","norris","Piloto + constructor + parrilla",2,5.68634863585814,3.68634863585814
+4,20,"2024-20","rodriguez","leclerc","Piloto + constructor + parrilla",3,3.73669839878211,0.736698398782115
+4,20,"2024-20","rodriguez","hamilton","Piloto + constructor + parrilla",4,4.96389083983856,0.963890839838561
+4,20,"2024-20","rodriguez","russell","Piloto + constructor + parrilla",5,4.79139256996835,0.208607430031647
+4,20,"2024-20","rodriguez","max_verstappen","Piloto + constructor + parrilla",6,2.56142344633818,3.43857655366182
+4,20,"2024-20","rodriguez","kevin_magnussen","Piloto + constructor + parrilla",7,9.9461946546622,2.94619465466221
+4,20,"2024-20","rodriguez","piastri","Piloto + constructor + parrilla",8,9.36545161074901,1.36545161074901
+4,20,"2024-20","rodriguez","hulkenberg","Piloto + constructor + parrilla",9,10.5592597446983,1.55925974469827
+4,20,"2024-20","rodriguez","gasly","Piloto + constructor + parrilla",10,9.79244102150485,0.207558978495154
+4,20,"2024-20","rodriguez","stroll","Piloto + constructor + parrilla",11,11.8521034185571,0.852103418557103
+4,20,"2024-20","rodriguez","colapinto","Piloto + constructor + parrilla",12,12.4360582587077,0.436058258707657
+4,20,"2024-20","rodriguez","ocon","Piloto + constructor + parrilla",13,14.4465877464028,1.44658774640275
+4,20,"2024-20","rodriguez","bottas","Piloto + constructor + parrilla",14,14.0581829634647,0.0581829634647466
+4,20,"2024-20","rodriguez","zhou","Piloto + constructor + parrilla",15,14.830502741441,0.169497258558962
+4,20,"2024-20","rodriguez","lawson","Piloto + constructor + parrilla",16,11.6986216991771,4.30137830082287
+4,20,"2024-20","rodriguez","perez","Piloto + constructor + parrilla",17,8.97914432345535,8.02085567654465
+4,24,"2024-24","yas_marina","norris","Constructor",1,7.23865567165635,6.23865567165635
+4,24,"2024-24","yas_marina","sainz","Constructor",2,4.44264667555435,2.44264667555435
+4,24,"2024-24","yas_marina","leclerc","Constructor",3,4.44264667555435,1.44264667555435
+4,24,"2024-24","yas_marina","hamilton","Constructor",4,5.33318155568673,1.33318155568673
+4,24,"2024-24","yas_marina","russell","Constructor",5,5.33318155568673,0.333181555686728
+4,24,"2024-24","yas_marina","max_verstappen","Constructor",6,4.60115038657677,1.39884961342323
+4,24,"2024-24","yas_marina","gasly","Constructor",7,10.7111838633788,3.71118386337876
+4,24,"2024-24","yas_marina","hulkenberg","Constructor",8,10.6333824068139,2.6333824068139
+4,24,"2024-24","yas_marina","alonso","Constructor",9,9.99565470288784,0.995654702887844
+4,24,"2024-24","yas_marina","piastri","Constructor",10,7.23865567165635,2.76134432834365
+4,24,"2024-24","yas_marina","albon","Constructor",11,11.0923870855522,0.092387085552156
+4,24,"2024-24","yas_marina","tsunoda","Constructor",12,11.0871930886518,0.91280691134823
+4,24,"2024-24","yas_marina","zhou","Constructor",13,12.5098596872634,0.490140312736569
+4,24,"2024-24","yas_marina","stroll","Constructor",14,9.99565470288784,4.00434529711216
+4,24,"2024-24","yas_marina","doohan","Constructor",15,10.7111838633788,4.28881613662124
+4,24,"2024-24","yas_marina","kevin_magnussen","Constructor",16,10.6333824068139,5.3666175931861
+4,24,"2024-24","yas_marina","norris","Parrilla",1,4.32336676082392,3.32336676082392
+4,24,"2024-24","yas_marina","sainz","Parrilla",2,5.15121272200051,3.15121272200051
+4,24,"2024-24","yas_marina","leclerc","Parrilla",3,12.7252922128387,9.72529221283869
+4,24,"2024-24","yas_marina","hamilton","Parrilla",4,11.4654337637079,7.46543376370787
+4,24,"2024-24","yas_marina","russell","Parrilla",5,6.53731271159319,1.53731271159319
+4,24,"2024-24","yas_marina","max_verstappen","Parrilla",6,5.59645649231544,0.40354350768456
+4,24,"2024-24","yas_marina","gasly","Parrilla",7,6.05940617376197,0.94059382623803
+4,24,"2024-24","yas_marina","hulkenberg","Parrilla",8,7.02723156734731,0.972768432652694
+4,24,"2024-24","yas_marina","alonso","Parrilla",9,7.52609756688986,1.47390243311014
+4,24,"2024-24","yas_marina","piastri","Parrilla",10,4.72614567474151,5.27385432525849
+4,24,"2024-24","yas_marina","albon","Parrilla",11,12.3270101032108,1.32701010321082
+4,24,"2024-24","yas_marina","tsunoda","Parrilla",12,9.04505377254135,2.95494622745865
+4,24,"2024-24","yas_marina","zhou","Parrilla",13,11.0064564329303,1.99354356706968
+4,24,"2024-24","yas_marina","stroll","Parrilla",14,10.0450629508559,3.95493704914413
+4,24,"2024-24","yas_marina","doohan","Parrilla",15,11.9063953157341,3.09360468426589
+4,24,"2024-24","yas_marina","kevin_magnussen","Parrilla",16,10.5320657787073,5.46793422129274
+4,24,"2024-24","yas_marina","norris","Constructor + parrilla",1,4.20043398641756,3.20043398641756
+4,24,"2024-24","yas_marina","sainz","Constructor + parrilla",2,2.96969869631264,0.969698696312641
+4,24,"2024-24","yas_marina","leclerc","Constructor + parrilla",3,8.50559014237374,5.50559014237374
+4,24,"2024-24","yas_marina","hamilton","Constructor + parrilla",4,8.17665296616244,4.17665296616244
+4,24,"2024-24","yas_marina","russell","Constructor + parrilla",5,4.4567128968873,0.543287103112704
+4,24,"2024-24","yas_marina","max_verstappen","Constructor + parrilla",6,3.34150347868632,2.65849652131368
+4,24,"2024-24","yas_marina","gasly","Constructor + parrilla",7,8.2515931726599,1.2515931726599
+4,24,"2024-24","yas_marina","hulkenberg","Constructor + parrilla",8,8.99916399256528,0.999163992565279
+4,24,"2024-24","yas_marina","alonso","Constructor + parrilla",9,8.86813783473442,0.131862165265577
+4,24,"2024-24","yas_marina","piastri","Constructor + parrilla",10,4.51995316810975,5.48004683189025
+4,24,"2024-24","yas_marina","albon","Constructor + parrilla",11,13.4826019498029,2.48260194980286
+4,24,"2024-24","yas_marina","tsunoda","Constructor + parrilla",12,11.0197864467406,0.980213553259365
+4,24,"2024-24","yas_marina","zhou","Constructor + parrilla",13,13.5635338239159,0.563533823915936
+4,24,"2024-24","yas_marina","stroll","Constructor + parrilla",14,10.9141551354894,3.08584486451061
+4,24,"2024-24","yas_marina","doohan","Constructor + parrilla",15,12.922043301397,2.07795669860295
+4,24,"2024-24","yas_marina","kevin_magnussen","Constructor + parrilla",16,11.8084390077448,4.19156099225524
+4,24,"2024-24","yas_marina","norris","Piloto + constructor + parrilla",1,4.36509292245407,3.36509292245407
+4,24,"2024-24","yas_marina","sainz","Piloto + constructor + parrilla",2,3.17203903830785,1.17203903830785
+4,24,"2024-24","yas_marina","leclerc","Piloto + constructor + parrilla",3,8.15063045929337,5.15063045929337
+4,24,"2024-24","yas_marina","hamilton","Piloto + constructor + parrilla",4,7.95010792917343,3.95010792917343
+4,24,"2024-24","yas_marina","russell","Piloto + constructor + parrilla",5,4.55569445249672,0.44430554750328
+4,24,"2024-24","yas_marina","max_verstappen","Piloto + constructor + parrilla",6,2.50356716320834,3.49643283679166
+4,24,"2024-24","yas_marina","gasly","Piloto + constructor + parrilla",7,8.12286653982241,1.12286653982241
+4,24,"2024-24","yas_marina","hulkenberg","Piloto + constructor + parrilla",8,8.99682505320835,0.996825053208351
+4,24,"2024-24","yas_marina","alonso","Piloto + constructor + parrilla",9,8.87852529638273,0.121474703617267
+4,24,"2024-24","yas_marina","piastri","Piloto + constructor + parrilla",10,4.21210173452854,5.78789826547146
+4,24,"2024-24","yas_marina","albon","Piloto + constructor + parrilla",11,13.5317032155443,2.53170321554429
+4,24,"2024-24","yas_marina","tsunoda","Piloto + constructor + parrilla",12,11.7420775402738,0.257922459726171
+4,24,"2024-24","yas_marina","zhou","Piloto + constructor + parrilla",13,13.528541911214,0.528541911214015
+4,24,"2024-24","yas_marina","stroll","Piloto + constructor + parrilla",14,11.2919706706527,2.70802932934734
+4,24,"2024-24","yas_marina","doohan","Piloto + constructor + parrilla",15,12.9978836724333,2.00211632756666
+4,24,"2024-24","yas_marina","kevin_magnussen","Piloto + constructor + parrilla",16,12.000372401006,3.99962759899395
+4,4,"2024-4","suzuka","max_verstappen","Constructor",1,5.10115038657677,4.10115038657677
+4,4,"2024-4","suzuka","perez","Constructor",2,5.10115038657677,3.10115038657677
+4,4,"2024-4","suzuka","sainz","Constructor",3,4.92765501727088,1.92765501727088
+4,4,"2024-4","suzuka","leclerc","Constructor",4,4.92765501727088,0.927655017270875
+4,4,"2024-4","suzuka","norris","Constructor",5,7.94571563098174,2.94571563098174
+4,4,"2024-4","suzuka","alonso","Constructor",6,10.8427639166486,4.84276391664856
+4,4,"2024-4","suzuka","russell","Constructor",7,5.89832417220766,1.10167582779234
+4,4,"2024-4","suzuka","piastri","Constructor",8,7.94571563098174,0.0542843690182551
+4,4,"2024-4","suzuka","hamilton","Constructor",9,5.89832417220766,3.10167582779234
+4,4,"2024-4","suzuka","tsunoda","Constructor",10,11.9734720517056,1.97347205170561
+4,4,"2024-4","suzuka","hulkenberg","Constructor",11,11.5046593495443,0.504659349544326
+4,4,"2024-4","suzuka","stroll","Constructor",12,10.8427639166486,1.15723608335144
+4,4,"2024-4","suzuka","kevin_magnussen","Constructor",13,11.5046593495443,1.49534065045567
+4,4,"2024-4","suzuka","bottas","Constructor",14,13.4372319711382,0.562768028861843
+4,4,"2024-4","suzuka","ocon","Constructor",15,11.584878837291,3.41512116270902
+4,4,"2024-4","suzuka","gasly","Constructor",16,11.584878837291,4.41512116270902
+4,4,"2024-4","suzuka","sargeant","Constructor",17,11.9790013561144,5.02099864388558
+4,4,"2024-4","suzuka","max_verstappen","Parrilla",1,4.75871822887698,3.75871822887698
+4,4,"2024-4","suzuka","perez","Parrilla",2,5.18443696576108,3.18443696576108
+4,4,"2024-4","suzuka","sainz","Parrilla",3,6.10117905879781,3.10117905879781
+4,4,"2024-4","suzuka","leclerc","Parrilla",4,8.12361159557518,4.12361159557518
+4,4,"2024-4","suzuka","norris","Parrilla",5,5.63263312164843,0.632633121648427
+4,4,"2024-4","suzuka","alonso","Parrilla",6,6.58754436921685,0.587544369216852
+4,4,"2024-4","suzuka","russell","Parrilla",7,8.65029180249603,1.65029180249603
+4,4,"2024-4","suzuka","piastri","Parrilla",8,7.08885953022221,0.911140469777787
+4,4,"2024-4","suzuka","hamilton","Parrilla",9,7.60198952567287,1.39801047432713
+4,4,"2024-4","suzuka","tsunoda","Parrilla",10,9.17855633892017,0.821443661079826
+4,4,"2024-4","suzuka","hulkenberg","Parrilla",11,10.2261175897566,0.773882410243445
+4,4,"2024-4","suzuka","stroll","Parrilla",12,12.1963459142609,0.196345914260855
+4,4,"2024-4","suzuka","kevin_magnussen","Parrilla",13,13.0757372010159,0.0757372010158672
+4,4,"2024-4","suzuka","bottas","Parrilla",14,10.7388003406202,3.26119965937976
+4,4,"2024-4","suzuka","ocon","Parrilla",15,11.726649280812,3.27335071918803
+4,4,"2024-4","suzuka","gasly","Parrilla",16,12.6467039785132,3.35329602148676
+4,4,"2024-4","suzuka","sargeant","Parrilla",17,13.4818251578337,3.51817484216634
+4,4,"2024-4","suzuka","max_verstappen","Constructor + parrilla",1,3.26429508042056,2.26429508042056
+4,4,"2024-4","suzuka","perez","Constructor + parrilla",2,3.53462612121059,1.53462612121059
+4,4,"2024-4","suzuka","sainz","Constructor + parrilla",3,3.9756659362199,0.975665936219896
+4,4,"2024-4","suzuka","leclerc","Constructor + parrilla",4,5.25491865996595,1.25491865996595
+4,4,"2024-4","suzuka","norris","Constructor + parrilla",5,5.83049034671144,0.830490346711437
+4,4,"2024-4","suzuka","alonso","Constructor + parrilla",6,8.6442194104421,2.6442194104421
+4,4,"2024-4","suzuka","russell","Constructor + parrilla",7,6.3947339737595,0.605266026240498
+4,4,"2024-4","suzuka","piastri","Constructor + parrilla",8,6.89474366930742,1.10525633069258
+4,4,"2024-4","suzuka","hamilton","Constructor + parrilla",9,5.69212415618599,3.30787584381401
+4,4,"2024-4","suzuka","tsunoda","Constructor + parrilla",10,11.3337962509155,1.33379625091547
+4,4,"2024-4","suzuka","hulkenberg","Constructor + parrilla",11,11.6770208621574,0.677020862157374
+4,4,"2024-4","suzuka","stroll","Constructor + parrilla",12,12.6065283759094,0.606528375909422
+4,4,"2024-4","suzuka","kevin_magnussen","Constructor + parrilla",13,13.7320330810665,0.73203308106654
+4,4,"2024-4","suzuka","bottas","Constructor + parrilla",14,13.5645646150555,0.435435384944466
+4,4,"2024-4","suzuka","ocon","Constructor + parrilla",15,12.7937279344892,2.20627206551084
+4,4,"2024-4","suzuka","gasly","Constructor + parrilla",16,13.4657906669185,2.53420933308151
+4,4,"2024-4","suzuka","sargeant","Constructor + parrilla",17,14.3407208592646,2.65927914073543
+4,4,"2024-4","suzuka","max_verstappen","Piloto + constructor + parrilla",1,2.3318122030998,1.3318122030998
+4,4,"2024-4","suzuka","perez","Piloto + constructor + parrilla",2,4.4256147470039,2.4256147470039
+4,4,"2024-4","suzuka","sainz","Piloto + constructor + parrilla",3,4.0667007454636,1.0667007454636
+4,4,"2024-4","suzuka","leclerc","Piloto + constructor + parrilla",4,5.04106252270161,1.04106252270161
+4,4,"2024-4","suzuka","norris","Piloto + constructor + parrilla",5,5.85544269389362,0.855442693893618
+4,4,"2024-4","suzuka","alonso","Piloto + constructor + parrilla",6,8.6081932725311,2.6081932725311
+4,4,"2024-4","suzuka","russell","Piloto + constructor + parrilla",7,6.32452048001519,0.675479519984807
+4,4,"2024-4","suzuka","piastri","Piloto + constructor + parrilla",8,6.32557084656798,1.67442915343202
+4,4,"2024-4","suzuka","hamilton","Piloto + constructor + parrilla",9,5.56347902312345,3.43652097687655
+4,4,"2024-4","suzuka","tsunoda","Piloto + constructor + parrilla",10,11.9012755436241,1.90127554362413
+4,4,"2024-4","suzuka","hulkenberg","Piloto + constructor + parrilla",11,11.4282166092767,0.428216609276737
+4,4,"2024-4","suzuka","stroll","Piloto + constructor + parrilla",12,12.7602524500348,0.760252450034793
+4,4,"2024-4","suzuka","kevin_magnussen","Piloto + constructor + parrilla",13,13.7154704153682,0.715470415368227
+4,4,"2024-4","suzuka","bottas","Piloto + constructor + parrilla",14,13.5955699964542,0.404430003545849
+4,4,"2024-4","suzuka","ocon","Piloto + constructor + parrilla",15,13.0248852612193,1.97511473878068
+4,4,"2024-4","suzuka","gasly","Piloto + constructor + parrilla",16,13.0040360475134,2.99596395248656
+4,4,"2024-4","suzuka","sargeant","Piloto + constructor + parrilla",17,15.027897142109,1.97210285789104
+4,8,"2024-8","monaco","leclerc","Constructor",1,4.36332980498285,3.36332980498285
+4,8,"2024-8","monaco","piastri","Constructor",2,7.08596026572999,5.08596026572999
+4,8,"2024-8","monaco","sainz","Constructor",3,4.36332980498285,1.36332980498285
+4,8,"2024-8","monaco","norris","Constructor",4,7.08596026572999,3.08596026572999
+4,8,"2024-8","monaco","russell","Constructor",5,5.22843212558996,0.228432125589962
+4,8,"2024-8","monaco","max_verstappen","Constructor",6,4.517133728459,1.482866271541
+4,8,"2024-8","monaco","hamilton","Constructor",7,5.22843212558996,1.77156787441004
+4,8,"2024-8","monaco","tsunoda","Constructor",8,10.8666157759824,2.86661577598245
+4,8,"2024-8","monaco","albon","Constructor",9,10.8718935181228,1.87189351812276
+4,8,"2024-8","monaco","gasly","Constructor",10,10.4922639460092,0.49226394600924
+4,8,"2024-8","monaco","alonso","Constructor",11,9.78395961676182,1.21604038323818
+4,8,"2024-8","monaco","ricciardo","Constructor",12,10.8666157759824,1.13338422401755
+4,8,"2024-8","monaco","bottas","Constructor",13,12.2951100555961,0.704889944403947
+4,8,"2024-8","monaco","stroll","Constructor",14,9.78395961676182,4.21604038323818
+4,8,"2024-8","monaco","sargeant","Constructor",15,10.8718935181228,4.12810648187724
+4,8,"2024-8","monaco","zhou","Constructor",16,12.2951100555961,3.70488994440395
+4,8,"2024-8","monaco","leclerc","Parrilla",1,4.32370795965005,3.32370795965005
+4,8,"2024-8","monaco","piastri","Parrilla",2,4.77577177997745,2.77577177997745
+4,8,"2024-8","monaco","sainz","Parrilla",3,5.25616804886076,2.25616804886076
+4,8,"2024-8","monaco","norris","Parrilla",4,5.76193881263199,1.76193881263199
+4,8,"2024-8","monaco","russell","Parrilla",5,6.28948478666309,1.28948478666309
+4,8,"2024-8","monaco","max_verstappen","Parrilla",6,6.83468394995536,0.834683949955362
+4,8,"2024-8","monaco","hamilton","Parrilla",7,7.39302742281275,0.393027422812749
+4,8,"2024-8","monaco","tsunoda","Parrilla",8,7.95975982370743,0.0402401762925679
+4,8,"2024-8","monaco","albon","Parrilla",9,8.53001349068414,0.469986509315859
+4,8,"2024-8","monaco","gasly","Parrilla",10,9.09892960257165,0.90107039742835
+4,8,"2024-8","monaco","alonso","Parrilla",11,11.2698631300799,0.269863130079891
+4,8,"2024-8","monaco","ricciardo","Parrilla",12,10.2139749259796,1.78602507402043
+4,8,"2024-8","monaco","bottas","Parrilla",13,12.6806443524894,0.319355647510577
+4,8,"2024-8","monaco","stroll","Parrilla",14,10.7513079477937,3.24869205220634
+4,8,"2024-8","monaco","sargeant","Parrilla",15,11.7661669048165,3.23383309518347
+4,8,"2024-8","monaco","zhou","Parrilla",16,13.0945570613263,2.90544293867375
+4,8,"2024-8","monaco","leclerc","Constructor + parrilla",1,2.81434097112663,1.81434097112663
+4,8,"2024-8","monaco","piastri","Constructor + parrilla",2,4.91240507004623,2.91240507004623
+4,8,"2024-8","monaco","sainz","Constructor + parrilla",3,3.37572696292843,0.375726962928431
+4,8,"2024-8","monaco","norris","Constructor + parrilla",4,5.62874760543322,1.62874760543322
+4,8,"2024-8","monaco","russell","Constructor + parrilla",5,4.64560199767091,0.354398002329091
+4,8,"2024-8","monaco","max_verstappen","Constructor + parrilla",6,4.44117606770093,1.55882393229907
+4,8,"2024-8","monaco","hamilton","Constructor + parrilla",7,5.35172279803797,1.64827720196203
+4,8,"2024-8","monaco","tsunoda","Constructor + parrilla",8,9.81217187946886,1.81217187946886
+4,8,"2024-8","monaco","albon","Constructor + parrilla",9,10.205630758428,1.20563075842796
+4,8,"2024-8","monaco","gasly","Constructor + parrilla",10,10.3150483901619,0.315048390161881
+4,8,"2024-8","monaco","alonso","Constructor + parrilla",11,11.345276220387,0.345276220386994
+4,8,"2024-8","monaco","ricciardo","Constructor + parrilla",12,11.378919729546,0.621080270454
+4,8,"2024-8","monaco","bottas","Constructor + parrilla",13,14.0318909221484,1.03189092214837
+4,8,"2024-8","monaco","stroll","Constructor + parrilla",14,10.9576426298652,3.04235737013485
+4,8,"2024-8","monaco","sargeant","Constructor + parrilla",15,12.4878135730483,2.5121864269517
+4,8,"2024-8","monaco","zhou","Constructor + parrilla",16,14.2958844240022,1.70411557599783
+4,8,"2024-8","monaco","leclerc","Piloto + constructor + parrilla",1,2.83508711923756,1.83508711923756
+4,8,"2024-8","monaco","piastri","Piloto + constructor + parrilla",2,4.63080365963481,2.63080365963481
+4,8,"2024-8","monaco","sainz","Piloto + constructor + parrilla",3,3.58729669888611,0.587296698886111
+4,8,"2024-8","monaco","norris","Piloto + constructor + parrilla",4,5.74899396824071,1.74899396824071
+4,8,"2024-8","monaco","russell","Piloto + constructor + parrilla",5,4.77029186470231,0.229708135297693
+4,8,"2024-8","monaco","max_verstappen","Piloto + constructor + parrilla",6,3.42782628946627,2.57217371053373
+4,8,"2024-8","monaco","hamilton","Piloto + constructor + parrilla",7,5.35417865156306,1.64582134843694
+4,8,"2024-8","monaco","tsunoda","Piloto + constructor + parrilla",8,10.3986252111707,2.39862521117065
+4,8,"2024-8","monaco","albon","Piloto + constructor + parrilla",9,10.2489927571598,1.24899275715984
+4,8,"2024-8","monaco","gasly","Piloto + constructor + parrilla",10,9.97460476470694,0.0253952352930611
+4,8,"2024-8","monaco","alonso","Piloto + constructor + parrilla",11,11.1074287201104,0.107428720110407
+4,8,"2024-8","monaco","ricciardo","Piloto + constructor + parrilla",12,11.2519688014315,0.748031198568537
+4,8,"2024-8","monaco","bottas","Piloto + constructor + parrilla",13,14.0594349285053,1.05943492850534
+4,8,"2024-8","monaco","stroll","Piloto + constructor + parrilla",14,11.1641471972157,2.83585280278433
+4,8,"2024-8","monaco","sargeant","Piloto + constructor + parrilla",15,13.2701478425666,1.72985215743344
+4,8,"2024-8","monaco","zhou","Piloto + constructor + parrilla",16,14.1701715254023,1.82982847459772

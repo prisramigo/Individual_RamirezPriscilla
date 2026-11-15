@@ -1,0 +1,118 @@
+2026-10-22 14:05:27 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-10-22 14:05:27 Descarga de apoyo: temporada 2014, offset 0 
+2026-10-22 14:05:30 Descarga de apoyo: temporada 2014, offset 100 
+2026-10-22 14:05:32 Descarga de apoyo: temporada 2014, offset 200 
+2026-10-22 14:05:34 Descarga de apoyo: temporada 2014, offset 300 
+2026-10-22 14:05:36 Descarga de apoyo: temporada 2014, offset 400 
+2026-10-22 14:05:38 Descarga de apoyo: temporada 2015, offset 0 
+2026-10-22 14:05:41 Descarga de apoyo: temporada 2015, offset 100 
+2026-10-22 14:05:50 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-10-22 14:05:51 Descarga de apoyo: temporada 2015, offset 100 
+2026-10-22 14:05:53 Descarga de apoyo: temporada 2015, offset 200 
+2026-10-22 14:05:55 Descarga de apoyo: temporada 2015, offset 300 
+2026-10-22 14:05:57 Descarga de apoyo: temporada 2016, offset 0 
+2026-10-22 14:05:59 Descarga de apoyo: temporada 2016, offset 100 
+2026-10-22 14:06:01 Descarga de apoyo: temporada 2016, offset 200 
+2026-10-22 14:06:03 Descarga de apoyo: temporada 2016, offset 300 
+2026-10-22 14:06:05 Descarga de apoyo: temporada 2016, offset 400 
+2026-10-22 14:06:07 Descarga de apoyo: temporada 2017, offset 0 
+2026-10-22 14:06:09 Descarga de apoyo: temporada 2017, offset 100 
+2026-10-22 14:06:12 Descarga de apoyo: temporada 2017, offset 200 
+2026-10-22 14:06:14 Descarga de apoyo: temporada 2017, offset 300 
+2026-10-22 14:06:16 Descarga de apoyo: temporada 2018, offset 0 
+2026-10-22 14:06:18 Descarga de apoyo: temporada 2018, offset 100 
+2026-10-22 14:06:20 Descarga de apoyo: temporada 2018, offset 200 
+2026-10-22 14:06:22 Descarga de apoyo: temporada 2018, offset 300 
+2026-10-22 14:06:25 Descarga de apoyo: temporada 2018, offset 400 
+2026-10-22 14:06:26 Descarga de apoyo: temporada 2019, offset 0 
+2026-10-22 14:06:28 Descarga de apoyo: temporada 2019, offset 100 
+2026-10-22 14:06:30 Descarga de apoyo: temporada 2019, offset 200 
+2026-10-22 14:06:33 Descarga de apoyo: temporada 2019, offset 300 
+2026-10-22 14:06:35 Descarga de apoyo: temporada 2019, offset 400 
+2026-10-22 14:06:37 Descarga de apoyo: temporada 2020, offset 0 
+2026-10-22 14:06:39 Descarga de apoyo: temporada 2020, offset 100 
+2026-10-22 14:06:41 Descarga de apoyo: temporada 2020, offset 200 
+2026-10-22 14:06:43 Descarga de apoyo: temporada 2020, offset 300 
+2026-10-22 14:06:45 Descarga de apoyo: temporada 2021, offset 0 
+2026-10-22 14:06:47 Descarga de apoyo: temporada 2021, offset 100 
+2026-10-22 14:06:50 Descarga de apoyo: temporada 2021, offset 200 
+2026-10-22 14:06:52 Descarga de apoyo: temporada 2021, offset 300 
+2026-10-22 14:06:54 Descarga de apoyo: temporada 2021, offset 400 
+2026-10-22 14:06:56 Descarga de apoyo: temporada 2022, offset 0 
+2026-10-22 14:06:58 Descarga de apoyo: temporada 2022, offset 100 
+2026-10-22 14:07:00 Descarga de apoyo: temporada 2022, offset 200 
+2026-10-22 14:07:03 Descarga de apoyo: temporada 2022, offset 300 
+2026-10-22 14:07:05 Descarga de apoyo: temporada 2022, offset 400 
+2026-10-22 14:07:07 Descarga de apoyo: temporada 2023, offset 0 
+2026-10-22 14:07:10 Descarga de apoyo: temporada 2023, offset 100 
+2026-10-22 14:07:12 Descarga de apoyo: temporada 2023, offset 200 
+2026-10-22 14:07:14 Descarga de apoyo: temporada 2023, offset 300 
+2026-10-22 14:07:17 Descarga de apoyo: temporada 2023, offset 400 
+2026-10-22 14:07:19 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-10-22 14:07:19 Muestreo MCMC: principal 
+2026-10-22 14:07:19 Compilación de Stan. Se conserva el código completo en el Quarto. 
+2026-10-22 14:18:05 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-10-22 14:18:06 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-10-22 14:18:06 Muestreo MCMC: principal 
+2026-10-22 14:18:06 Compilación de Stan. Se conserva el código completo en el Quarto. 
+2026-10-22 14:22:35 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-10-22 14:22:36 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-10-22 14:22:36 Muestreo MCMC: principal 
+2026-10-22 14:22:36 Compilación de Stan. Se conserva el código completo en el Quarto. 
+2026-10-22 14:47:37 Muestreo MCMC: prior_alternativo 
+2026-10-22 18:13:02 Rankings, descomposición y contrafactuales calculados. 
+2026-10-22 18:13:02 Muestreo MCMC: cv_parrilla_1 
+2026-10-22 18:18:42 Muestreo MCMC: cv_parrilla_2 
+2026-10-22 18:26:23 Muestreo MCMC: cv_parrilla_3 
+2026-10-22 18:34:27 Muestreo MCMC: cv_parrilla_4 
+2026-10-22 18:42:50 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-10-26 14:46:32 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-10-26 14:46:33 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-10-26 14:46:34 Reutilizando ajuste principal 
+2026-10-26 14:46:40 Reutilizando ajuste prior_alternativo 
+2026-10-26 14:46:46 Rankings, descomposición y contrafactuales calculados. 
+2026-10-26 14:46:47 Reutilizando ajuste cv_parrilla_1 
+2026-10-26 14:46:52 Reutilizando ajuste cv_parrilla_2 
+2026-10-26 14:46:58 Reutilizando ajuste cv_parrilla_3 
+2026-10-26 14:47:05 Reutilizando ajuste cv_parrilla_4 
+2026-10-26 14:47:10 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-10-26 15:17:27 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-10-26 15:17:29 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-10-26 15:17:29 Reutilizando ajuste principal 
+2026-10-26 15:17:35 Reutilizando ajuste prior_alternativo 
+2026-10-26 15:17:42 Rankings, descomposición y contrafactuales calculados. 
+2026-10-26 15:17:42 Reutilizando ajuste cv_parrilla_1 
+2026-10-26 15:17:47 Reutilizando ajuste cv_parrilla_2 
+2026-10-26 15:17:52 Reutilizando ajuste cv_parrilla_3 
+2026-10-26 15:17:58 Reutilizando ajuste cv_parrilla_4 
+2026-10-26 15:18:04 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-10-26 17:23:14 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-10-26 17:23:16 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-10-26 17:23:16 Reutilizando ajuste principal 
+2026-10-26 17:23:22 Reutilizando ajuste prior_alternativo 
+2026-10-26 17:23:29 Rankings, descomposición y contrafactuales calculados. 
+2026-10-26 17:23:29 Reutilizando ajuste cv_parrilla_1 
+2026-10-26 17:23:34 Reutilizando ajuste cv_parrilla_2 
+2026-10-26 17:23:39 Reutilizando ajuste cv_parrilla_3 
+2026-10-26 17:23:45 Reutilizando ajuste cv_parrilla_4 
+2026-10-26 17:23:50 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-09 15:53:21 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-09 15:53:22 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-09 15:53:23 Reutilizando ajuste principal 
+2026-11-09 15:53:29 Reutilizando ajuste prior_alternativo 
+2026-11-09 15:53:35 Rankings, descomposición y contrafactuales calculados. 
+2026-11-09 15:53:35 Reutilizando ajuste cv_parrilla_1 
+2026-11-09 15:53:40 Reutilizando ajuste cv_parrilla_2 
+2026-11-09 15:53:46 Reutilizando ajuste cv_parrilla_3 
+2026-11-09 15:53:51 Reutilizando ajuste cv_parrilla_4 
+2026-11-09 15:53:57 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-15 17:25:34 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-15 17:25:36 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-15 17:25:37 Reutilizando ajuste principal 
+2026-11-15 17:25:44 Reutilizando ajuste prior_alternativo 
+2026-11-15 17:25:52 Rankings, descomposición y contrafactuales calculados. 
+2026-11-15 17:25:52 Reutilizando ajuste cv_parrilla_1 
+2026-11-15 17:25:57 Reutilizando ajuste cv_parrilla_2 
+2026-11-15 17:26:03 Reutilizando ajuste cv_parrilla_3 
+2026-11-15 17:26:08 Reutilizando ajuste cv_parrilla_4 
+2026-11-15 17:26:14 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 

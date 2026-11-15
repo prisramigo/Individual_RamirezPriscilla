@@ -1,0 +1,25 @@
+season,round,grand_prix,circuit_id,session_key,meeting_key,fecha_utc,circuito_openf1
+2024,1,Bahrain Grand Prix,bahrain,9472,1229,2024-03-02,Sakhir
+2024,2,Saudi Arabian Grand Prix,jeddah,9480,1230,2024-03-09,Jeddah
+2024,3,Australian Grand Prix,albert_park,9488,1231,2024-03-24,Melbourne
+2024,4,Japanese Grand Prix,suzuka,9496,1232,2024-04-07,Suzuka
+2024,5,Chinese Grand Prix,shanghai,9673,1233,2024-04-21,Shanghai
+2024,6,Miami Grand Prix,miami,9507,1234,2024-05-05,Miami
+2024,7,Emilia Romagna Grand Prix,imola,9515,1235,2024-05-19,Imola
+2024,8,Monaco Grand Prix,monaco,9523,1236,2024-05-26,Monte Carlo
+2024,9,Canadian Grand Prix,villeneuve,9531,1237,2024-06-09,Montreal
+2024,10,Spanish Grand Prix,catalunya,9539,1238,2024-06-23,Catalunya
+2024,11,Austrian Grand Prix,red_bull_ring,9550,1239,2024-06-30,Spielberg
+2024,12,British Grand Prix,silverstone,9558,1240,2024-07-07,Silverstone
+2024,13,Hungarian Grand Prix,hungaroring,9566,1241,2024-07-21,Hungaroring
+2024,14,Belgian Grand Prix,spa,9574,1242,2024-07-28,Spa-Francorchamps
+2024,15,Dutch Grand Prix,zandvoort,9582,1243,2024-08-25,Zandvoort
+2024,16,Italian Grand Prix,monza,9590,1244,2024-09-01,Monza
+2024,17,Azerbaijan Grand Prix,baku,9598,1245,2024-09-15,Baku
+2024,18,Singapore Grand Prix,marina_bay,9606,1246,2024-09-22,Singapore
+2024,19,United States Grand Prix,americas,9617,1247,2024-10-20,Austin
+2024,20,Mexico City Grand Prix,rodriguez,9625,1248,2024-10-27,Mexico City
+2024,21,São Paulo Grand Prix,interlagos,9636,1249,2024-11-03,Interlagos
+2024,22,Las Vegas Grand Prix,vegas,9644,1250,2024-11-24,Las Vegas
+2024,23,Qatar Grand Prix,losail,9655,1251,2024-12-01,Lusail
+2024,24,Abu Dhabi Grand Prix,yas_marina,9662,1252,2024-12-08,Yas Marina Circuit

@@ -1,0 +1,103 @@
+--- reporte_anterior.qmd
++++ reporte_revisado.qmd
+@@ -709,7 +709,7 @@
+ ),format="latex",booktabs=TRUE,align=c("l","l"))
+ ```
+ 
+-El modelo principal conserva el orden de los clasificados hasta el último participante activo, excluyendo descalificaciones y no participantes. Esta selección sigue la lógica del estudio bayesiano; por tanto, las probabilidades están condicionadas a ese conjunto y no modelan la fiabilidad. Los retiros que tomaron la salida se incluyen en el contraste inspirado en Bell. La lluvia no excluye automáticamente una carrera: São Paulo y los demás GP permanecen disponibles según el criterio de clasificación.
++El modelo principal conserva el orden de los clasificados hasta el último participante activo, excluyendo descalificaciones y no participantes. Esta selección sigue la lógica del estudio bayesiano; por tanto, las probabilidades están condicionadas a ese conjunto y no modelan la fiabilidad. El contraste inspirado en Bell también incluye retiros, restringido a registros con al menos una vuelta completada y sin estados excluidos. La lluvia no excluye automáticamente una carrera: São Paulo y los demás GP permanecen disponibles según el criterio de clasificación.
+ 
+ \newpage
+ 
+@@ -724,18 +724,18 @@
+ $$P(\pi_r\mid\eta)=\prod_{k=1}^{n_r-1}
+ \frac{\exp(\eta_{\pi_{rk}})}{\sum_{j=k}^{n_r}\exp(\eta_{\pi_{rj}})}.$$
+ 
+-Se adapta el logit ordenado de @kesteren2023 y la separación multinivel de @bell2016. Los efectos anuales permiten que piloto y equipo cambien entre años; dentro de 2024 representan una competitividad media, no la velocidad de cada evolución del carro. Los nombres oficiales de constructores se conservan como categorías distintas.
++Se adapta el logit de rangos (Plackett–Luce) de @kesteren2023 y la separación multinivel de @bell2016. Los efectos anuales permiten que piloto y equipo cambien entre años; dentro de 2024 representan una competitividad media, no la velocidad de cada evolución del carro. Los nombres oficiales de constructores se conservan como categorías distintas.
+ 
+ **Rankings y proporción.** Los efectos $D_d=a_d+a_{d,2024}$ y $C_c=b_c+b_{c,2024}$ se centran por separado para mostrarlos. Cada extracción posterior genera rankings e intervalos creíbles (ICr). Para responder específicamente sobre 2024 se calcula
+ 
+ $$S_{C,2024}=\frac{\operatorname{Var}_{c}(C_c)}{
+ \operatorname{Var}_{c}(C_c)+\operatorname{Var}_{d}(D_d)}.$$
+ 
+-Es una proporción de dispersión de efectos latentes bajo un escenario equilibrado, no un porcentaje de victorias, de mérito ni de varianza total explicada. Se exporta también la razón de hiperparámetros comparable con los estudios, que corresponde al período completo de estimación, no solo a 2024.
++Es una proporción de dispersión de efectos latentes, con igual peso para los pilotos y para los constructores de sus respectivos conjuntos. No representa el porcentaje de victorias, de mérito ni de varianza total explicada. Se exporta también la razón de hiperparámetros comparable con los estudios, que corresponde al período completo de estimación, no solo a 2024.
+ 
+ **Intercambios.** Para dos combinaciones, $P(A\succ B)=\operatorname{logit}^{-1}(D_A+C_A-D_B-C_B)$. Los escenarios se fijaron antes del ajuste. Mantienen los efectos estimados al intercambiar carros y no incluyen adaptación, sinergia particular, averías ni cambios en la conducción. Comparan dos participantes; no son probabilidades de ganar a todo el pelotón.
+ 
+-**Parrilla y circuitos.** Una extensión añade $(\beta+u_{circuito})g$, con $g$ como ventaja normalizada de parrilla y pendientes regularizadas por circuito. Se reservan GP completos de 2024 en cuatro pliegues y se reestima con los demás GP y el apoyo histórico. En el test se evalúan cuatro ablaciones de información: constructor, parrilla, ambos y modelo completo. Se predice el rango esperado $1+\sum_{j\ne i}P(j\succ i)$; el MAE se promedia dando igual peso a cada GP. Son reglas derivadas de una misma estructura, no cuatro causas aisladas. El ejercicio es retrospectivo y condicional a clasificación.
++**Parrilla y circuitos.** Una extensión añade $(\beta+u_{circuito})g$, con $g$ como ventaja normalizada de parrilla y pendientes regularizadas por circuito. Se reservan GP completos de 2024 en cuatro pliegues y se reestima con los demás GP y el apoyo histórico. En el test se evalúan cuatro ablaciones de información: constructor, parrilla, ambos y modelo completo. Se predice el rango esperado $1+\sum_{j\ne i}P(j\succ i)$; el MAE se promedia dando igual peso a cada GP. Son reglas derivadas de una misma estructura, no cuatro causas aisladas. La diferencia de MAE entre constructor y parrilla se acompaña de un intervalo bootstrap pareado por GP. El ejercicio es retrospectivo y condicional a clasificación.
+ 
+ **Calidad.** Se ejecutan cuatro cadenas NUTS; se exige $\widehat R\le1.01$, ESS efectivo $\ge400$ y cero divergencias. El programa se detiene si no se cumplen. Se contrastan priors, datos simulados de victorias y una adaptación gaussiana de Bell basada en puntos normalizados, incluyendo retiros. No se fuerza concordancia entre estudios [@stan].
+ 
+@@ -780,16 +780,16 @@
+ 
+ ## Resultados de la metodología
+ 
+-**¿Qué componente predomina?** La mediana de $S_{C,2024}$ es **`r pct(median(share24))`**, con ICr 95 % **`r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`**. La probabilidad posterior de que esta proporción supere la mitad es **`r pct(mean(share24>.5))`**. El complemento corresponde al piloto dentro de esta descomposición; no se aplica a cada victoria individual.
++**¿Qué componente predomina?** La mediana de $S_{C,2024}$ es **`r pct(median(share24))`**, con ICr 95 % **`r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`**. La mediana complementaria del piloto es **`r pct(median(1-share24))`**. `r if(all(share24>.5)) "Todas las extracciones posteriores retenidas superan el 50 % para el constructor; esto no equivale a certeza absoluta." else paste0("La proporción de extracciones que supera el 50 % para el constructor es ",pct(mean(share24>.5)),".")` Estos porcentajes describen la dispersión de componentes, no el mérito de cada victoria.
+ 
+ ```{r}
+ #| label: fig-rankings-ajustados
+-#| fig-cap: "Seis primeros por media posterior; barras: ICr 95 %. Escala log-odds, centrada dentro de cada componente. Rankings completos y probabilidades en las tablas reproducibles."
++#| fig-cap: "Seis primeros por media posterior; barras: ICr 95 %. Entre paréntesis: participaciones de 2024 modeladas. Escala log-odds, centrada por componente; no es un orden cierto de talento."
+ #| fig-width: 6.4
+ #| fig-height: 2.2
+ #| fig-pos: "H"
+ pd <- bind_rows(
+-  rank_d |> slice_head(n=6) |> transmute(componente="Pilotos: carro equivalente",nombre,media,inferior,superior),
++  rank_d |> slice_head(n=6) |> transmute(componente="Pilotos: carro equivalente",nombre=paste0(nombre," (",carreras_2024,")"),media,inferior,superior),
+   rank_t |> slice_head(n=6) |> transmute(componente="Constructores: piloto equivalente",nombre=constructor_name,media,inferior,superior))
+ pd$nombre <- factor(pd$nombre,levels=unique(pd$nombre[order(pd$media)]))
+ plot_rank <- ggplot(pd,aes(x=media,y=nombre,xmin=inferior,xmax=superior))+
+@@ -799,7 +799,7 @@
+ plot_rank
+ ```
+ 
+-**Rankings.** `r rank_d$nombre[1]` encabeza la media de pilotos y `r rank_t$constructor_name[1]` la de constructores; sus probabilidades de ocupar realmente el primer lugar entre los efectos estimados son `r pct(rank_d$prob_mejor[1])` y `r pct(rank_t$prob_mejor[1])`. El piloto que lidera la media ganó `r sum(ganadores$driver_id==rank_d$id[1])` GP y el constructor que la lidera ganó `r sum(ganadores$constructor_id==rank_t$id[1])` de 24; son efectos medios de temporada, no una identificación del más rápido en cada circuito.
++**Rankings.** `r rank_d$nombre[1]` encabeza la media de pilotos y `r rank_t$constructor_name[1]` la de constructores; sus probabilidades posteriores de encabezar el respectivo componente son `r pct(rank_d$prob_mejor[1])` y `r pct(rank_t$prob_mejor[1])`. El piloto que lidera la media ganó `r sum(ganadores$driver_id==rank_d$id[1])` GP y el constructor que la lidera ganó `r sum(ganadores$constructor_id==rank_t$id[1])` de 24; son efectos medios de temporada, no una identificación del más rápido en cada circuito.
+ 
+ **¿Qué ocurre al cambiar de carro?** Probabilidad de que la primera combinación termine delante de la segunda, condicionada al modelo anual:
+ 
+@@ -808,7 +808,7 @@
+ knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))
+ ```
+ 
+-**¿Constructor o salida?** Comparación retrospectiva de información en GP reservados; menor MAE es mejor. Los rangos estimados siempre pertenecen al intervalo posible entre los clasificados.
++**¿Constructor o salida?** Comparación retrospectiva en GP reservados; menor MAE es mejor. Los rangos se refieren al conjunto de participantes clasificados utilizado por el modelo.
+ 
+ ```{r}
+ #| label: tabla-parrilla
+@@ -818,19 +818,23 @@
+ } else cat("La comparación de parrilla está desactivada: no debe declararse terminada esta pregunta.")
+ ```
+ 
+-**Comprobaciones.** El modelo principal obtuvo $\widehat R_{max}=$ `r num(principal_fit$diagnostico$rhat_max,3)`, ESS mínimo `r round(principal_fit$diagnostico$ess_bulk_min)` y `r principal_fit$diagnostico$divergencias` divergencias. `r if(!is.null(sens_prior)) paste0('La correlación de rankings con el prior alternativo fue ',num(sens_prior$spearman[1],3),' para pilotos y ',num(sens_prior$spearman[2],3),' para constructores.') else 'Falta la sensibilidad al prior: no omitir esta advertencia.'` Las diferencias con Bell, las sensibilidades y las verificaciones predictivas se exportan, sin sustituir los resultados principales.
++`r if(!is.null(cv_summary)) paste0("La diferencia de MAE constructor menos parrilla es ",num(mean(delta),3)," puestos; IC bootstrap 95 % [",num(quantile(boot,.025),3),"; ",num(quantile(boot,.975),3),"]. Al incluir cero, no respalda una superioridad clara de una sola fuente de información.") else "La evaluación de parrilla está pendiente."`
++
++**Comprobaciones.** El ajuste principal obtuvo $\widehat R_{max}=$ `r num(principal_fit$diagnostico$rhat_max,3)`, ESS mínimo `r round(principal_fit$diagnostico$ess_bulk_min)` y `r principal_fit$diagnostico$divergencias` divergencias. La convergencia no certifica la validez causal. Los contrastes de especificación se resumen en las conclusiones.
+ 
+ \newpage
+ 
+ # Conclusiones
+ 
+-1. **Separación estadística de los componentes.** `r if(mean(share24>.5)>=.95) paste0('La evidencia posterior favorece un predominio del constructor en la dispersión latente de 2024: mediana ',pct(median(share24)),'.') else if(mean(share24>.5)<=.05) paste0('La evidencia posterior favorece un predominio del piloto en la dispersión latente de 2024: la parte del constructor tiene mediana ',pct(median(share24)),'.') else paste0('La descomposición central asigna una mediana de ',pct(median(share24)),' al constructor, pero su intervalo no permite afirmar un predominio inequívoco.')` El porcentaje describe los efectos estimados bajo esta especificación y su apoyo histórico; no demuestra una fracción mecánica o causal de cada resultado.
+-
+-2. **Carro equivalente y escenarios de intercambio.** `r rank_d$nombre[1]` y `r rank_t$constructor_name[1]` encabezan las medias de sus respectivos componentes. Para Verstappen y Norris en carro común, la probabilidad estimada de que el primero termine delante es `r pct(contrafactuales$prob_A_delante[1])`; en el intercambio VER–McLaren / NOR–Red Bull es `r pct(contrafactuales$prob_A_delante[3])`. Las comparaciones distinguen ventaja individual y ventaja del constructor sin afirmar que el cambio físico produciría exactamente esos resultados.
+-
+-3. **Parrilla y alcance.** `r if(!is.null(cv_summary)) paste0('La regla con menor MAE medio en la validación fue «',cv_summary$regla[1],'», con ',num(cv_summary$mae[1],3),' puestos.') else 'La validación de parrilla está pendiente.'` Los errores por GP permiten observar heterogeneidad entre circuitos sin atribuirla automáticamente a su geometría. El análisis es anual, condicional a clasificación y a supuestos de independencia y estabilidad; no pronostica averías ni separa piezas mecánicas, estrategia y organización dentro del constructor.
+-
+-**Aporte respecto al prototipo.** El estudio deja de definir el carro como el promedio de dos pilotos: utiliza componentes separados, apoyo histórico, incertidumbre posterior y comparaciones contrafactuales. No pretende replicar exactamente las muestras de los artículos ni reproducir forzosamente sus conclusiones. El código, las entradas y los diagnósticos están integrados en el Quarto y su estructura de proyecto.
++1. **El constructor predomina, pero no determina por sí solo quién gana.** En la descomposición de efectos de 2024, la mediana del componente constructor es **`r pct(median(share24))`** (ICr 95 %: `r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`), frente a **`r pct(median(1-share24))`** del piloto. El resultado responde a una comparación de competitividad latente dentro del modelo, no a una división mecánica del mérito de cada victoria.
++
++2. **La ventaja individual puede distinguirse estadísticamente de la del equipo.** `r rank_d$nombre[1]` y `r rank_t$constructor_name[1]` encabezan las medias de los componentes piloto y constructor, con probabilidades de primer puesto de `r pct(rank_d$prob_mejor[1])` y `r pct(rank_t$prob_mejor[1])`. El escenario de carro común favorece en promedio a Verstappen frente a Norris (`r pct(contrafactuales$prob_A_delante[1])`), aunque su ICr 95 % (`r pct(contrafactuales$inferior[1])`–`r pct(contrafactuales$superior[1])`) incluye el 50 %. En el intercambio Verstappen–Sauber frente a Zhou–Red Bull, la probabilidad media del primero baja a `r pct(contrafactuales$prob_A_delante[4])` (ICr: `r pct(contrafactuales$inferior[4])`–`r pct(contrafactuales$superior[4])`). Los escenarios muestran el peso potencial del constructor sin garantizar el desenlace de un cambio real de carro.
++
++3. **Constructor y parrilla aportan información complementaria.** `r if(!is.null(cv_summary)) paste0("El menor MAE medio corresponde a «",cv_summary$regla[1],"», con ",num(cv_summary$mae[1],3)," puestos. La regla constructor–parrilla queda próxima al modelo completo.") else "La evaluación de parrilla está pendiente."` `r if(!is.null(cv_summary)) paste0("La diferencia entre constructor y parrilla por separado es ",num(mean(delta),3)," puestos (IC bootstrap 95 %: ",num(quantile(boot,.025),3)," a ",num(quantile(boot,.975),3),"); no distingue una ventaja clara entre esas dos reglas.") else ""` Esta comparación no contradice la descomposición anterior: error de predicción y dispersión de efectos son medidas diferentes. Su alcance es retrospectivo, entre participantes clasificados.
++
++**Sensibilidad y precisión.** `r if(!is.null(sens_prior)) paste0("El cambio de escala del prior mantiene correlaciones de rankings de ",num(sens_prior$spearman[1],3)," para pilotos y ",num(sens_prior$spearman[2],3)," para constructores.") else "Falta la sensibilidad al prior."` `r if(!is.null(bell_resultados)) paste0("Frente al contraste gaussiano inspirado en Bell, son ",num(bell_resultados$rho_con_PL[1],3)," y ",num(bell_resultados$rho_con_PL[2],3),", respectivamente: algunos puestos dependen de la especificación y de incluir retiros.") else "Falta el contraste inspirado en Bell."` No se atribuye todo el cambio a una sola decisión. En particular, `r rank_d$nombre[rank_d$id=="colapinto"]` figura `r rank_d$orden[rank_d$id=="colapinto"]`.º por media, pero solo tiene `r rank_d$carreras_2024[rank_d$id=="colapinto"]` participaciones modeladas y un ICr del rango de `r rank_d$rango_inferior[rank_d$id=="colapinto"]` a `r rank_d$rango_superior[rank_d$id=="colapinto"]`: no es evidencia de un quinto puesto inequívoco.
++
++**Alcance.** El apoyo histórico reduce, pero no elimina por sí mismo, los problemas de identificación. Los efectos de constructor agregan carro y organización; los efectos anuales no capturan cada actualización ni todo el tráfico o la estrategia. El estudio produce una separación estadística condicionada a estos supuestos, no una prueba mecánica experimental. Las tablas completas y los controles permanecen disponibles en la entrega reproducible.
+ 
+ \newpage
+ 

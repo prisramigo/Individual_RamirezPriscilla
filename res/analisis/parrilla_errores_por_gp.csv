@@ -1,0 +1,97 @@
+"round","race_id","circuit_id","regla","n","mae"
+1,"2024-1","bahrain","Constructor",20,2.83485903573855
+1,"2024-1","bahrain","Constructor + parrilla",20,1.95846107756773
+1,"2024-1","bahrain","Parrilla",20,2.78016121531292
+1,"2024-1","bahrain","Piloto + constructor + parrilla",20,1.95364684826134
+2,"2024-2","jeddah","Constructor",18,2.73487800169182
+2,"2024-2","jeddah","Constructor + parrilla",18,1.87649207187886
+2,"2024-2","jeddah","Parrilla",18,2.33716026352174
+2,"2024-2","jeddah","Piloto + constructor + parrilla",18,1.86953862739293
+3,"2024-3","albert_park","Constructor",16,2.1980015494205
+3,"2024-3","albert_park","Constructor + parrilla",16,1.50037111631116
+3,"2024-3","albert_park","Parrilla",16,1.95646530585983
+3,"2024-3","albert_park","Piloto + constructor + parrilla",16,1.5321430859292
+4,"2024-4","suzuka","Constructor",17,2.3910849125383
+4,"2024-4","suzuka","Constructor + parrilla",17,1.51218754411992
+4,"2024-4","suzuka","Parrilla",17,2.03652920678224
+4,"2024-4","suzuka","Piloto + constructor + parrilla",17,1.54518131799971
+5,"2024-5","shanghai","Constructor",17,2.51589601677241
+5,"2024-5","shanghai","Constructor + parrilla",17,1.38276307155866
+5,"2024-5","shanghai","Parrilla",17,2.53717704517916
+5,"2024-5","shanghai","Piloto + constructor + parrilla",17,1.31479174373157
+6,"2024-6","miami","Constructor",19,3.05351101265507
+6,"2024-6","miami","Constructor + parrilla",19,2.57076674137087
+6,"2024-6","miami","Parrilla",19,2.87584585903274
+6,"2024-6","miami","Piloto + constructor + parrilla",19,2.61612966557632
+7,"2024-7","imola","Constructor",19,2.58633218119299
+7,"2024-7","imola","Constructor + parrilla",19,2.03091319748414
+7,"2024-7","imola","Parrilla",19,3.30248262220748
+7,"2024-7","imola","Piloto + constructor + parrilla",19,2.00747538826349
+8,"2024-8","monaco","Constructor",16,2.29472318839126
+8,"2024-8","monaco","Constructor + parrilla",16,1.43015484751607
+8,"2024-8","monaco","Parrilla",16,1.61308073632892
+8,"2024-8","monaco","Piloto + constructor + parrilla",16,1.45208288286818
+9,"2024-9","villeneuve","Constructor",15,2.24967920940836
+9,"2024-9","villeneuve","Constructor + parrilla",15,1.44357034114554
+9,"2024-9","villeneuve","Parrilla",15,2.01072671484431
+9,"2024-9","villeneuve","Piloto + constructor + parrilla",15,1.37013199695961
+10,"2024-10","catalunya","Constructor",20,3.07740193338582
+10,"2024-10","catalunya","Constructor + parrilla",20,1.64289692717889
+10,"2024-10","catalunya","Parrilla",20,2.21797535841195
+10,"2024-10","catalunya","Piloto + constructor + parrilla",20,1.54798656448559
+11,"2024-11","red_bull_ring","Constructor",20,3.67884693555957
+11,"2024-11","red_bull_ring","Constructor + parrilla",20,3.07220273203783
+11,"2024-11","red_bull_ring","Parrilla",20,3.17231922866474
+11,"2024-11","red_bull_ring","Piloto + constructor + parrilla",20,3.26115805641436
+12,"2024-12","silverstone","Constructor",18,3.73567241165834
+12,"2024-12","silverstone","Constructor + parrilla",18,2.64971854522579
+12,"2024-12","silverstone","Parrilla",18,2.47908854592909
+12,"2024-12","silverstone","Piloto + constructor + parrilla",18,2.58638890917665
+13,"2024-13","hungaroring","Constructor",19,2.73570755537433
+13,"2024-13","hungaroring","Constructor + parrilla",19,1.92036586576998
+13,"2024-13","hungaroring","Parrilla",19,3.49924043674954
+13,"2024-13","hungaroring","Piloto + constructor + parrilla",19,2.07559697518782
+14,"2024-14","spa","Constructor",18,2.74885084843941
+14,"2024-14","spa","Constructor + parrilla",18,1.92972881313625
+14,"2024-14","spa","Parrilla",18,2.45559573148879
+14,"2024-14","spa","Piloto + constructor + parrilla",18,1.77882362448116
+15,"2024-15","zandvoort","Constructor",20,2.71925607574414
+15,"2024-15","zandvoort","Constructor + parrilla",20,2.06928674488095
+15,"2024-15","zandvoort","Parrilla",20,3.3869189330242
+15,"2024-15","zandvoort","Piloto + constructor + parrilla",20,1.85451532754869
+16,"2024-16","monza","Constructor",19,2.69798865931076
+16,"2024-16","monza","Constructor + parrilla",19,2.1301425184394
+16,"2024-16","monza","Parrilla",19,2.74476260747191
+16,"2024-16","monza","Piloto + constructor + parrilla",19,2.09072767227368
+17,"2024-17","baku","Constructor",16,2.67497903726494
+17,"2024-17","baku","Constructor + parrilla",16,1.60550824684518
+17,"2024-17","baku","Parrilla",16,2.57187455415265
+17,"2024-17","baku","Piloto + constructor + parrilla",16,1.60722279721691
+18,"2024-18","marina_bay","Constructor",18,2.81778917815514
+18,"2024-18","marina_bay","Constructor + parrilla",18,1.67230615972518
+18,"2024-18","marina_bay","Parrilla",18,2.3482388479298
+18,"2024-18","marina_bay","Piloto + constructor + parrilla",18,1.5348816723348
+19,"2024-19","americas","Constructor",19,2.76312577619892
+19,"2024-19","americas","Constructor + parrilla",19,2.55137485006818
+19,"2024-19","americas","Parrilla",19,4.0410447570396
+19,"2024-19","americas","Piloto + constructor + parrilla",19,2.4899398568737
+20,"2024-20","rodriguez","Constructor",17,2.59929424221018
+20,"2024-20","rodriguez","Constructor + parrilla",17,1.93383609518244
+20,"2024-20","rodriguez","Parrilla",17,2.36984151596397
+20,"2024-20","rodriguez","Piloto + constructor + parrilla",17,1.92311461154295
+21,"2024-21","interlagos","Constructor",15,3.38537373276108
+21,"2024-21","interlagos","Constructor + parrilla",15,2.95806241634764
+21,"2024-21","interlagos","Parrilla",15,3.11159237513574
+21,"2024-21","interlagos","Piloto + constructor + parrilla",15,2.85003139467059
+22,"2024-22","vegas","Constructor",18,2.67585547026443
+22,"2024-22","vegas","Constructor + parrilla",18,1.78372552128003
+22,"2024-22","vegas","Parrilla",18,2.95168227440968
+22,"2024-22","vegas","Piloto + constructor + parrilla",18,1.73458164495465
+23,"2024-23","losail","Constructor",15,3.10567341655309
+23,"2024-23","losail","Constructor + parrilla",15,2.71640575149892
+23,"2024-23","losail","Parrilla",15,2.63809840950271
+23,"2024-23","losail","Piloto + constructor + parrilla",15,2.70429509126577
+24,"2024-24","yas_marina","Constructor",16,2.4028650240964
+24,"2024-24","yas_marina","Constructor + parrilla",16,2.3936585912763
+24,"2024-24","yas_marina","Parrilla",16,3.31620353427188
+24,"2024-24","yas_marina","Piloto + constructor + parrilla",16,2.35222588362722

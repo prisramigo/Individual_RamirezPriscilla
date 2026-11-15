@@ -1,0 +1,30 @@
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.quarto/
+*_cache/
+*_files/
+res/modelos/*.rds
+res/modelos/*.so
+res/modelos/*.dll
+res/modelos/*.hpp
+res/modelos/*.cpp
+res/modelos/*.o
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb
+
+# Archivos auxiliares de RStudio
+.Rproj.user/
+.Rhistory
+.Ruserdata
+
+# Archivos auxiliares de macOS y Quarto
+.DS_Store
+.quarto/
+
+# Configuración local con credenciales
+.Renviron
+.env

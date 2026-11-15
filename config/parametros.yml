@@ -1,0 +1,25 @@
+# El año objetivo no cambia: las temporadas previas son apoyo de identificación.
+anio_objetivo: 2024
+primer_anio_apoyo: 2014
+ultimo_anio_apoyo: 2023
+semilla: 20241024
+cadenas: 4
+iteraciones: 3000
+calentamiento: 1500
+nucleos: 2
+adapt_delta: 0.99
+max_treedepth: 13
+escala_prior: 2.5
+sensibilidad_prior: true
+escala_prior_alternativa: 1.0
+comparacion_bell: true
+validacion_parrilla: true
+pliegues: 4
+iteraciones_cv: 2500
+calentamiento_cv: 1250
+min_ess: 400
+max_rhat: 1.01
+max_divergencias: 0
+reajustar: false
+# true: detiene la entrega si los diagnósticos MCMC no son satisfactorios.
+exigir_diagnosticos: true

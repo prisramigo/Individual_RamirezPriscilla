@@ -1,0 +1,6 @@
+project:
+  type: default
+  execute-dir: project
+  output-dir: res/reporte
+  render:
+    - cod/reporte_f1.qmd

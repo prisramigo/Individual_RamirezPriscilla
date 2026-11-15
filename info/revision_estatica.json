@@ -1,0 +1,9 @@
+{
+  "YAML_configuraciones_validas": true,
+  "delimitadores_R_equilibrados_revision_lexica": true,
+  "etiquetas_Quarto_unicas": true,
+  "numero_bloques": 13,
+  "secciones_resultados_en_paginas_separadas": true,
+  "ejecucion_R_Stan_realizada": false,
+  "render_Quarto_realizado": false
+}

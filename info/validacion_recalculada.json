@@ -1,0 +1,15 @@
+{
+  "csv_diagnostics_all_pass": true,
+  "models_reviewed": 6,
+  "max_rhat_all": 1.00623138152708,
+  "min_bulk_ess_all": 1133.77029097505,
+  "total_divergences": 0,
+  "n_prediction_rows": 1700,
+  "n_pilot_race": 425,
+  "recomputed_cv_mae_matches": true,
+  "prediction_range_valid": true,
+  "recomputed_Bell_PL_correlation_matches": true,
+  "reduction_full_vs_grid": 0.2579217821298815,
+  "max_probability_draws_reconstruction": null,
+  "limitation": "No se recibieron extracciones posteriores; no se repitió MCMC ni se reconstruyeron sus intervalos desde muestras."
+}

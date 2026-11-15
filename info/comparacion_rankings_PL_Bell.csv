@@ -1,0 +1,25 @@
+id,nombre,orden,carreras_2024,rango_inferior,rango_superior,prob_mejor,driver_id,puntaje_bell,puesto_bell,cambio_bell_menos_pl
+max_verstappen,Max Verstappen,1,23,1,4,0.844333333333333,max_verstappen,0.584885381399237,1,0
+norris,Lando Norris,2,24,1,15,0.0545,norris,0.329108005177903,2,0
+piastri,Oscar Piastri,3,24,2,20,0.0155,piastri,0.134295423405536,6,3
+sainz,Carlos Sainz,4,20,2,18,0.0125,sainz,0.157856549419016,5,1
+colapinto,Franco Colapinto,5,6,2,21,0.024,colapinto,0.0904444639711845,9,4
+leclerc,Charles Leclerc,6,23,2,19,0.007,leclerc,0.246882520658342,3,-3
+russell,George Russell,7,21,2,19,0.0111666666666667,russell,0.0294699814631749,14,7
+alonso,Fernando Alonso,8,23,2,20,0.005,alonso,0.0790375307911501,11,3
+hulkenberg,Nico Hülkenberg,9,21,2,20,0.0041666666666666,hulkenberg,0.0811036194143087,10,1
+bottas,Valtteri Bottas,10,22,2,21,0.0035,bottas,0.0018921818365885,17,7
+gasly,Pierre Gasly,11,20,2,20,0.0028333333333333,gasly,0.0975941715312293,8,-3
+hamilton,Lewis Hamilton,12,22,3,22,0.0023333333333333,hamilton,0.230929742538941,4,-8
+albon,Alexander Albon,13,17,3,22,0.0015,albon,0.0541869136809556,12,-1
+ricciardo,Daniel Ricciardo,14,16,3,22,0.0005,ricciardo,0.125364840151981,7,-7
+bearman,Oliver Bearman,15,3,2,24,0.0053333333333333,bearman,0.0162845420805567,16,1
+tsunoda,Yuki Tsunoda,16,20,4,23,0.0008333333333333,tsunoda,-0.0243266220214392,19,3
+lawson,Liam Lawson,17,5,3,23,0.0021666666666666,lawson,0.021108885453386,15,-2
+zhou,Guanyu Zhou,18,22,5,23,0.0005,zhou,-0.0422547031486651,20,2
+ocon,Esteban Ocon,19,21,6,23,0.0001666666666666,ocon,0.043949841055616,13,-6
+kevin_magnussen,Kevin Magnussen,20,20,7,24,0.0,kevin_magnussen,-0.0501748807470877,21,1
+doohan,Jack Doohan,21,1,3,24,0.0021666666666666,doohan,-0.0158365451959468,18,-3
+stroll,Lance Stroll,22,20,10,24,0.0,stroll,-0.200889193245452,23,1
+perez,Sergio Pérez,23,19,12,24,0.0,perez,-0.0848847647015104,22,-1
+sargeant,Logan Sargeant,24,12,17,24,0.0,sargeant,-0.360668907119444,24,0

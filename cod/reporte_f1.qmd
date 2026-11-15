@@ -1,0 +1,841 @@
+---
+lang: es
+format:
+  pdf:
+    documentclass: article
+    pdf-engine: xelatex
+    fontsize: 10pt
+    geometry:
+      - margin=20mm
+    number-sections: true
+    toc: false
+    colorlinks: true
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{float}
+        \usepackage{microtype}
+        \setlength{\parskip}{4pt}
+        \setlength{\parindent}{0pt}
+execute:
+  echo: false
+  message: false
+  warning: false
+  error: false
+bibliography: ../info/referencias.bib
+link-citations: true
+---
+
+```{r}
+#| label: configuracion
+#| include: false
+
+paquetes <- c("dplyr", "tidyr", "tibble", "ggplot2", "httr2", "yaml",
+              "knitr", "digest", "rstan", "posterior", "lme4")
+faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
+if (length(faltan)) stop("Instala en Console los paquetes: ", paste(faltan, collapse = ", "))
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+cfg <- yaml::read_yaml("config/parametros.yml")
+stopifnot(cfg$anio_objetivo == 2024,
+          cfg$ultimo_anio_apoyo < cfg$anio_objetivo,
+          cfg$calentamiento < cfg$iteraciones,
+          cfg$calentamiento_cv < cfg$iteraciones_cv)
+set.seed(cfg$semilla)
+for (p in c("data/originales/historico", "data/limpios", "res/modelos",
+            "res/analisis", "res/diagnosticos", "res/figuras")) {
+  dir.create(p, recursive = TRUE, showWarnings = FALSE)
+}
+write_csv <- function(x, nombre, carpeta = "res/analisis") {
+  utils::write.csv(as.data.frame(x), file.path(carpeta, nombre),
+                   row.names = FALSE, na = "", fileEncoding = "UTF-8")
+}
+num <- function(x, d = 2) formatC(x, format = "f", digits = d, decimal.mark = ",")
+pct <- function(x, d = 1) paste0(num(100 * x, d), " %")
+intervalo <- function(x, d = 2) {
+  q <- quantile(x, c(.025, .5, .975), names = FALSE)
+  paste0(num(q[2], d), " [", num(q[1], d), "; ", num(q[3], d), "]")
+}
+scalar <- function(x, default = NA_character_) {
+  if (is.null(x) || !length(x)) return(default)
+  as.character(x[[1]])
+}
+
+avance <- function(s) {
+  cat(format(Sys.time(), "%Y-%m-%d %H:%M:%S"), s, "\n",
+      file = "res/diagnosticos/avance.txt", append = TRUE)
+}
+avance("Inicio del análisis piloto-constructor; objetivo 2024.")
+```
+
+```{r}
+#| label: datos-y-conexiones
+#| include: false
+
+# Datos 2024 
+objetivo_raw <- utils::read.csv("data/originales/base_piloto_carrera.csv",
+                              stringsAsFactors = FALSE, check.names = FALSE,
+                              fileEncoding = "UTF-8")
+cols <- c("season", "round", "circuit_id", "driver_id", "nombre",
+          "constructor_id", "constructor_name", "position", "grid", "points", "laps", "status")
+stopifnot(all(cols %in% names(objetivo_raw)))
+objetivo <- objetivo_raw[, cols]
+objetivo$fuente <- "Insumo 2024 de la estudiante: Jolpica/OpenF1"
+
+# Apoyo histórico exclusivamente anterior a 2024; páginas de 100 resultados.
+obtener_anio <- function(anio) {
+  registros <- list(); offset <- 0L; total <- Inf; p <- 0L
+  while (offset < total) {
+    archivo <- sprintf("data/originales/historico/jolpica_%d_%04d.rds", anio, offset)
+    if (file.exists(archivo)) {
+      respuesta <- readRDS(archivo)
+    } else {
+      avance(sprintf("Descarga de apoyo: temporada %d, offset %d", anio, offset))
+      Sys.sleep(1.2)
+      respuesta <- httr2::request(sprintf("https://api.jolpi.ca/ergast/f1/%d/results/", anio)) |>
+        httr2::req_user_agent("ProyectoAcademicoF1-2024/2.0") |>
+        httr2::req_url_query(limit = 100, offset = offset) |>
+        httr2::req_timeout(90) |>
+        httr2::req_retry(max_tries = 5) |>
+        httr2::req_perform() |>
+        httr2::resp_body_json(simplifyVector = FALSE)
+      if (is.null(respuesta$MRData$RaceTable$Races)) stop("Respuesta inválida de Jolpica: ", anio)
+      saveRDS(respuesta, archivo)
+    }
+    mr <- respuesta$MRData
+    total <- as.integer(scalar(mr$total))
+    limite <- as.integer(scalar(mr$limit))
+    if (!is.finite(total) || total <= 0 || !is.finite(limite) || limite < 1)
+      stop("Paginación inválida en la temporada ", anio)
+    carreras <- mr$RaceTable$Races
+    if (!length(carreras)) stop("Página vacía antes de completar la temporada ", anio)
+    for (rr in carreras) for (dd in rr$Results) {
+      p <- p + 1L
+      registros[[p]] <- data.frame(
+        season = as.integer(scalar(rr$season)), round = as.integer(scalar(rr$round)),
+        circuit_id = scalar(rr$Circuit$circuitId), driver_id = scalar(dd$Driver$driverId),
+        nombre = paste(scalar(dd$Driver$givenName), scalar(dd$Driver$familyName)),
+        constructor_id = scalar(dd$Constructor$constructorId),
+        constructor_name = scalar(dd$Constructor$name),
+        position = as.integer(scalar(dd$position)), grid = as.integer(scalar(dd$grid)),
+        points = as.numeric(scalar(dd$points)), laps = as.integer(scalar(dd$laps)),
+        status = scalar(dd$status), fuente = "Jolpica: apoyo histórico", stringsAsFactors = FALSE
+      )
+    }
+    offset <- offset + limite
+  }
+  out <- dplyr::bind_rows(registros)
+  if (nrow(out) != total || anyDuplicated(out[c("season", "round", "driver_id")]))
+    stop("Cobertura o duplicados inesperados en la temporada ", anio)
+  out
+}
+historico <- bind_rows(lapply(seq.int(cfg$primer_anio_apoyo, cfg$ultimo_anio_apoyo), obtener_anio))
+base <- bind_rows(historico, objetivo) |>
+  mutate(across(c(season, round, position, grid, laps), as.integer),
+         race_id = paste(season, round, sep = "-"),
+         driver_year = paste(driver_id, season, sep = "::"),
+         team_year = paste(constructor_id, season, sep = "::"),
+         activo = status == "Finished" | status == "Lapped" | grepl("^\\+[0-9]+ Lap", status),
+         excluido = grepl("disqual|did not start|did not qualify|withdraw|excluded|withdrew",
+                           status, ignore.case = TRUE)) |>
+  arrange(season, round, position) |>
+  group_by(race_id) |>
+  mutate(n_inscritos = n(),
+         ultimo_activo = if (any(activo & !excluido)) max(position[activo & !excluido]) else NA_integer_,
+         # Adaptación explícita de compute_classified() de van Kesteren y Bergkamp.
+         clasificado = !excluido & !is.na(ultimo_activo) & position <= ultimo_activo,
+         salio = !excluido & !is.na(laps) & laps > 0,
+         # Pit-lane/no parrilla: se trata como detrás del último puesto, nunca como pole.
+         grid_operativo = if_else(is.na(grid) | grid <= 0, as.double(n_inscritos + 1L), as.double(grid)),
+         grid_ventaja = (n_inscritos - grid_operativo) / pmax(n_inscritos - 1, 1)) |>
+  ungroup()
+stopifnot(!anyNA(base[c("season", "round", "driver_id", "constructor_id", "position")]),
+          !anyDuplicated(base[c("season", "round", "driver_id")]),
+          all(base$season <= cfg$anio_objetivo))
+write_csv(base, "base_historico_y_objetivo.csv", "data/limpios")
+
+# Grafo bipartito: conexiones de pilotos y constructores, no una prueba completa de identificación.
+componentes_red <- function(df) {
+  aristas <- unique(data.frame(a = paste0("D:", df$driver_id), b = paste0("C:", df$constructor_id)))
+  nodos <- unique(c(aristas$a, aristas$b)); grupo <- setNames(seq_along(nodos), nodos)
+  for (i in seq_len(nrow(aristas))) {
+    ga <- grupo[[aristas$a[i]]]; gb <- grupo[[aristas$b[i]]]
+    if (ga != gb) grupo[grupo == gb] <- ga
+  }
+  length(unique(grupo))
+}
+red_2024 <- componentes_red(filter(base, season == cfg$anio_objetivo))
+red_apoyo <- componentes_red(base)
+write_csv(data.frame(muestra = c("Solo 2024", "Histórico y 2024"),
+                     componentes = c(red_2024, red_apoyo)), "conectividad.csv", "res/diagnosticos")
+if (red_apoyo > 1) warning("El grafo histórico no está conectado: revisar sensibilidad entre componentes.")
+
+# Diccionarios estables: se construyen una vez, también para validación.
+ids <- list(driver = sort(unique(base$driver_id)), team = sort(unique(base$constructor_id)),
+            driver_year = sort(unique(base$driver_year)), team_year = sort(unique(base$team_year)),
+            circuit = sort(unique(base$circuit_id)))
+foco_d <- filter(base, season == cfg$anio_objetivo) |>
+  distinct(driver_id, nombre) |>
+  arrange(driver_id)
+foco_t <- filter(base, season == cfg$anio_objetivo) |>
+  distinct(constructor_id, constructor_name) |>
+  arrange(constructor_id)
+stopifnot(!anyDuplicated(foco_d$driver_id), !anyDuplicated(foco_t$constructor_id))
+base <- base |>
+  mutate(did = match(driver_id, ids$driver), tid = match(constructor_id, ids$team),
+         dyid = match(driver_year, ids$driver_year), tyid = match(team_year, ids$team_year),
+         cid = match(circuit_id, ids$circuit))
+principal <- filter(base, clasificado) |>
+  group_by(race_id) |> filter(n() >= 2) |>
+  arrange(position, .by_group = TRUE) |> mutate(rank_modelo = row_number()) |>
+  ungroup() |> arrange(season, round, position)
+target <- filter(principal, season == cfg$anio_objetivo)
+write_csv(count(base, season, name = "participaciones"), "cobertura_anual.csv", "res/diagnosticos")
+write_csv(base |> group_by(season, round, race_id) |>
+  summarise(inscritos = n(), clasificados_modelo = sum(clasificado),
+            estados_no_modelados = sum(!clasificado), .groups = "drop"),
+  "cobertura_carreras.csv", "res/diagnosticos")
+make_data <- function(df, grid = FALSE, escala = cfg$escala_prior) {
+  df <- arrange(df, season, round, position)
+  counts <- df |> count(season, round, name = "n") |> arrange(season, round)
+  if (any(counts$n < 2)) stop("Una carrera tiene menos de dos participantes utilizables.")
+  list(N = nrow(df), R = nrow(counts), D = length(ids$driver), T = length(ids$team),
+       DY = length(ids$driver_year), TY = length(ids$team_year), C = length(ids$circuit),
+       K = as.integer(counts$n), did = as.integer(df$did), tid = as.integer(df$tid),
+       dyid = as.integer(df$dyid), tyid = as.integer(df$tyid), cid = as.integer(df$cid),
+       x_grid = as.numeric(df$grid_ventaja), G = as.integer(grid), prior_scale = escala,
+       FD = nrow(foco_d), FT = nrow(foco_t),
+       focus_d = match(foco_d$driver_id, ids$driver),
+       focus_dy = match(paste(foco_d$driver_id, cfg$anio_objetivo, sep = "::"), ids$driver_year),
+       focus_t = match(foco_t$constructor_id, ids$team),
+       focus_ty = match(paste(foco_t$constructor_id, cfg$anio_objetivo, sep = "::"), ids$team_year))
+}
+avance(sprintf("Datos: %d carreras, %d participaciones; red %d -> %d componentes.",
+               n_distinct(base$race_id), nrow(base), red_2024, red_apoyo))
+```
+
+```{r}
+#| label: modelo-stan
+#| include: false
+
+stan_code <- paste(c(
+  "// Implementación propia de Plackett-Luce multinivel.",
+  "// Estructura basada en van Kesteren & Bergkamp (2023), basic_model.stan (MIT).",
+  "// Adaptaciones: escalas positivas, efectos sólo para temporadas observadas,",
+  "// cálculo estable O(K), foco 2024 y extensión de parrilla por circuito.",
+  "functions {",
+  "  real pl_lpdf(vector eta) {",
+  "    int m = num_elements(eta);",
+  "    real acc = eta[m];",
+  "    real out = 0;",
+  "    for (j in 1:(m - 1)) {",
+  "      int k = m - j;",
+  "      acc = log_sum_exp(eta[k], acc);",
+  "      out += eta[k] - acc;",
+  "    }",
+  "    return out;",
+  "  }",
+  "}",
+  "data {",
+  "  int<lower=1> N;",
+  "  int<lower=1> R;",
+  "  int<lower=2> D;",
+  "  int<lower=2> T;",
+  "  int<lower=1> DY;",
+  "  int<lower=1> TY;",
+  "  int<lower=1> C;",
+  "  array[R] int<lower=2> K;",
+  "  array[N] int<lower=1,upper=D> did;",
+  "  array[N] int<lower=1,upper=T> tid;",
+  "  array[N] int<lower=1,upper=DY> dyid;",
+  "  array[N] int<lower=1,upper=TY> tyid;",
+  "  array[N] int<lower=1,upper=C> cid;",
+  "  vector[N] x_grid;",
+  "  int<lower=0,upper=1> G;",
+  "  real<lower=0> prior_scale;",
+  "  int<lower=2> FD;",
+  "  int<lower=2> FT;",
+  "  array[FD] int<lower=1,upper=D> focus_d;",
+  "  array[FD] int<lower=1,upper=DY> focus_dy;",
+  "  array[FT] int<lower=1,upper=T> focus_t;",
+  "  array[FT] int<lower=1,upper=TY> focus_ty;",
+  "}",
+  "parameters {",
+  "  vector[D] zd;",
+  "  vector[T] zt;",
+  "  vector[DY] zdy;",
+  "  vector[TY] zty;",
+  "  vector<lower=0>[4] sigma;",
+  "  vector[G] beta_grid;",
+  "  vector<lower=0>[G] sigma_circuit;",
+  "  vector[G * C] zc;",
+  "}",
+  "transformed parameters {",
+  "  vector[D] d = sigma[1] * zd;",
+  "  vector[T] t = sigma[2] * zt;",
+  "  vector[DY] dy = sigma[3] * zdy;",
+  "  vector[TY] ty = sigma[4] * zty;",
+  "  vector[C] grid_coef = rep_vector(0, C);",
+  "  if (G == 1) grid_coef = rep_vector(beta_grid[1], C) + sigma_circuit[1] * zc;",
+  "}",
+  "model {",
+  "  int pos = 1;",
+  "  zd ~ std_normal(); zt ~ std_normal(); zdy ~ std_normal(); zty ~ std_normal();",
+  "  sigma ~ student_t(3, 0, prior_scale);",
+  "  beta_grid ~ normal(0, 1.5);",
+  "  sigma_circuit ~ normal(0, 0.5);",
+  "  zc ~ std_normal();",
+  "  for (r in 1:R) {",
+  "    vector[K[r]] eta;",
+  "    for (k in 1:K[r]) {",
+  "      int i = pos + k - 1;",
+  "      eta[k] = d[did[i]] + dy[dyid[i]] + t[tid[i]] + ty[tyid[i]];",
+  "      if (G == 1) eta[k] += grid_coef[cid[i]] * x_grid[i];",
+  "    }",
+  "    target += pl_lpdf(eta);",
+  "    pos += K[r];",
+  "  }",
+  "}",
+  "generated quantities {",
+  "  vector[FD] D2024;",
+  "  vector[FT] C2024;",
+  "  real share_hyper = (square(sigma[2]) + square(sigma[4])) / dot_self(sigma);",
+  "  real share_2024;",
+  "  vector[R] log_lik;",
+  "  int pos = 1;",
+  "  for (j in 1:FD) D2024[j] = d[focus_d[j]] + dy[focus_dy[j]];",
+  "  for (j in 1:FT) C2024[j] = t[focus_t[j]] + ty[focus_ty[j]];",
+  "  D2024 = D2024 - mean(D2024);",
+  "  C2024 = C2024 - mean(C2024);",
+  "  share_2024 = (dot_self(C2024) / FT) / (dot_self(C2024) / FT + dot_self(D2024) / FD);",
+  "  for (r in 1:R) {",
+  "    vector[K[r]] eta;",
+  "    for (k in 1:K[r]) {",
+  "      int i = pos + k - 1;",
+  "      eta[k] = d[did[i]] + dy[dyid[i]] + t[tid[i]] + ty[tyid[i]];",
+  "      if (G == 1) eta[k] += grid_coef[cid[i]] * x_grid[i];",
+  "    }",
+  "    log_lik[r] = pl_lpdf(eta);",
+  "    pos += K[r];",
+  "  }",
+  "}"
+), collapse = "\n")
+```
+
+```{r}
+#| label: ajustes-y-diagnosticos
+#| include: false
+
+# RStan compila la especificación incluida arriba; no se necesita un .stan externo.
+options(mc.cores = cfg$nucleos)
+rstan::rstan_options(auto_write = TRUE)
+mod_compilado <- NULL
+modelo_compilado <- function() {
+  if (is.null(mod_compilado)) {
+    avance("Compilación de Stan. Se conserva el código completo en el Quarto.")
+    mod_compilado <<- rstan::stan_model(model_code = stan_code, model_name = "f1_driver_constructor")
+  }
+  mod_compilado
+}
+comprobar_cadenas <- function(fit, etiqueta) {
+  # Diagnósticos de todos los parámetros guardados, excluidas cantidades constantes.
+  ar <- as.array(fit)
+  varianzas <- apply(ar, 3, function(x) var(as.numeric(x)))
+  ar <- ar[, , is.finite(varianzas) & varianzas > 1e-15, drop = FALSE]
+  sm <- posterior::summarise_draws(posterior::as_draws_array(ar))
+  write_csv(sm, paste0("mcmc_parametros_", etiqueta, ".csv"), "res/diagnosticos")
+  sp <- rstan::get_sampler_params(fit, inc_warmup = FALSE)
+  bfmi <- vapply(sp, function(a) mean(diff(a[, "energy__"])^2) / var(a[, "energy__"]), numeric(1))
+  dh <- data.frame(modelo = etiqueta,
+    rhat_max = max(sm$rhat, na.rm = TRUE),
+    ess_bulk_min = min(sm$ess_bulk, na.rm = TRUE),
+    ess_tail_min = min(sm$ess_tail, na.rm = TRUE),
+    divergencias = sum(vapply(sp, function(a) sum(a[, "divergent__"]), numeric(1))),
+    max_depth_hits = sum(vapply(sp, function(a) sum(a[, "treedepth__"] >= cfg$max_treedepth), numeric(1))),
+    bfmi_min = min(bfmi), stringsAsFactors = FALSE)
+  dh$diagnosticos_completos <- all(is.finite(sm$rhat) & is.finite(sm$ess_bulk) & is.finite(sm$ess_tail))
+  dh$aprobado <- with(dh, diagnosticos_completos & is.finite(rhat_max) & rhat_max <= cfg$max_rhat &
+    ess_bulk_min >= cfg$min_ess & ess_tail_min >= cfg$min_ess &
+    divergencias <= cfg$max_divergencias & bfmi_min >= .3 & max_depth_hits == 0)
+  write_csv(dh, paste0("mcmc_", etiqueta, ".csv"), "res/diagnosticos")
+  dh
+}
+ajustar <- function(df, etiqueta, grid = FALSE, escala = cfg$escala_prior, cv = FALSE) {
+  dat <- make_data(df, grid, escala)
+  it <- if (cv) cfg$iteraciones_cv else cfg$iteraciones
+  wa <- if (cv) cfg$calentamiento_cv else cfg$calentamiento
+  huella <- digest::digest(list(dat, stan_code, cfg$semilla, cfg$cadenas, it, wa,
+                               cfg$adapt_delta, cfg$max_treedepth))
+  archivo <- file.path("res/modelos", paste0(etiqueta, ".rds"))
+  guardado <- if (file.exists(archivo) && !isTRUE(cfg$reajustar)) readRDS(archivo) else NULL
+  if (!is.null(guardado) && identical(guardado$huella, huella)) {
+    avance(paste("Reutilizando ajuste", etiqueta)); fit <- guardado$fit
+  } else {
+    avance(paste("Muestreo MCMC:", etiqueta))
+    fit <- rstan::sampling(modelo_compilado(), data = dat, chains = cfg$cadenas,
+      cores = cfg$nucleos, iter = it, warmup = wa, seed = cfg$semilla,
+      refresh = 100, control = list(adapt_delta = cfg$adapt_delta, max_treedepth = cfg$max_treedepth),
+      pars = c("sigma", "D2024", "C2024", "share_hyper", "share_2024",
+               "d", "t", "dy", "ty", "grid_coef", "log_lik"))
+    saveRDS(list(huella = huella, fit = fit), archivo, compress = TRUE)
+  }
+  diagnostico <- comprobar_cadenas(fit, etiqueta)
+  if (isTRUE(cfg$exigir_diagnosticos) && !isTRUE(diagnostico$aprobado)) {
+    stop("El modelo ", etiqueta, " no pasa los diagnósticos. Revisa res/diagnosticos/mcmc_",
+         etiqueta, ".csv. Se guardó el ajuste; no presentes sus rankings como definitivos.")
+  }
+  list(fit = fit, diagnostico = diagnostico,
+       draws = rstan::extract(fit, pars = c("D2024", "C2024", "sigma", "share_2024", "share_hyper",
+                                           "grid_coef", "d", "t", "dy", "ty"), permuted = TRUE))
+}
+principal_fit <- ajustar(principal, "principal")
+prior_fit <- if (isTRUE(cfg$sensibilidad_prior))
+  ajustar(principal, "prior_alternativo", escala = cfg$escala_prior_alternativa) else NULL
+# Variación respecto al tratamiento de finalización de Bell: incluye retiros que salieron.
+# Se prepara como insumo; el contraste gaussiano de Bell usa esta muestra más amplia.
+muestra_bell <- filter(base, salio)
+```
+
+```{r}
+#| label: resultados-latentes
+#| include: false
+
+# Rankings: orden por media posterior, incertidumbre en puntuación y en puesto.
+rank_summary <- function(draw, etiquetas, counts) {
+  ranks <- t(apply(draw, 1, function(v) rank(-v, ties.method = "average")))
+  q <- t(apply(draw, 2, quantile, probs = c(.025, .975)))
+  qr <- t(apply(ranks, 2, quantile, probs = c(.025, .975)))
+  tibble(id = etiquetas, media = colMeans(draw), inferior = q[,1], superior = q[,2],
+         rango_medio = colMeans(ranks), rango_inferior = qr[,1], rango_superior = qr[,2],
+         prob_mejor = colMeans(ranks == 1), carreras_2024 = as.integer(counts)) |>
+    arrange(desc(media)) |> mutate(orden = row_number())
+}
+nd <- table(factor(target$driver_id, levels = foco_d$driver_id))
+nt <- target |> distinct(race_id, constructor_id) |> count(constructor_id)
+rank_d <- rank_summary(principal_fit$draws$D2024, foco_d$driver_id, nd) |>
+  left_join(foco_d, by = c("id" = "driver_id"))
+rank_t <- rank_summary(principal_fit$draws$C2024, foco_t$constructor_id,
+                      nt$n[match(foco_t$constructor_id, nt$constructor_id)]) |>
+  left_join(foco_t, by = c("id" = "constructor_id"))
+write_csv(rank_d, "ranking_pilotos_2024.csv")
+write_csv(rank_t, "ranking_constructores_2024.csv")
+share24 <- principal_fit$draws$share_2024
+sharehip <- principal_fit$draws$share_hyper
+reparto <- bind_rows(
+  data.frame(medida = "Dispersión de los efectos de 2024", mediana = median(share24),
+             inferior = quantile(share24,.025), superior = quantile(share24,.975),
+             prob_mayor_50 = mean(share24 > .5)),
+  data.frame(medida = "Hiperparámetros del período de apoyo + objetivo", mediana = median(sharehip),
+             inferior = quantile(sharehip,.025), superior = quantile(sharehip,.975),
+             prob_mayor_50 = mean(sharehip > .5)))
+write_csv(reparto, "descomposicion_variacion.csv")
+
+# Comparaciones contrafactuales fijadas ANTES de ver los rankings.
+# Probabilidad de A delante de B, no probabilidad de ganar una carrera completa.
+escenarios <- tibble::tribble(
+  ~escenario, ~piloto_a, ~carro_a, ~piloto_b, ~carro_b,
+  "Verstappen y Norris: mismo carro", "max_verstappen", "comun", "norris", "comun",
+  "Verstappen/RB frente a Norris/McL", "max_verstappen", "red_bull", "norris", "mclaren",
+  "Intercambio: Verstappen/McL frente a Norris/RB", "max_verstappen", "mclaren", "norris", "red_bull",
+  "Verstappen/Sauber frente a Zhou/RB", "max_verstappen", "sauber", "zhou", "red_bull")
+score_car <- function(id, draws) {
+  if (id == "comun") return(rep(0, nrow(draws$C2024)))
+  j <- match(id, foco_t$constructor_id)
+  if (is.na(j)) stop("Constructor ausente en un escenario: ", id)
+  draws$C2024[,j]
+}
+calc_escenario <- function(row, draws) {
+  a <- match(row$piloto_a, foco_d$driver_id); b <- match(row$piloto_b, foco_d$driver_id)
+  stopifnot(!is.na(a), !is.na(b))
+  dif <- draws$D2024[,a] - draws$D2024[,b] +
+    score_car(row$carro_a, draws) - score_car(row$carro_b, draws)
+  pr <- plogis(dif)
+  data.frame(escenario = row$escenario, prob_A_delante = mean(pr),
+             inferior = unname(quantile(pr,.025)), superior = unname(quantile(pr,.975)),
+             prob_ventaja_A = mean(dif > 0))
+}
+contrafactuales <- bind_rows(lapply(seq_len(nrow(escenarios)), function(i)
+  calc_escenario(escenarios[i,], principal_fit$draws)))
+write_csv(contrafactuales, "contrafactuales_2024.csv")
+
+# ¿Quién gana cuando piloto y constructor se consideran por separado?
+# 4 categorías mutuamente excluyentes usando EL MEJOR EFECTO DE CADA DRAW.
+ganadores <- filter(base, season == cfg$anio_objetivo, position == 1)
+stopifnot(nrow(ganadores) == 24)
+mejor_d_draw <- max.col(principal_fit$draws$D2024, ties.method = "first")
+mejor_t_draw <- max.col(principal_fit$draws$C2024, ties.method = "first")
+clasif_ganadores <- bind_rows(lapply(seq_len(nrow(ganadores)), function(i) {
+  dd <- mejor_d_draw == match(ganadores$driver_id[i], foco_d$driver_id)
+  tt <- mejor_t_draw == match(ganadores$constructor_id[i], foco_t$constructor_id)
+  data.frame(round = ganadores$round[i], ganador = ganadores$driver_id[i],
+    constructor = ganadores$constructor_id[i], ambos = mean(dd & tt),
+    solo_piloto = mean(dd & !tt), solo_constructor = mean(!dd & tt),
+    ninguno = mean(!dd & !tt))
+}))
+write_csv(clasif_ganadores, "ganadores_y_componentes_2024.csv")
+
+
+# Comparaciones entre compañeros realmente observados en 2024.
+# La diferencia del constructor se cancela al asignar el mismo carro.
+parejas_gp <- bind_rows(lapply(split(target, paste(target$race_id, target$constructor_id)), function(g) {
+  if (nrow(g) != 2 || n_distinct(g$driver_id) != 2) return(NULL)
+  g <- arrange(g, driver_id)
+  data.frame(constructor_id=g$constructor_id[1], piloto_a=g$driver_id[1],
+    piloto_b=g$driver_id[2], round=g$round[1], a_delante=g$position[1]<g$position[2])
+}))
+if (nrow(parejas_gp)) {
+  parejas <- parejas_gp |> group_by(constructor_id,piloto_a,piloto_b) |>
+    summarise(carreras_ambos_clasificados=n(), veces_a_delante=sum(a_delante), .groups="drop")
+  comp_parejas <- bind_rows(lapply(seq_len(nrow(parejas)),function(j) {
+    r <- parejas[j,]
+    v <- principal_fit$draws$D2024[,match(r$piloto_a,foco_d$driver_id)] -
+         principal_fit$draws$D2024[,match(r$piloto_b,foco_d$driver_id)]
+    pr <- plogis(v)
+    cbind(as.data.frame(r),data.frame(prob_a_delante_carro_comun=mean(pr),
+      inferior=unname(quantile(pr,.025)),superior=unname(quantile(pr,.975))))
+  }))
+  write_csv(comp_parejas,"companeros_2024.csv")
+}
+
+# Estabilidad a escala previa: importante para no ocultar identificación parcial.
+sens_prior <- NULL
+if (!is.null(prior_fit)) {
+  d2 <- rank_summary(prior_fit$draws$D2024, foco_d$driver_id, nd)
+  t2 <- rank_summary(prior_fit$draws$C2024, foco_t$constructor_id,
+                    nt$n[match(foco_t$constructor_id, nt$constructor_id)])
+  sens_prior <- bind_rows(
+    data.frame(componente = "pilotos", spearman = cor(rank_d$media,
+      d2$media[match(rank_d$id,d2$id)], method="spearman")),
+    data.frame(componente = "constructores", spearman = cor(rank_t$media,
+      t2$media[match(rank_t$id,t2$id)], method="spearman")))
+  write_csv(sens_prior, "sensibilidad_prior_correlaciones.csv")
+  write_csv(data.frame(escala = c(cfg$escala_prior,cfg$escala_prior_alternativa),
+    mediana_c2024 = c(median(share24),median(prior_fit$draws$share_2024))),
+    "sensibilidad_prior_descomposicion.csv")
+}
+
+# EDA objetiva: victorias de GP, sin sumar sprint ni punto de vuelta rápida.
+eda_wins <- ganadores |> count(nombre, constructor_name, name="victorias") |> arrange(desc(victorias))
+write_csv(eda_wins, "victorias_observadas_2024.csv")
+# Posterior predictivo: ganador entre los clasificados de cada carrera.
+wincheck <- bind_rows(lapply(split(target, target$race_id), function(dr) {
+  dr <- arrange(dr,position)
+  eta <- principal_fit$draws$D2024[,match(dr$driver_id,foco_d$driver_id),drop=FALSE] +
+    principal_fit$draws$C2024[,match(dr$constructor_id,foco_t$constructor_id),drop=FALSE]
+  ww <- exp(eta - apply(eta,1,max)); ww <- ww / rowSums(ww)
+  data.frame(race_id=dr$race_id[1], prob_ganador_observado=mean(ww[,1]),
+             prob_promedio_uniforme=1/nrow(dr), ganadores_esperados_por_piloto=NA_real_)
+}))
+write_csv(wincheck, "comprobacion_predictiva_ganadores.csv")
+# No se llama validación externa: usa la muestra ajustada.
+avance("Rankings, descomposición y contrafactuales calculados.")
+```
+
+```{r}
+#| label: validacion-parrilla
+#| include: false
+
+# Comparación auxiliar de parrilla: validación por GP, sin reutilizar efectos
+# estimados con la carrera de evaluación. Se reestiman las capacidades en cada pliegue.
+# Reglas de ablación de una misma estructura, NO cuatro causas aisladas.
+expected_rank <- function(eta) {
+  n <- ncol(eta)
+  vapply(seq_len(n), function(i) {
+    otros <- setdiff(seq_len(n), i)
+    1 + mean(rowSums(plogis(sweep(eta[,otros,drop=FALSE], 1, eta[,i], "-"))))
+  }, numeric(1))
+}
+cv_pred <- NULL; cv_summary <- NULL; cv_gp <- NULL
+if (isTRUE(cfg$validacion_parrilla)) {
+  partes <- lapply(seq_len(cfg$pliegues), function(fold) {
+    test <- filter(target, ((round - 1L) %% cfg$pliegues) + 1L == fold)
+    train <- filter(principal, !race_id %in% test$race_id)
+    stopifnot(!any(train$race_id %in% test$race_id), nrow(test) > 0)
+    fm <- ajustar(train, paste0("cv_parrilla_",fold), grid=TRUE, cv=TRUE)
+    ss <- fm$draws
+    pick <- unique(round(seq(1,nrow(ss$D2024),length.out=min(1000,nrow(ss$D2024)))))
+    bind_rows(lapply(split(test,test$race_id), function(dr) {
+      dr <- arrange(dr,position)
+      DD <- ss$D2024[pick,match(dr$driver_id,foco_d$driver_id),drop=FALSE]
+      CC <- ss$C2024[pick,match(dr$constructor_id,foco_t$constructor_id),drop=FALSE]
+      GG <- outer(ss$grid_coef[pick,dr$cid[1]], dr$grid_ventaja)
+      reglas <- list("Constructor"=CC, "Parrilla"=GG,
+                     "Constructor + parrilla"=CC+GG,
+                     "Piloto + constructor + parrilla"=DD+CC+GG)
+      bind_rows(lapply(names(reglas), function(nm) {
+        data.frame(fold=fold, round=dr$round, race_id=dr$race_id, circuit_id=dr$circuit_id,
+          driver_id=dr$driver_id, regla=nm, observado=dr$rank_modelo,
+          estimado=expected_rank(reglas[[nm]]))
+      }))
+    }))
+  })
+  cv_pred <- bind_rows(partes) |> mutate(error_absoluto=abs(observado-estimado))
+  stopifnot(all(cv_pred$estimado >= 1), !anyNA(cv_pred))
+  cv_gp <- cv_pred |> group_by(round,race_id,circuit_id,regla) |>
+    summarise(n=n(),mae=mean(error_absoluto),.groups="drop")
+  cv_summary <- cv_gp |> group_by(regla) |>
+    summarise(carreras=n(), observaciones=sum(n), mae=mean(mae), .groups="drop") |>
+    arrange(mae)
+  write_csv(cv_pred,"parrilla_predicciones_fuera_de_muestra.csv")
+  write_csv(cv_gp,"parrilla_errores_por_gp.csv")
+  write_csv(cv_summary,"parrilla_resumen.csv")
+  # Incertidumbre pareada sobre diferencia de MAE entre reglas de una sola información.
+  zz <- cv_gp |> filter(regla %in% c("Constructor","Parrilla")) |>
+    select(race_id,regla,mae) |> pivot_wider(names_from=regla,values_from=mae)
+  delta <- zz$Constructor-zz$Parrilla
+  set.seed(cfg$semilla+51L)
+  boot <- replicate(3000,mean(sample(delta,replace=TRUE)))
+  write_csv(data.frame(contraste="MAE Constructor menos MAE Parrilla",diferencia=mean(delta),
+    inferior=quantile(boot,.025),superior=quantile(boot,.975),n_carreras=length(delta)),
+    "parrilla_diferencia_mae_bootstrap.csv")
+}
+# Control predictivo interno: replicar ganadores de 2024 entre sus clasificados.
+# No se utiliza como evidencia de validación externa.
+set.seed(cfg$semilla+71L)
+idx <- unique(round(seq(1,nrow(principal_fit$draws$D2024),length.out=1000)))
+rep_wins <- matrix(0,length(idx),nrow(foco_d))
+for (dr in split(target,target$race_id)) {
+  dr <- arrange(dr,position)
+  E <- principal_fit$draws$D2024[idx,match(dr$driver_id,foco_d$driver_id),drop=FALSE] +
+       principal_fit$draws$C2024[idx,match(dr$constructor_id,foco_t$constructor_id),drop=FALSE]
+  W <- exp(E-apply(E,1,max)); W <- W/rowSums(W)
+  cum <- t(apply(W,1,cumsum)); u <- runif(length(idx))
+  j <- pmin(1L+rowSums(sweep(cum,1,u,"<")),ncol(W))
+  col <- match(dr$driver_id[j],foco_d$driver_id)
+  ind <- cbind(seq_along(idx),col)
+  rep_wins[ind] <- rep_wins[ind]+1L
+}
+wc <- table(factor(ganadores$driver_id,levels=foco_d$driver_id))
+ppc <- data.frame(driver_id=foco_d$driver_id,observado=as.integer(wc),
+  replicado_medio=colMeans(rep_wins),
+  inferior=apply(rep_wins,2,quantile,.025),superior=apply(rep_wins,2,quantile,.975))
+write_csv(ppc,"comprobacion_predictiva_victorias.csv")
+```
+
+```{r}
+#| label: contraste-bell-y-exportacion
+#| include: false
+
+# Contraste inspirado en Bell: no se presenta como réplica exacta de 1950--2014.
+# Incluye quienes tomaron la salida y permite un efecto piloto-temporada adicional.
+# Se documentan expresamente estas diferencias de muestra/especificación.
+bell_resultados <- NULL
+if (isTRUE(cfg$comparacion_bell)) {
+  bb <- muestra_bell |>
+    mutate(puntos_constantes=if_else(position <= 6,
+             c(10,6,4,3,2,1)[pmin(position,6)],(0.1^0.2)^(position-6)),
+           rankit=qnorm((rank(puntos_constantes,ties.method="average")-.375)/(n()+.25)),
+           n_centrado=n_inscritos-mean(n_inscritos))
+  bell <- lme4::lmer(rankit ~ n_centrado + (1|driver_id) + (1|constructor_id) +
+                     (1|driver_year) + (1|team_year), data=bb, REML=TRUE,
+                     control=lme4::lmerControl(optimizer="bobyqa",optCtrl=list(maxfun=200000)))
+  re <- lme4::ranef(bell)
+  extraer <- function(nombre, llaves) {
+    zz <- re[[nombre]]
+    as.numeric(zz[match(llaves,rownames(zz)),"(Intercept)"])
+  }
+  bd <- extraer("driver_id",foco_d$driver_id)+
+    extraer("driver_year",paste(foco_d$driver_id,cfg$anio_objetivo,sep="::"))
+  bt <- extraer("constructor_id",foco_t$constructor_id)+
+    extraer("team_year",paste(foco_t$constructor_id,cfg$anio_objetivo,sep="::"))
+  bell_resultados <- data.frame(componente=c("Piloto","Constructor"),
+    rho_con_PL=c(cor(bd,colMeans(principal_fit$draws$D2024),method="spearman",use="complete.obs"),
+                cor(bt,colMeans(principal_fit$draws$C2024),method="spearman",use="complete.obs")),
+    ajuste_singular=lme4::isSingular(bell))
+  write_csv(bell_resultados,"sensibilidad_inspirada_en_Bell.csv")
+  write_csv(as.data.frame(lme4::VarCorr(bell)),"bell_componentes_varianza.csv")
+  write_csv(data.frame(driver_id=foco_d$driver_id,puntaje_bell=bd),"bell_ranking_pilotos_2024.csv")
+  saveRDS(bell,"res/modelos/bell_sensibilidad.rds")
+}
+# Resumen de ejecución: versión de paquetes, especificaciones, huellas y número de carreras.
+writeLines(capture.output(sessionInfo()),"info/sessionInfo_ejecucion.txt")
+huellas <- data.frame(archivo=c("data/originales/base_piloto_carrera.csv","data/limpios/base_historico_y_objetivo.csv"))
+huellas$md5 <- as.character(tools::md5sum(huellas$archivo))
+write_csv(huellas,"huellas_datos.csv","res/diagnosticos")
+revision_final <- data.frame(
+  comprobacion=c("Carreras objetivo","Inscripciones objetivo","Clasificados objetivo",
+    "Pilotos objetivo","Carreras de apoyo","Componentes red solo 2024","Componentes red con apoyo",
+    "Modelo principal: Rhat máximo","Modelo principal: ESS mínimo","Modelo principal: divergencias"),
+  valor=c(n_distinct(objetivo$round),nrow(objetivo),nrow(target),nrow(foco_d),
+    n_distinct(filter(base,season<cfg$anio_objetivo)$race_id),red_2024,red_apoyo,
+    principal_fit$diagnostico$rhat_max,principal_fit$diagnostico$ess_bulk_min,
+    principal_fit$diagnostico$divergencias))
+write_csv(revision_final,"revision_final.csv","res/diagnosticos")
+saveRDS(revision_final,"res/diagnosticos/revision_final.rds")
+# Tabla compacta de escenarios para el informe.
+cf_tab <- contrafactuales |>
+  transmute(Escenario=c("VER / NOR, carro común","VER-RB / NOR-McL","VER-McL / NOR-RB","VER-Sauber / ZHO-RB"),
+    `P(A delante)`=paste0(num(100*prob_A_delante,1)," %"),
+    `ICr 95 %`=paste0(num(100*inferior,1),"--",num(100*superior,1)," %"))
+# Exportación integral para revisión, sin meter historiales personales.
+archivos_export <- list.files("res/analisis",pattern="\\.csv$",full.names=TRUE)
+archivos_export <- c(archivos_export,list.files("res/diagnosticos",pattern="\\.csv$",full.names=TRUE))
+utils::zip("res/diagnosticos/resultados_bell_bayes_2024.zip",files=archivos_export,flags="-j")
+avance("Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos.")
+```
+
+\begin{center}
+{\sffamily\LARGE\bfseries ¿Es el piloto o es el carro?}\par
+\vspace{3pt}
+{\sffamily\large Pilotos, constructores y parrilla en la Fórmula 1 de 2024}\par
+\vspace{3pt}
+\end{center}
+
+# Objetivo
+
+Separar estadísticamente la competitividad del constructor y el rendimiento del piloto en 2024; estimar sus diferencias, explorar intercambios hipotéticos de carro y contrastar la información predictiva de constructor y posición de salida.
+
+# Introducción
+
+Una victoria pertenece a una combinación de conductor, carro y organización. Bell et al. proponen modelos multinivel que distinguen piloto, equipo y equipo–temporada; van Kesteren y Bergkamp modelan directamente el orden de llegada y permiten intercambios hipotéticos de constructor. Este estudio adapta esas estructuras para obtener resultados específicos de 2024, sin copiar sus porcentajes ni sus rankings [@bell2016; @kesteren2023].
+
+La temporada objetivo no cambia. Se utilizan resultados de 2014–2023 como apoyo para conectar compañeros y pilotos que cambiaron de constructor: las relaciones observadas únicamente en 2024 forman `r red_2024` grupos desconectados. La ventaja estimada del constructor representa el paquete deportivo asociado al equipo, no una medición experimental de potencia o aerodinámica. La separación es condicional al modelo y a su regularización; los escenarios son contrafactuales estadísticos.
+
+# Datos (insumos)
+
+Los insumos de 2024 son los resultados de Jolpica previamente reunidos en el proyecto. El apoyo anterior se obtiene del mismo servicio, mediante solicitudes paginadas y copias locales; no se incorporan resultados posteriores a 2024 ni carreras sprint [@jolpica]. La unidad es el participante en un Gran Premio; las vueltas y sus promedios dejan de definir la supuesta calidad del carro.
+
+```{r}
+#| label: tabla-muestra
+knitr::kable(data.frame(
+  Muestra=c("Temporada objetivo", "Apoyo histórico", "Participantes objetivo en el modelo", "Pilotos / constructores objetivo"),
+  Contenido=c(paste(n_distinct(objetivo$round),"GP;",nrow(objetivo),"inscripciones"),
+    paste(cfg$primer_anio_apoyo,"–",cfg$ultimo_anio_apoyo,":",nrow(distinct(historico,season,round)),"GP"),
+    as.character(nrow(target)),paste(nrow(foco_d),"/",nrow(foco_t)))
+),format="latex",booktabs=TRUE,align=c("l","l"))
+```
+
+El modelo principal conserva el orden de los clasificados hasta el último participante activo, excluyendo descalificaciones y no participantes. Esta selección sigue la lógica del estudio bayesiano; por tanto, las probabilidades están condicionadas a ese conjunto y no modelan la fiabilidad. El contraste inspirado en Bell también incluye retiros, restringido a registros con al menos una vuelta completada y sin estados excluidos. La lluvia no excluye automáticamente una carrera: São Paulo y los demás GP permanecen disponibles según el criterio de clasificación.
+
+\newpage
+
+# Metodología
+
+**Modelo principal.** Para el piloto $d$, constructor $c$ y temporada $s$, la puntuación latente es
+
+$$\eta_{dcs}=a_d+a_{ds}+b_c+b_{cs}.$$
+
+Los cuatro componentes tienen distribuciones normales centradas en cero, con desviaciones $\sigma_d,\sigma_{ds},\sigma_c,\sigma_{cs}>0$. Se usan priors half-$t_3(0,2.5)$ y una sensibilidad con escala 1. El resultado de cada GP se modela como una secuencia Plackett–Luce entre sus $n_r$ clasificados:
+
+$$P(\pi_r\mid\eta)=\prod_{k=1}^{n_r-1}
+\frac{\exp(\eta_{\pi_{rk}})}{\sum_{j=k}^{n_r}\exp(\eta_{\pi_{rj}})}.$$
+
+Se adapta el logit de rangos (Plackett–Luce) de @kesteren2023 y la separación multinivel de @bell2016. Los efectos anuales permiten que piloto y equipo cambien entre años; dentro de 2024 representan una competitividad media, no la velocidad de cada evolución del carro. Los nombres oficiales de constructores se conservan como categorías distintas.
+
+**Rankings y proporción.** Los efectos $D_d=a_d+a_{d,2024}$ y $C_c=b_c+b_{c,2024}$ se centran por separado para mostrarlos. Cada extracción posterior genera rankings e intervalos creíbles (ICr). Para responder específicamente sobre 2024 se calcula
+
+$$S_{C,2024}=\frac{\operatorname{Var}_{c}(C_c)}{
+\operatorname{Var}_{c}(C_c)+\operatorname{Var}_{d}(D_d)}.$$
+
+Es una proporción de dispersión de efectos latentes, con igual peso para los pilotos y para los constructores de sus respectivos conjuntos. No representa el porcentaje de victorias, de mérito ni de varianza total explicada. Se exporta también la razón de hiperparámetros comparable con los estudios, que corresponde al período completo de estimación, no solo a 2024.
+
+**Intercambios.** Para dos combinaciones, $P(A\succ B)=\operatorname{logit}^{-1}(D_A+C_A-D_B-C_B)$. Los escenarios se fijaron antes del ajuste. Mantienen los efectos estimados al intercambiar carros y no incluyen adaptación, sinergia particular, averías ni cambios en la conducción. Comparan dos participantes; no son probabilidades de ganar a todo el pelotón.
+
+**Parrilla y circuitos.** Una extensión añade $(\beta+u_{circuito})g$, con $g$ como ventaja normalizada de parrilla y pendientes regularizadas por circuito. Se reservan GP completos de 2024 en cuatro pliegues y se reestima con los demás GP y el apoyo histórico. En el test se evalúan cuatro ablaciones de información: constructor, parrilla, ambos y modelo completo. Se predice el rango esperado $1+\sum_{j\ne i}P(j\succ i)$; el MAE se promedia dando igual peso a cada GP. Son reglas derivadas de una misma estructura, no cuatro causas aisladas. La diferencia de MAE entre constructor y parrilla se acompaña de un intervalo bootstrap pareado por GP. El ejercicio es retrospectivo y condicional a clasificación.
+
+**Calidad.** Se ejecutan cuatro cadenas NUTS; se exige $\widehat R\le1.01$, ESS efectivo $\ge400$ y cero divergencias. El programa se detiene si no se cumplen. Se contrastan priors, datos simulados de victorias y una adaptación gaussiana de Bell basada en puntos normalizados, incluyendo retiros. No se fuerza concordancia entre estudios [@stan].
+
+\newpage
+
+# Resultados
+
+## Análisis Exploratorio de Datos
+
+La temporada contiene `r nrow(ganadores)` victorias repartidas entre `r n_distinct(ganadores$driver_id)` pilotos y `r n_distinct(ganadores$constructor_id)` constructores. `r eda_wins$nombre[1]` acumula `r eda_wins$victorias[1]` triunfos. Las victorias no constituyen todavía un ranking de talento: cada observación combina al piloto con su constructor.
+
+```{r}
+#| label: fig-victorias-observadas
+#| fig-cap: "Victorias en los Grandes Premios de 2024. No incluye sprint. Elaboración propia con los insumos del proyecto."
+#| fig-width: 6.3
+#| fig-height: 2.7
+#| fig-pos: "H"
+plot_wins <- ggplot(eda_wins,aes(x=victorias,y=reorder(nombre,victorias)))+
+  geom_col(width=.65)+geom_text(aes(label=victorias),hjust=-.3,size=3.2)+
+  scale_x_continuous(expand=expansion(mult=c(0,.12)),breaks=seq(0,max(eda_wins$victorias),2))+
+  labs(x="Victorias",y=NULL)+theme_minimal(base_size=10)
+plot_wins
+```
+
+La disponibilidad de pilotos es desigual. Hay sustitutos con pocas participaciones y parejas con casi toda la temporada compartida; el modelo conserva ambos casos y utiliza regularización, en lugar de atribuir la misma precisión a una carrera y a veinticuatro. Las tablas de ranking incluyen el número de participaciones efectivamente modeladas.
+
+```{r}
+#| label: tabla-datos-exploratorios
+ee <- base |> filter(season==cfg$anio_objetivo) |>
+  summarise(`Pilotos distintos`=n_distinct(driver_id),
+    `Ganadores distintos`=n_distinct(driver_id[position==1]),
+    `No participantes`=sum(grepl("did not start",status,ignore.case=TRUE)),
+    `Descalificaciones`=sum(grepl("disqual",status,ignore.case=TRUE)))
+knitr::kable(ee,format="latex",booktabs=TRUE)
+```
+
+El apoyo histórico cambia la red de `r red_2024` a `r red_apoyo` componentes conectados. Esto aporta comparaciones que no existen en la muestra aislada de 2024, pero no convierte el estudio en un experimento: la descomposición depende de los efectos anuales y de los priors. Por eso se comparan dos escalas previas y no se iguala el promedio de compañeros a capacidad mecánica.
+
+Las condiciones de Mónaco o Hungría no se eliminan del estudio. El modelo de parrilla permite que su asociación cambie entre circuitos y se guardan los errores de cada GP. La especificación principal no contiene una medición exhaustiva del tráfico, las mejoras del carro ni la estrategia; esos factores delimitan la interpretación de sus efectos, no se consideran "controlados" por haber sido mencionados.
+
+\newpage
+
+## Resultados de la metodología
+
+**¿Qué componente predomina?** La mediana de $S_{C,2024}$ es **`r pct(median(share24))`**, con ICr 95 % **`r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`**. La mediana complementaria del piloto es **`r pct(median(1-share24))`**. `r if(all(share24>.5)) "Todas las extracciones posteriores retenidas superan el 50 % para el constructor; esto no equivale a certeza absoluta." else paste0("La proporción de extracciones que supera el 50 % para el constructor es ",pct(mean(share24>.5)),".")` Estos porcentajes describen la dispersión de componentes, no el mérito de cada victoria.
+
+```{r}
+#| label: fig-rankings-ajustados
+#| fig-cap: "Seis primeros por media posterior; barras: ICr 95 %. Entre paréntesis: participaciones de 2024 modeladas. Escala log-odds, centrada por componente; no es un orden cierto de talento."
+#| fig-width: 6.4
+#| fig-height: 2.2
+#| fig-pos: "H"
+pd <- bind_rows(
+  rank_d |> slice_head(n=6) |> transmute(componente="Pilotos: carro equivalente",nombre=paste0(nombre," (",carreras_2024,")"),media,inferior,superior),
+  rank_t |> slice_head(n=6) |> transmute(componente="Constructores: piloto equivalente",nombre=constructor_name,media,inferior,superior))
+pd$nombre <- factor(pd$nombre,levels=unique(pd$nombre[order(pd$media)]))
+plot_rank <- ggplot(pd,aes(x=media,y=nombre,xmin=inferior,xmax=superior))+
+  geom_vline(xintercept=0,linetype=3)+geom_errorbar(orientation="y",width=.2)+geom_point(size=1.8)+
+  facet_wrap(~componente,scales="free_y",nrow=1)+labs(x="Puntuación ajustada",y=NULL)+
+  theme_minimal(base_size=8.5)
+plot_rank
+```
+
+**Rankings.** `r rank_d$nombre[1]` encabeza la media de pilotos y `r rank_t$constructor_name[1]` la de constructores; sus probabilidades posteriores de encabezar el respectivo componente son `r pct(rank_d$prob_mejor[1])` y `r pct(rank_t$prob_mejor[1])`. El piloto que lidera la media ganó `r sum(ganadores$driver_id==rank_d$id[1])` GP y el constructor que la lidera ganó `r sum(ganadores$constructor_id==rank_t$id[1])` de 24; son efectos medios de temporada, no una identificación del más rápido en cada circuito.
+
+**¿Qué ocurre al cambiar de carro?** Probabilidad de que la primera combinación termine delante de la segunda, condicionada al modelo anual:
+
+```{r}
+#| label: tabla-intercambios
+knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))
+```
+
+**¿Constructor o salida?** Comparación retrospectiva en GP reservados; menor MAE es mejor. Los rangos se refieren al conjunto de participantes clasificados utilizado por el modelo.
+
+```{r}
+#| label: tabla-parrilla
+if (!is.null(cv_summary)) {
+  tb <- cv_summary |> transmute(Regla=regla,`MAE (puestos)`=round(mae,3),GP=carreras)
+  knitr::kable(tb,format="latex",booktabs=TRUE)
+} else cat("La comparación de parrilla está desactivada: no debe declararse terminada esta pregunta.")
+```
+
+`r if(!is.null(cv_summary)) paste0("La diferencia de MAE constructor menos parrilla es ",num(mean(delta),3)," puestos; IC bootstrap 95 % [",num(quantile(boot,.025),3),"; ",num(quantile(boot,.975),3),"]. Al incluir cero, no respalda una superioridad clara de una sola fuente de información.") else "La evaluación de parrilla está pendiente."`
+
+**Comprobaciones.** El ajuste principal obtuvo $\widehat R_{max}=$ `r num(principal_fit$diagnostico$rhat_max,3)`, ESS mínimo `r round(principal_fit$diagnostico$ess_bulk_min)` y `r principal_fit$diagnostico$divergencias` divergencias. La convergencia no certifica la validez causal. Los contrastes de especificación se resumen en las conclusiones.
+
+\newpage
+
+# Conclusiones
+
+1. **El constructor predomina, pero no determina por sí solo quién gana.** En la descomposición de efectos de 2024, la mediana del componente constructor es **`r pct(median(share24))`** (ICr 95 %: `r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`), frente a **`r pct(median(1-share24))`** del piloto. El resultado responde a una comparación de competitividad latente dentro del modelo, no a una división mecánica del mérito de cada victoria.
+
+2. **La ventaja individual puede distinguirse estadísticamente de la del equipo.** `r rank_d$nombre[1]` y `r rank_t$constructor_name[1]` encabezan las medias de los componentes piloto y constructor, con probabilidades de primer puesto de `r pct(rank_d$prob_mejor[1])` y `r pct(rank_t$prob_mejor[1])`. El escenario de carro común favorece en promedio a Verstappen frente a Norris (`r pct(contrafactuales$prob_A_delante[1])`), aunque su ICr 95 % (`r pct(contrafactuales$inferior[1])`–`r pct(contrafactuales$superior[1])`) incluye el 50 %. En el intercambio Verstappen–Sauber frente a Zhou–Red Bull, la probabilidad media del primero baja a `r pct(contrafactuales$prob_A_delante[4])` (ICr: `r pct(contrafactuales$inferior[4])`–`r pct(contrafactuales$superior[4])`). Los escenarios muestran el peso potencial del constructor sin garantizar el desenlace de un cambio real de carro.
+
+3. **Constructor y parrilla aportan información complementaria.** `r if(!is.null(cv_summary)) paste0("El menor MAE medio corresponde a «",cv_summary$regla[1],"», con ",num(cv_summary$mae[1],3)," puestos. La regla constructor–parrilla queda próxima al modelo completo.") else "La evaluación de parrilla está pendiente."` `r if(!is.null(cv_summary)) paste0("La diferencia entre constructor y parrilla por separado es ",num(mean(delta),3)," puestos (IC bootstrap 95 %: ",num(quantile(boot,.025),3)," a ",num(quantile(boot,.975),3),"); no distingue una ventaja clara entre esas dos reglas.") else ""` Esta comparación no contradice la descomposición anterior: error de predicción y dispersión de efectos son medidas diferentes. Su alcance es retrospectivo, entre participantes clasificados.
+
+**Sensibilidad y precisión.** `r if(!is.null(sens_prior)) paste0("El cambio de escala del prior mantiene correlaciones de rankings de ",num(sens_prior$spearman[1],3)," para pilotos y ",num(sens_prior$spearman[2],3)," para constructores.") else "Falta la sensibilidad al prior."` `r if(!is.null(bell_resultados)) paste0("Frente al contraste gaussiano inspirado en Bell, son ",num(bell_resultados$rho_con_PL[1],3)," y ",num(bell_resultados$rho_con_PL[2],3),", respectivamente: algunos puestos dependen de la especificación y de incluir retiros.") else "Falta el contraste inspirado en Bell."` No se atribuye todo el cambio a una sola decisión. En particular, `r rank_d$nombre[rank_d$id=="colapinto"]` figura `r rank_d$orden[rank_d$id=="colapinto"]`.º por media, pero solo tiene `r rank_d$carreras_2024[rank_d$id=="colapinto"]` participaciones modeladas y un ICr del rango de `r rank_d$rango_inferior[rank_d$id=="colapinto"]` a `r rank_d$rango_superior[rank_d$id=="colapinto"]`: no es evidencia de un quinto puesto inequívoco.
+
+**Alcance.** El apoyo histórico reduce, pero no elimina por sí mismo, los problemas de identificación. Los efectos de constructor agregan carro y organización; los efectos anuales no capturan cada actualización ni todo el tráfico o la estrategia. El estudio produce una separación estadística condicionada a estos supuestos, no una prueba mecánica experimental. Las tablas completas y los controles permanecen disponibles en la entrega reproducible.
+
+\newpage
+
+# Bibliografía {.unnumbered}
+
+::: {#refs}
+:::
