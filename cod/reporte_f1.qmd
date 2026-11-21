@@ -773,11 +773,11 @@ Esta proporción compara la dispersión de los efectos; no representa el porcent
 
 ## Análisis Exploratorio de Datos
 
-La temporada contiene `r nrow(ganadores)` victorias repartidas entre `r n_distinct(ganadores$driver_id)` pilotos y `r n_distinct(ganadores$constructor_id)` constructores. `r eda_wins$nombre[1]` acumula `r eda_wins$victorias[1]` triunfos. Las victorias no constituyen todavía un ranking de talento: cada observación combina al piloto con su constructor.
+La temporada contiene `r nrow(ganadores)` victorias repartidas entre `r n_distinct(ganadores$driver_id)` pilotos y `r n_distinct(ganadores$constructor_id)` constructores. `r eda_wins$nombre[1]` tuvo `r eda_wins$victorias[1]` triunfos. Las victorias no constituyen todavía un ranking de talento: cada observación combina al piloto con su constructor.
 
 ```{r}
 #| label: fig-victorias-observadas
-#| fig-cap: "Victorias en los Grandes Premios de 2024. No incluye sprint. Elaboración propia con los insumos del proyecto."
+#| fig-cap: "Victorias en los Grandes Premios de 2024 (sin sprints). Elaboración propia con datos de Jolpica [@jolpica] y apoyo de ChatGPT (OpenAI, 2026) para escribir el código."
 #| fig-width: 6.3
 #| fig-height: 2.7
 #| fig-pos: "H"
@@ -791,13 +791,33 @@ plot_wins
 La disponibilidad de pilotos es desigual. Hay sustitutos con pocas participaciones y parejas con casi toda la temporada compartida; el modelo conserva ambos casos y utiliza regularización, en lugar de atribuir la misma precisión a una carrera y a veinticuatro. Las tablas de ranking incluyen el número de participaciones efectivamente modeladas.
 
 ```{r}
-#| label: tabla-datos-exploratorios
-ee <- base |> filter(season==cfg$anio_objetivo) |>
-  summarise(`Pilotos distintos`=n_distinct(driver_id),
-    `Ganadores distintos`=n_distinct(driver_id[position==1]),
-    `No participantes`=sum(grepl("did not start",status,ignore.case=TRUE)),
-    `Descalificaciones`=sum(grepl("disqual",status,ignore.case=TRUE)))
-knitr::kable(ee,format="latex",booktabs=TRUE)
+#| label: tbl-datos-exploratorios
+#| tbl-cap: "Datos exploratorios"
+#| tbl-pos: H
+
+ee <- base |>
+  dplyr::filter(season == cfg$anio_objetivo) |>
+  dplyr::summarise(
+    `Pilotos distintos` = dplyr::n_distinct(driver_id, na.rm = TRUE),
+    `Ganadores distintos` = dplyr::n_distinct(
+      driver_id[position == 1],
+      na.rm = TRUE
+    ),
+    `No participantes` = sum(
+      grepl("did not start", status, ignore.case = TRUE),
+      na.rm = TRUE
+    ),
+    `Descalificaciones` = sum(
+      grepl("disqual", status, ignore.case = TRUE),
+      na.rm = TRUE
+    )
+  )
+
+knitr::kable(ee, format = "latex", booktabs = TRUE) |>
+  kableExtra::kable_styling(
+    position = "center",
+    latex_options = "HOLD_position"
+  )
 ```
 
 El apoyo histórico cambia la red de `r red_2024` a `r red_apoyo` componentes conectados. Esto aporta comparaciones que no existen en la muestra aislada de 2024, pero no convierte el estudio en un experimento: la descomposición depende de los efectos anuales y de los priors. Por eso se comparan dos escalas previas y no se iguala el promedio de compañeros a capacidad mecánica.
@@ -808,7 +828,7 @@ Las condiciones de Mónaco o Hungría no se eliminan del estudio. El modelo de p
 
 ## Resultados de la metodología
 
-**¿Qué componente predomina?** La mediana de $S_{C,2024}$ es **`r pct(median(share24))`**, con ICr 95 % **`r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`**. La mediana complementaria del piloto es **`r pct(median(1-share24))`**. `r if(all(share24>.5)) "Todas las extracciones posteriores retenidas superan el 50 % para el constructor; esto no equivale a certeza absoluta." else paste0("La proporción de extracciones que supera el 50 % para el constructor es ",pct(mean(share24>.5)),".")` Estos porcentajes describen la dispersión de componentes, no el mérito de cada victoria.
+La mediana de $S_{C,2024}$ es **`r pct(median(share24))`**, con ICr 95 % **`r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`**. La mediana complementaria del piloto es **`r pct(median(1-share24))`**. `r if(all(share24>.5)) "Todas las extracciones posteriores retenidas superan el 50 % para el constructor; esto no equivale a certeza absoluta." else paste0("La proporción de extracciones que supera el 50 % para el constructor es ",pct(mean(share24>.5)),".")` Estos porcentajes describen la dispersión de componentes, no el mérito de cada victoria.
 
 ```{r}
 #| label: fig-rankings-ajustados
@@ -833,7 +853,11 @@ plot_rank
 
 ```{r}
 #| label: tabla-intercambios
-knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))
+knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))|>
+  kableExtra::kable_styling(
+    position = "center",
+    latex_options = "HOLD_position"
+  )
 ```
 
 **¿Constructor o salida?** Comparación retrospectiva en GP reservados; menor MAE es mejor. Los rangos se refieren al conjunto de participantes clasificados utilizado por el modelo.
@@ -842,7 +866,11 @@ knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))
 #| label: tabla-parrilla
 if (!is.null(cv_summary)) {
   tb <- cv_summary |> transmute(Regla=regla,`MAE (puestos)`=round(mae,3),GP=carreras)
-  knitr::kable(tb,format="latex",booktabs=TRUE)
+  knitr::kable(tb,format="latex",booktabs=TRUE)|>
+  kableExtra::kable_styling(
+    position = "center",
+    latex_options = "HOLD_position"
+  )
 } else cat("La comparación de parrilla está desactivada: no debe declararse terminada esta pregunta.")
 ```
 
