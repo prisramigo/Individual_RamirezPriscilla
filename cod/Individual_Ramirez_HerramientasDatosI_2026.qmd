@@ -684,9 +684,6 @@ avance("Cálculos terminados. Se genera el reporte con los resultados efectivame
 \vspace{3pt}
 \end{center}
 
-# Objetivo
-
-Analizar, con datos de la temporada 2024 de Fórmula 1, la contribución estadística de la competitividad del constructor y del rendimiento del piloto a los resultados de carrera; estimar las diferencias entre pilotos y comparar la capacidad predictiva del constructor y la posición de salida.
 
 # Introducción
 
@@ -694,7 +691,7 @@ En Fórmula 1, el resultado de una carrera refleja una combinación del rendimie
 
 La ventaja estimada del constructor representa el paquete deportivo asociado al equipo; no es una medición experimental de la potencia o la aerodinámica del carro. Las estimaciones dependen del modelo, y los escenarios de intercambio se interpretan como contrafactuales estadísticos.
 
-# Datos (insumos)
+## Datos (insumos)
 
 Los insumos de 2024 son los resultados de Jolpica previamente reunidos en el proyecto. Los datos históricos de apoyo provienen del mismo servicio, mediante solicitudes paginadas y copias locales. Se excluyen las carreras sprint y los resultados posteriores a 2024 [@jolpica]. La unidad de análisis es cada observación piloto–Gran Premio. El análisis se basa en resultados de carrera; los tiempos por vuelta y sus promedios no se usan como medida de la calidad del carro. La @tbl-muestra resume la temporada 2024 y el apoyo histórico de 2014 a 2023.
 
@@ -737,6 +734,10 @@ knitr::kable(
 ```
 
 El modelo principal utiliza participantes con una posición final válida y excluye descalificaciones y no participantes. Por esta selección, las probabilidades se interpretan condicionadas a la muestra incluida; el modelo no estima la fiabilidad. El contraste basado en puntos, incluye retiros con al menos una vuelta completada y excluye los estados especificados en su filtro. La lluvia no es por sí sola un criterio de exclusión: cada Gran Premio se conserva si cumple las reglas de inclusión correspondientes.
+
+# Objetivo
+
+Analizar, con datos de la temporada 2024 de Fórmula 1, la contribución estadística de la competitividad del constructor y del rendimiento del piloto a los resultados de carrera; estimar las diferencias entre pilotos y comparar la capacidad predictiva del constructor y la posición de salida.
 
 
 # Metodología
