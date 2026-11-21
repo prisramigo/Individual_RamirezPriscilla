@@ -680,6 +680,7 @@ avance("Cálculos terminados. Se genera el reporte con los resultados efectivame
 \vspace{3pt}
 {\sffamily\large Pilotos, constructores y parrilla en la Fórmula 1 de 2024}\par
 {\sffamily\large Priscilla Ramírez Ramírez C4I820}\par
+{\small Repositorio: \url{https://github.com/prisramigo/Individual_RamirezPriscilla}\par}
 \vspace{3pt}
 \end{center}
 

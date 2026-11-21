@@ -3,4 +3,4 @@ project:
   execute-dir: project
   output-dir: res/reporte
   render:
-    - cod/reporte_f1.qmd
+        - cod/Individual_Ramirez_HerramientasDatosI_2026.qmd

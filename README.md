@@ -9,7 +9,7 @@
 
 Este proyecto analiza los resultados de la Fórmula 1 de 2024 para estudiar las diferencias de competitividad entre pilotos y constructores, explorar cambios hipotéticos de carro y comparar la información predictiva del equipo con la posición de salida.
 
-El análisis, la especificación del modelo y el reporte están integrados en `cod/reporte_f1.qmd`. El archivo `_quarto.yml` establece la carpeta principal del proyecto como directorio de ejecución y envía el reporte a `res/reporte/`.
+El análisis, la especificación del modelo y el reporte están integrados en `cod/Individual_Ramirez_HerramientasDatosI_2026.qmd`. El archivo `_quarto.yml` establece la carpeta principal del proyecto como directorio de ejecución y envía el reporte a `res/reporte/`.
 
 ## Datos y alcance
 
@@ -36,7 +36,7 @@ Además, evalúa la información de la parrilla mediante validación que reserva
 
 | Ruta | Contenido |
 |---|---|
-| `cod/reporte_f1.qmd` | Código de preparación, modelos, diagnósticos, resultados y texto del reporte. |
+| `cod/Individual_Ramirez_HerramientasDatosI_2026.qmd` | Código de preparación, modelos, diagnósticos, resultados y texto del reporte. |
 | `data/originales/` | Insumos de 2024 y respuestas históricas descargadas. |
 | `data/limpios/` | Base integrada generada por el análisis. |
 | `config/parametros.yml` | Años, semilla, opciones de estimación y criterios de diagnóstico. |
@@ -88,7 +88,7 @@ La configuración del compilador depende del sistema operativo. Consultar la [gu
 
 ## Cómo ejecutar el proyecto
 
-1. Abrir la carpeta completa del proyecto. Debe contener `_quarto.yml`, `config/parametros.yml`, `cod/reporte_f1.qmd`, `info/referencias.bib` y `data/originales/base_piloto_carrera.csv`.
+1. Abrir la carpeta completa del proyecto. Debe contener `_quarto.yml`, `config/parametros.yml`, `cod/Individual_Ramirez_HerramientasDatosI_2026.qmd`, `info/referencias.bib` y `data/originales/base_piloto_carrera.csv`.
 2. Instalar las dependencias descritas arriba.
 3. Desde **Terminal**, situada en la carpeta principal, ejecutar:
 
@@ -96,7 +96,7 @@ La configuración del compilador depende del sistema operativo. Consultar la [gu
 quarto render
 ```
 
-También se puede abrir `cod/reporte_f1.qmd` en RStudio y pulsar **Render**.
+También se puede abrir `cod/Individual_Ramirez_HerramientasDatosI_2026.qmd` en RStudio y pulsar **Render**.
 
 El proceso lee los insumos, obtiene el apoyo histórico que falte, prepara la base, estima o recupera los modelos, comprueba sus diagnósticos y genera las tablas y el PDF. No requiere ejecutar scripts previos ni restaurar una sesión `.RData`.
 
