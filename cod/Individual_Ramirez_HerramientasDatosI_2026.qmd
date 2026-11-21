@@ -696,11 +696,11 @@ La ventaja estimada del constructor representa el paquete deportivo asociado al 
 
 # Datos (insumos)
 
-Los insumos de 2024 son los resultados de Jolpica previamente reunidos en el proyecto. Los datos históricos de apoyo provienen del mismo servicio, mediante solicitudes paginadas y copias locales. Se excluyen las carreras sprint y los resultados posteriores a 2024 [@jolpica]. La unidad de análisis es cada observación piloto–Gran Premio. El análisis se basa en resultados de carrera; los tiempos por vuelta y sus promedios no se usan como medida de la calidad del carro.
+Los insumos de 2024 son los resultados de Jolpica previamente reunidos en el proyecto. Los datos históricos de apoyo provienen del mismo servicio, mediante solicitudes paginadas y copias locales. Se excluyen las carreras sprint y los resultados posteriores a 2024 [@jolpica]. La unidad de análisis es cada observación piloto–Gran Premio. El análisis se basa en resultados de carrera; los tiempos por vuelta y sus promedios no se usan como medida de la calidad del carro. La @tbl-muestra resume la temporada 2024 y el apoyo histórico de 2014 a 2023.
 
 ```{r}
 #| label: tbl-muestra
-#| tbl-cap: "Resumen de la muestra"
+#| tbl-cap: "Resumen de la muestra. Fuente: elaboración propia con datos de Jolpica [@jolpica]."
 #| tbl-pos: H
 
 knitr::kable(
@@ -793,7 +793,7 @@ La disponibilidad de pilotos es desigual. Hay sustitutos con pocas participacion
 
 ```{r}
 #| label: tbl-datos-exploratorios
-#| tbl-cap: "Datos exploratorios"
+#| tbl-cap: "Participación de los pilotos en 2024. Fuente: elaboración propia con datos de Jolpica [@jolpica]."
 #| tbl-pos: H
 
 ee <- base |>
@@ -853,8 +853,8 @@ plot_rank
 **¿Qué ocurre al cambiar de carro?** Probabilidad de que la primera combinación termine delante de la segunda, condicionada al modelo anual:
 
 ```{r}
-#| label: tabla-intercambios
-#| tbl-cap: "Intercambios"
+#| label: tbl-intercambios
+#| tbl-cap: "Probabilidad de que el primer piloto termine delante del segundo. Fuente: elaboración propia con el modelo Plackett–Luce."
 #| tbl-pos: H
 knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))|>
   kableExtra::kable_styling(
@@ -866,8 +866,8 @@ knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))|>
 **¿Constructor o salida?** Comparación retrospectiva en GP reservados; menor MAE es mejor. Los rangos se refieren al conjunto de participantes clasificados utilizado por el modelo.
 
 ```{r}
-#| label: tabla-parrilla
-#| tbl-cap: "Parrilla"
+#| label: tbl-parrilla
+#| tbl-cap: "Error absoluto medio (MAE) al predecir el puesto de llegada. Fuente: elaboración propia mediante validación por Gran Premio."
 #| tbl-pos: H
 if (!is.null(cv_summary)) {
   tb <- cv_summary |> transmute(Regla=regla,`MAE (puestos)`=round(mae,3),GP=carreras)
