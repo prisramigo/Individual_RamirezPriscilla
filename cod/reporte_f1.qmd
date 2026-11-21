@@ -777,7 +777,7 @@ La temporada contiene `r nrow(ganadores)` victorias repartidas entre `r n_distin
 
 ```{r}
 #| label: fig-victorias-observadas
-#| fig-cap: "Victorias en los Grandes Premios de 2024 (sin sprints). Elaboración propia con datos de Jolpica [@jolpica] y apoyo de ChatGPT (OpenAI, 2026) para escribir el código."
+#| fig-cap: "Victorias en los Grandes Premios de 2024 (sin sprints). Elaboración propia con datos de Jolpica [@jolpica] y apoyo de ChatGPT [@openai2026] para escribir el código."
 #| fig-width: 6.3
 #| fig-height: 2.7
 #| fig-pos: "H"
@@ -828,11 +828,11 @@ Las condiciones de Mónaco o Hungría no se eliminan del estudio. El modelo de p
 
 ## Resultados de la metodología
 
-La mediana de $S_{C,2024}$ es **`r pct(median(share24))`**, con ICr 95 % **`r pct(quantile(share24,.025))`–`r pct(quantile(share24,.975))`**. La mediana complementaria del piloto es **`r pct(median(1-share24))`**. `r if(all(share24>.5)) "Todas las extracciones posteriores retenidas superan el 50 % para el constructor; esto no equivale a certeza absoluta." else paste0("La proporción de extracciones que supera el 50 % para el constructor es ",pct(mean(share24>.5)),".")` Estos porcentajes describen la dispersión de componentes, no el mérito de cada victoria.
+La mediana de la proporción de dispersión asociada al constructor en 2024, $S_{C,2024}$, es 82,7 % (ICr del 95 %: 69,6 %–90,4 %). La proporción complementaria del piloto tiene una mediana de 17,3 %. En todas las extracciones posteriores retenidas, la proporción del constructor supera el 50 %. Estas cifras describen la dispersión de los efectos latentes, no el porcentaje de victorias atribuible a cada componente.
 
 ```{r}
 #| label: fig-rankings-ajustados
-#| fig-cap: "Seis primeros por media posterior; barras: ICr 95 %. Entre paréntesis: participaciones de 2024 modeladas. Escala log-odds, centrada por componente; no es un orden cierto de talento."
+#| fig-cap: "Seis primeros por media posterior; barras: ICr del 95 %. Entre paréntesis: participaciones de 2024 modeladas. Escala log-odds, centrada por componente. Elaboración propia con resultados del modelo; código del gráfico preparado con apoyo de ChatGPT [@openai2026]."
 #| fig-width: 6.4
 #| fig-height: 2.2
 #| fig-pos: "H"
@@ -853,6 +853,8 @@ plot_rank
 
 ```{r}
 #| label: tabla-intercambios
+#| tbl-cap: "Intercambios"
+#| tbl-pos: H
 knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))|>
   kableExtra::kable_styling(
     position = "center",
@@ -864,6 +866,8 @@ knitr::kable(cf_tab,format="latex",booktabs=TRUE,align=c("l","r","r"))|>
 
 ```{r}
 #| label: tabla-parrilla
+#| tbl-cap: "Parrilla"
+#| tbl-pos: H
 if (!is.null(cv_summary)) {
   tb <- cv_summary |> transmute(Regla=regla,`MAE (puestos)`=round(mae,3),GP=carreras)
   knitr::kable(tb,format="latex",booktabs=TRUE)|>
