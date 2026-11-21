@@ -31,7 +31,7 @@ link-citations: true
 #| include: false
 
 paquetes <- c("dplyr", "tidyr", "tibble", "ggplot2", "httr2", "yaml",
-              "knitr", "digest", "rstan", "posterior", "lme4")
+              "knitr", "digest", "rstan", "posterior", "lme4", "kableExtra")
 faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
 if (length(faltan)) stop("Instala en Console los paquetes: ", paste(faltan, collapse = ", "))
 library(dplyr)

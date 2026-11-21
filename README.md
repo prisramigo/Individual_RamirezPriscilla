@@ -60,9 +60,7 @@ Abrir `F1_2024_Bell_Bayes.Rproj` y ejecutar una vez este bloque en **Console de 
 ```r
 paquetes <- c(
   "dplyr", "tidyr", "tibble", "ggplot2", "httr2", "yaml",
-  "knitr", "rmarkdown", "digest", "rstan", "posterior", "lme4"
-)
-
+  "knitr", "rmarkdown", "digest", "rstan", "posterior", "lme4", "kableExtra")
 faltantes <- paquetes[
   !vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)
 ]
