@@ -679,61 +679,94 @@ avance("Cálculos terminados. Se genera el reporte con los resultados efectivame
 {\sffamily\LARGE\bfseries ¿Es el piloto o es el carro?}\par
 \vspace{3pt}
 {\sffamily\large Pilotos, constructores y parrilla en la Fórmula 1 de 2024}\par
+{\sffamily\large Priscilla Ramírez Ramírez C4I820}\par
 \vspace{3pt}
 \end{center}
 
 # Objetivo
 
-Separar estadísticamente la competitividad del constructor y el rendimiento del piloto en 2024; estimar sus diferencias, explorar intercambios hipotéticos de carro y contrastar la información predictiva de constructor y posición de salida.
+Analizar, con datos de la temporada 2024 de Fórmula 1, la contribución estadística de la competitividad del constructor y del rendimiento del piloto a los resultados de carrera; estimar las diferencias entre pilotos y comparar la capacidad predictiva del constructor y la posición de salida.
 
 # Introducción
 
-Una victoria pertenece a una combinación de conductor, carro y organización. Bell et al. proponen modelos multinivel que distinguen piloto, equipo y equipo–temporada; van Kesteren y Bergkamp modelan directamente el orden de llegada y permiten intercambios hipotéticos de constructor. Este estudio adapta esas estructuras para obtener resultados específicos de 2024, sin copiar sus porcentajes ni sus rankings [@bell2016; @kesteren2023].
+En Fórmula 1, el resultado de una carrera refleja una combinación del rendimiento del piloto, el carro y el equipo. Además, la posición de salida puede aportar información sobre el resultado final. Este estudio analiza la temporada 2024 para estimar las contribuciones asociadas al piloto y al constructor, explorar escenarios hipotéticos de intercambio entre piloto y constructor, y comparar su información predictiva con la de la posición de salida.
 
-La temporada objetivo no cambia. Se utilizan resultados de 2014–2023 como apoyo para conectar compañeros y pilotos que cambiaron de constructor: las relaciones observadas únicamente en 2024 forman `r red_2024` grupos desconectados. La ventaja estimada del constructor representa el paquete deportivo asociado al equipo, no una medición experimental de potencia o aerodinámica. La separación es condicional al modelo y a su regularización; los escenarios son contrafactuales estadísticos.
+La ventaja estimada del constructor representa el paquete deportivo asociado al equipo; no es una medición experimental de la potencia o la aerodinámica del carro. Las estimaciones dependen del modelo, y los escenarios de intercambio se interpretan como contrafactuales estadísticos.
 
 # Datos (insumos)
 
-Los insumos de 2024 son los resultados de Jolpica previamente reunidos en el proyecto. El apoyo anterior se obtiene del mismo servicio, mediante solicitudes paginadas y copias locales; no se incorporan resultados posteriores a 2024 ni carreras sprint [@jolpica]. La unidad es el participante en un Gran Premio; las vueltas y sus promedios dejan de definir la supuesta calidad del carro.
+Los insumos de 2024 son los resultados de Jolpica previamente reunidos en el proyecto. Los datos históricos de apoyo provienen del mismo servicio, mediante solicitudes paginadas y copias locales. Se excluyen las carreras sprint y los resultados posteriores a 2024 [@jolpica]. La unidad de análisis es cada observación piloto–Gran Premio. El análisis se basa en resultados de carrera; los tiempos por vuelta y sus promedios no se usan como medida de la calidad del carro.
 
 ```{r}
-#| label: tabla-muestra
-knitr::kable(data.frame(
-  Muestra=c("Temporada objetivo", "Apoyo histórico", "Participantes objetivo en el modelo", "Pilotos / constructores objetivo"),
-  Contenido=c(paste(n_distinct(objetivo$round),"GP;",nrow(objetivo),"inscripciones"),
-    paste(cfg$primer_anio_apoyo,"–",cfg$ultimo_anio_apoyo,":",nrow(distinct(historico,season,round)),"GP"),
-    as.character(nrow(target)),paste(nrow(foco_d),"/",nrow(foco_t)))
-),format="latex",booktabs=TRUE,align=c("l","l"))
+#| label: tbl-muestra
+#| tbl-cap: "Resumen de la muestra"
+#| tbl-pos: H
+
+knitr::kable(
+  data.frame(Muestra = c(
+
+      "Temporada objetivo",
+
+      "Apoyo histórico",
+
+      "Observaciones objetivo en el modelo",
+
+      "Pilotos / constructores objetivo"
+
+    ),
+
+    Contenido = c(
+
+      paste(n_distinct(objetivo$round), "GP;", nrow(objetivo), "inscripciones"),
+
+      paste(cfg$primer_anio_apoyo, "–", cfg$ultimo_anio_apoyo, ":",
+
+            nrow(distinct(historico, season, round)), "GP"),
+
+      as.character(nrow(target)),
+
+      paste(nrow(foco_d), "/", nrow(foco_t))
+
+    )),
+  format = "latex",
+  booktabs = TRUE,
+  align = c("l", "l")
+)
+ 
 ```
 
-El modelo principal conserva el orden de los clasificados hasta el último participante activo, excluyendo descalificaciones y no participantes. Esta selección sigue la lógica del estudio bayesiano; por tanto, las probabilidades están condicionadas a ese conjunto y no modelan la fiabilidad. El contraste inspirado en Bell también incluye retiros, restringido a registros con al menos una vuelta completada y sin estados excluidos. La lluvia no excluye automáticamente una carrera: São Paulo y los demás GP permanecen disponibles según el criterio de clasificación.
+El modelo principal utiliza participantes con una posición final válida y excluye descalificaciones y no participantes. Por esta selección, las probabilidades se interpretan condicionadas a la muestra incluida; el modelo no estima la fiabilidad. El contraste basado en puntos, incluye retiros con al menos una vuelta completada y excluye los estados especificados en su filtro. La lluvia no es por sí sola un criterio de exclusión: cada Gran Premio se conserva si cumple las reglas de inclusión correspondientes.
 
 
 # Metodología
 
-**Modelo principal.** Para el piloto $d$, constructor $c$ y temporada $s$, la puntuación latente es
+**Modelo principal.** Se estima un modelo bayesiano multinivel Plackett–Luce (logit de rangos) para el orden de llegada de los clasificados. Se adapta el enfoque de van Kesteren y Bergkamp y la separación multinivel de Bell et al. [@kesteren2023; @bell2016]. La puntuación combina efectos del piloto y del constructor, generales y por temporada:
 
-$$\eta_{dcs}=a_d+a_{ds}+b_c+b_{cs}.$$
+$$
+\eta_{dcs}=a_d+a_{ds}+b_c+b_{cs}.
+$$
 
-Los cuatro componentes tienen distribuciones normales centradas en cero, con desviaciones $\sigma_d,\sigma_{ds},\sigma_c,\sigma_{cs}>0$. Se usan priors half-$t_3(0,2.5)$ y una sensibilidad con escala 1. El resultado de cada GP se modela como una secuencia Plackett–Luce entre sus $n_r$ clasificados:
+Los efectos tienen distribuciones normales centradas en cero. Las desviaciones estándar usan priors half-\(t\) con 3 grados de libertad y escala 2.5; se revisa la sensibilidad con escala 1. Los efectos por temporada permiten cambios entre años, pero no describen la evolución del carro dentro de 2024.
 
-$$P(\pi_r\mid\eta)=\prod_{k=1}^{n_r-1}
-\frac{\exp(\eta_{\pi_{rk}})}{\sum_{j=k}^{n_r}\exp(\eta_{\pi_{rj}})}.$$
+**Estimaciones e intercambios.** Para 2024 se combinan los efectos generales y anuales:
 
-Se adapta el logit de rangos (Plackett–Luce) de @kesteren2023 y la separación multinivel de @bell2016. Los efectos anuales permiten que piloto y equipo cambien entre años; dentro de 2024 representan una competitividad media, no la velocidad de cada evolución del carro. Los nombres oficiales de constructores se conservan como categorías distintas.
+$$
+D_d=a_d+a_{d,2024},
+\qquad
+C_c=b_c+b_{c,2024}.
+$$
 
-**Rankings y proporción.** Los efectos $D_d=a_d+a_{d,2024}$ y $C_c=b_c+b_{c,2024}$ se centran por separado para mostrarlos. Cada extracción posterior genera rankings e intervalos creíbles (ICr). Para responder específicamente sobre 2024 se calcula
+Con las extracciones posteriores se obtienen rankings e intervalos creíbles. La proporción de dispersión atribuible a los efectos del constructor se calcula así:
 
-$$S_{C,2024}=\frac{\operatorname{Var}_{c}(C_c)}{
-\operatorname{Var}_{c}(C_c)+\operatorname{Var}_{d}(D_d)}.$$
+$$
+S_{C,2024}=
+\frac{\operatorname{Var}_c(C_c)}
+{\operatorname{Var}_c(C_c)+\operatorname{Var}_d(D_d)}.
+$$
 
-Es una proporción de dispersión de efectos latentes, con igual peso para los pilotos y para los constructores de sus respectivos conjuntos. No representa el porcentaje de victorias, de mérito ni de varianza total explicada. Se exporta también la razón de hiperparámetros comparable con los estudios, que corresponde al período completo de estimación, no solo a 2024.
+Esta proporción compara la dispersión de los efectos; no representa el porcentaje de victorias ni la varianza total explicada. Los intercambios hipotéticos comparan dos participantes, mantienen fijos los efectos estimados y no incorporan adaptación, averías ni cambios en la conducción.
 
-**Intercambios.** Para dos combinaciones, $P(A\succ B)=\operatorname{logit}^{-1}(D_A+C_A-D_B-C_B)$. Los escenarios se fijaron antes del ajuste. Mantienen los efectos estimados al intercambiar carros y no incluyen adaptación, sinergia particular, averías ni cambios en la conducción. Comparan dos participantes; no son probabilidades de ganar a todo el pelotón.
-
-**Parrilla y circuitos.** Una extensión añade $(\beta+u_{circuito})g$, con $g$ como ventaja normalizada de parrilla y pendientes regularizadas por circuito. Se reservan GP completos de 2024 en cuatro pliegues y se reestima con los demás GP y el apoyo histórico. En el test se evalúan cuatro ablaciones de información: constructor, parrilla, ambos y modelo completo. Se predice el rango esperado $1+\sum_{j\ne i}P(j\succ i)$; el MAE se promedia dando igual peso a cada GP. Son reglas derivadas de una misma estructura, no cuatro causas aisladas. La diferencia de MAE entre constructor y parrilla se acompaña de un intervalo bootstrap pareado por GP. El ejercicio es retrospectivo y condicional a clasificación.
-
-**Calidad.** Se ejecutan cuatro cadenas NUTS; se exige $\widehat R\le1.01$, ESS efectivo $\ge400$ y cero divergencias. El programa se detiene si no se cumplen. Se contrastan priors, datos simulados de victorias y una adaptación gaussiana de Bell basada en puntos normalizados, incluyendo retiros. No se fuerza concordancia entre estudios [@stan].
+**Parrilla y validación.** Una extensión incorpora la posición de salida normalizada y efectos por circuito. Se comparan cuatro variantes —constructor, parrilla, ambos y modelo completo— mediante validación cruzada en cuatro pliegues, reservando Grandes Premios completos de 2024. Se evalúa el rango esperado con el MAE, dando el mismo peso a cada Gran Premio, y se calcula un intervalo bootstrap pareado para la diferencia entre constructor y parrilla. El análisis es retrospectivo y condicionado a la clasificación.
 
 
 # Resultados
