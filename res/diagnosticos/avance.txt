@@ -116,3 +116,414 @@
 2026-11-15 17:26:03 Reutilizando ajuste cv_parrilla_3 
 2026-11-15 17:26:08 Reutilizando ajuste cv_parrilla_4 
 2026-11-15 17:26:14 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-15 17:57:36 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-15 17:57:37 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-15 17:57:38 Reutilizando ajuste principal 
+2026-11-15 17:57:44 Reutilizando ajuste prior_alternativo 
+2026-11-15 17:57:50 Rankings, descomposición y contrafactuales calculados. 
+2026-11-15 17:57:50 Reutilizando ajuste cv_parrilla_1 
+2026-11-15 17:57:55 Reutilizando ajuste cv_parrilla_2 
+2026-11-15 17:58:01 Reutilizando ajuste cv_parrilla_3 
+2026-11-15 17:58:06 Reutilizando ajuste cv_parrilla_4 
+2026-11-15 17:58:11 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-15 17:59:17 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-15 17:59:18 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-15 17:59:19 Reutilizando ajuste principal 
+2026-11-15 17:59:25 Reutilizando ajuste prior_alternativo 
+2026-11-15 17:59:31 Rankings, descomposición y contrafactuales calculados. 
+2026-11-15 17:59:31 Reutilizando ajuste cv_parrilla_1 
+2026-11-15 17:59:36 Reutilizando ajuste cv_parrilla_2 
+2026-11-15 17:59:41 Reutilizando ajuste cv_parrilla_3 
+2026-11-15 17:59:47 Reutilizando ajuste cv_parrilla_4 
+2026-11-15 17:59:52 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 19:16:00 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 19:16:01 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 19:16:02 Reutilizando ajuste principal 
+2026-11-20 19:16:08 Reutilizando ajuste prior_alternativo 
+2026-11-20 19:16:14 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 19:16:14 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 19:16:19 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 19:16:25 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 19:16:31 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 19:16:37 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 19:35:48 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 19:35:49 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 19:35:50 Reutilizando ajuste principal 
+2026-11-20 19:35:56 Reutilizando ajuste prior_alternativo 
+2026-11-20 19:36:02 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 19:36:03 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 19:36:08 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 19:36:14 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 19:36:19 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 19:36:25 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 19:38:36 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 19:38:38 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 19:38:38 Reutilizando ajuste principal 
+2026-11-20 19:38:45 Reutilizando ajuste prior_alternativo 
+2026-11-20 19:38:51 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 19:38:51 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 19:38:56 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 19:39:02 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 19:39:08 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 19:39:13 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 19:43:51 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 19:43:53 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 19:43:54 Reutilizando ajuste principal 
+2026-11-20 19:44:01 Reutilizando ajuste prior_alternativo 
+2026-11-20 19:44:08 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 19:44:08 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 19:44:15 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 19:44:22 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 19:44:28 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 19:44:35 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 19:45:01 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 19:45:03 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 19:45:04 Reutilizando ajuste principal 
+2026-11-20 19:45:10 Reutilizando ajuste prior_alternativo 
+2026-11-20 19:45:17 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 19:45:17 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 19:45:23 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 19:45:31 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 19:45:39 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 19:45:47 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 19:49:21 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 19:49:22 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 19:49:23 Reutilizando ajuste principal 
+2026-11-20 19:49:30 Reutilizando ajuste prior_alternativo 
+2026-11-20 19:49:37 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 19:49:38 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 19:49:44 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 19:49:50 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 19:49:56 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 19:50:02 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:00:48 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:00:49 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:00:50 Reutilizando ajuste principal 
+2026-11-20 20:00:56 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:01:02 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:01:03 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:01:08 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:01:13 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:01:19 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:01:25 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:05:03 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:05:05 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:05:05 Reutilizando ajuste principal 
+2026-11-20 20:05:12 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:05:20 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:05:20 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:05:26 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:05:32 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:05:38 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:05:45 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:07:05 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:07:06 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:07:07 Reutilizando ajuste principal 
+2026-11-20 20:07:14 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:07:21 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:07:21 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:07:27 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:07:34 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:07:40 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:07:47 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:12:10 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:12:12 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:12:12 Reutilizando ajuste principal 
+2026-11-20 20:12:18 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:12:24 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:12:25 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:12:31 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:12:36 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:12:42 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:12:47 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:13:27 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:13:29 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:13:30 Reutilizando ajuste principal 
+2026-11-20 20:13:36 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:13:42 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:13:42 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:13:48 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:13:53 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:13:59 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:14:04 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:14:34 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:14:36 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:14:37 Reutilizando ajuste principal 
+2026-11-20 20:14:43 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:14:49 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:14:49 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:14:55 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:15:00 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:15:06 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:15:11 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:30:17 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:30:18 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:30:19 Reutilizando ajuste principal 
+2026-11-20 20:30:25 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:30:31 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:30:31 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:30:37 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:30:42 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:30:47 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:30:53 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:31:41 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:31:43 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:31:43 Reutilizando ajuste principal 
+2026-11-20 20:31:49 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:31:55 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:31:56 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:32:01 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:32:07 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:32:12 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:32:17 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:34:03 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:34:05 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:34:05 Reutilizando ajuste principal 
+2026-11-20 20:34:11 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:34:17 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:34:18 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:34:23 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:34:29 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:34:34 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:34:39 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:35:04 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:35:05 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:35:06 Reutilizando ajuste principal 
+2026-11-20 20:35:12 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:35:18 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:35:18 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:35:24 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:35:29 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:35:35 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:35:40 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:36:18 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:36:20 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:36:20 Reutilizando ajuste principal 
+2026-11-20 20:36:27 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:36:33 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:36:33 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:36:38 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:36:44 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:36:49 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:36:55 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:39:12 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:39:14 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:39:15 Reutilizando ajuste principal 
+2026-11-20 20:39:21 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:39:27 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:39:27 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:39:32 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:39:38 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:39:43 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:39:49 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:40:53 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:40:54 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:40:55 Reutilizando ajuste principal 
+2026-11-20 20:41:01 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:41:07 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:41:07 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:41:13 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:41:18 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:41:24 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:41:29 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:46:25 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:46:27 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:46:28 Reutilizando ajuste principal 
+2026-11-20 20:46:35 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:46:42 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:46:42 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:46:49 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:46:55 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:47:01 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:47:08 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 20:47:31 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 20:47:32 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 20:47:33 Reutilizando ajuste principal 
+2026-11-20 20:47:40 Reutilizando ajuste prior_alternativo 
+2026-11-20 20:47:46 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 20:47:47 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 20:47:53 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 20:47:59 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 20:48:06 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 20:48:12 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:03:23 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:03:24 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:03:25 Reutilizando ajuste principal 
+2026-11-20 21:03:31 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:03:37 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:03:38 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:03:43 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:03:49 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:03:54 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:03:59 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:05:02 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:05:04 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:05:04 Reutilizando ajuste principal 
+2026-11-20 21:05:10 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:05:16 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:05:17 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:05:22 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:05:28 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:05:33 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:05:39 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:09:20 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:09:22 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:09:22 Reutilizando ajuste principal 
+2026-11-20 21:09:29 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:09:35 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:09:35 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:09:40 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:09:46 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:09:51 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:09:56 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:12:16 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:12:23 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:12:25 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:12:25 Reutilizando ajuste principal 
+2026-11-20 21:12:31 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:12:37 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:12:38 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:12:43 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:12:49 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:12:54 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:13:00 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:14:13 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:14:15 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:14:15 Reutilizando ajuste principal 
+2026-11-20 21:14:21 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:14:27 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:14:28 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:14:33 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:14:39 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:14:44 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:14:50 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:22:06 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:22:07 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:22:08 Reutilizando ajuste principal 
+2026-11-20 21:22:15 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:22:22 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:22:22 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:22:29 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:22:35 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:22:42 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:22:48 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:50:40 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:50:41 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:50:42 Reutilizando ajuste principal 
+2026-11-20 21:50:48 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:50:54 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:50:54 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:51:00 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:51:05 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:51:11 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:51:16 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 21:53:23 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 21:53:24 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 21:53:25 Reutilizando ajuste principal 
+2026-11-20 21:53:31 Reutilizando ajuste prior_alternativo 
+2026-11-20 21:53:38 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 21:53:38 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 21:53:44 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 21:53:49 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 21:53:55 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 21:54:00 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 22:01:29 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 22:01:31 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 22:01:32 Reutilizando ajuste principal 
+2026-11-20 22:01:37 Reutilizando ajuste prior_alternativo 
+2026-11-20 22:01:43 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 22:01:44 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 22:01:51 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 22:01:58 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 22:02:06 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 22:02:12 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 22:03:16 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 22:03:17 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 22:03:18 Reutilizando ajuste principal 
+2026-11-20 22:03:24 Reutilizando ajuste prior_alternativo 
+2026-11-20 22:03:31 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 22:03:31 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 22:03:37 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 22:03:42 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 22:03:48 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 22:03:53 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 22:05:54 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 22:05:55 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 22:05:56 Reutilizando ajuste principal 
+2026-11-20 22:06:02 Reutilizando ajuste prior_alternativo 
+2026-11-20 22:06:08 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 22:06:08 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 22:06:14 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 22:06:19 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 22:06:24 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 22:06:31 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 22:36:20 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 22:36:21 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 22:36:22 Reutilizando ajuste principal 
+2026-11-20 22:36:28 Reutilizando ajuste prior_alternativo 
+2026-11-20 22:36:34 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 22:36:34 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 22:36:41 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 22:36:46 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 22:36:52 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 22:36:57 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 22:47:40 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 22:47:42 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 22:47:42 Reutilizando ajuste principal 
+2026-11-20 22:47:48 Reutilizando ajuste prior_alternativo 
+2026-11-20 22:47:55 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 22:47:55 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 22:48:01 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 22:48:06 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 22:48:11 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 22:48:17 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 22:55:28 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 22:55:30 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 22:55:30 Reutilizando ajuste principal 
+2026-11-20 22:55:36 Reutilizando ajuste prior_alternativo 
+2026-11-20 22:55:42 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 22:55:43 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 22:55:48 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 22:55:53 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 22:55:59 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 22:56:04 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 22:59:47 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 22:59:49 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 22:59:50 Reutilizando ajuste principal 
+2026-11-20 22:59:56 Reutilizando ajuste prior_alternativo 
+2026-11-20 23:00:02 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 23:00:02 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 23:00:07 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 23:00:13 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 23:00:18 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 23:00:23 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 23:05:48 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 23:05:49 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 23:05:50 Reutilizando ajuste principal 
+2026-11-20 23:05:56 Reutilizando ajuste prior_alternativo 
+2026-11-20 23:06:03 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 23:06:03 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 23:06:08 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 23:06:14 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 23:06:20 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 23:06:26 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 23:07:59 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 23:08:02 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 23:08:02 Reutilizando ajuste principal 
+2026-11-20 23:08:09 Reutilizando ajuste prior_alternativo 
+2026-11-20 23:08:16 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 23:08:16 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 23:08:21 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 23:08:27 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 23:08:32 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 23:08:38 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 
+2026-11-20 23:11:28 Inicio del análisis piloto-constructor; objetivo 2024. 
+2026-11-20 23:11:29 Datos: 228 carreras, 4626 participaciones; red 9 -> 2 componentes. 
+2026-11-20 23:11:30 Reutilizando ajuste principal 
+2026-11-20 23:11:36 Reutilizando ajuste prior_alternativo 
+2026-11-20 23:11:42 Rankings, descomposición y contrafactuales calculados. 
+2026-11-20 23:11:42 Reutilizando ajuste cv_parrilla_1 
+2026-11-20 23:11:47 Reutilizando ajuste cv_parrilla_2 
+2026-11-20 23:11:52 Reutilizando ajuste cv_parrilla_3 
+2026-11-20 23:11:58 Reutilizando ajuste cv_parrilla_4 
+2026-11-20 23:12:04 Cálculos terminados. Se genera el reporte con los resultados efectivamente obtenidos. 

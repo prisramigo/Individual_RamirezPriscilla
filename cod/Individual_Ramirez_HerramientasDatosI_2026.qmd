@@ -23,6 +23,7 @@ execute:
   warning: false
   error: false
 bibliography: ../info/referencias.bib
+csl: ../info/apa.csl
 link-citations: true
 ---
 
