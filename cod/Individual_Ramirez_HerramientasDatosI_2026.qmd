@@ -23,7 +23,6 @@ execute:
   warning: false
   error: false
 bibliography: ../info/referencias.bib
-csl: ../info/apa.csl
 link-citations: true
 ---
 
@@ -682,6 +681,7 @@ avance("Cálculos terminados. Se genera el reporte con los resultados efectivame
 {\sffamily\large Pilotos, constructores y parrilla en la Fórmula 1 de 2024}\par
 {\sffamily\large Priscilla Ramírez Ramírez C4I820}\par
 {\small Repositorio: \url{https://github.com/prisramigo/Individual_RamirezPriscilla}\par}
+{\small \href{https://canva.link/tl3qwk3kge8t0k1}{Ver presentación}\par}
 \vspace{3pt}
 \end{center}
 
