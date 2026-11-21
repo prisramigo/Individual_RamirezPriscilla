@@ -4,7 +4,7 @@ format:
   pdf:
     documentclass: article
     pdf-engine: xelatex
-    fontsize: 10pt
+    fontsize: 12pt
     geometry:
       - margin=20mm
     number-sections: true
@@ -708,7 +708,6 @@ knitr::kable(data.frame(
 
 El modelo principal conserva el orden de los clasificados hasta el último participante activo, excluyendo descalificaciones y no participantes. Esta selección sigue la lógica del estudio bayesiano; por tanto, las probabilidades están condicionadas a ese conjunto y no modelan la fiabilidad. El contraste inspirado en Bell también incluye retiros, restringido a registros con al menos una vuelta completada y sin estados excluidos. La lluvia no excluye automáticamente una carrera: São Paulo y los demás GP permanecen disponibles según el criterio de clasificación.
 
-\newpage
 
 # Metodología
 
@@ -736,7 +735,6 @@ Es una proporción de dispersión de efectos latentes, con igual peso para los p
 
 **Calidad.** Se ejecutan cuatro cadenas NUTS; se exige $\widehat R\le1.01$, ESS efectivo $\ge400$ y cero divergencias. El programa se detiene si no se cumplen. Se contrastan priors, datos simulados de victorias y una adaptación gaussiana de Bell basada en puntos normalizados, incluyendo retiros. No se fuerza concordancia entre estudios [@stan].
 
-\newpage
 
 # Resultados
 
@@ -773,7 +771,7 @@ El apoyo histórico cambia la red de `r red_2024` a `r red_apoyo` componentes co
 
 Las condiciones de Mónaco o Hungría no se eliminan del estudio. El modelo de parrilla permite que su asociación cambie entre circuitos y se guardan los errores de cada GP. La especificación principal no contiene una medición exhaustiva del tráfico, las mejoras del carro ni la estrategia; esos factores delimitan la interpretación de sus efectos, no se consideran "controlados" por haber sido mencionados.
 
-\newpage
+
 
 ## Resultados de la metodología
 
@@ -819,7 +817,7 @@ if (!is.null(cv_summary)) {
 
 **Comprobaciones.** El ajuste principal obtuvo $\widehat R_{max}=$ `r num(principal_fit$diagnostico$rhat_max,3)`, ESS mínimo `r round(principal_fit$diagnostico$ess_bulk_min)` y `r principal_fit$diagnostico$divergencias` divergencias. La convergencia no certifica la validez causal. Los contrastes de especificación se resumen en las conclusiones.
 
-\newpage
+
 
 # Conclusiones
 
